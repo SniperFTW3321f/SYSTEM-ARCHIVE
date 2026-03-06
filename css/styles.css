@@ -89,17 +89,37 @@ code, pre {
 }
 .btn--primary:hover { filter: brightness(1.1); }
 
-/* ── FIELDS / INPUTS ── */
+/* ── FIELDS / INPUTS / SELECTS ── */
 .field { display: grid; gap: 5px; }
 label { font-size: 11px; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }
+
 input, select {
-  width: 100%; padding: 11px 12px; border-radius: 10px;
-  border: 1px solid var(--line); background: rgba(255,255,255,.05);
-  color: var(--text); outline: none; appearance: none;
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.05);
+  color: var(--text);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
   transition: border-color var(--t);
+  color-scheme: dark;
 }
 input:focus, select:focus { border-color: rgba(124,92,255,.65); }
 input::placeholder { color: var(--muted); }
+
+/* ── DROPDOWN OPTIONS FIX ── */
+option {
+  background: #0E1632;
+  color: #EAF0FF;
+}
+option:hover,
+option:focus,
+option:checked {
+  background: #1a2550;
+  color: #ffffff;
+}
 
 /* ── CHIPS ── */
 .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
@@ -160,7 +180,7 @@ input::placeholder { color: var(--muted); }
   flex-wrap: wrap; gap: 18px;
 }
 
-/* ── QUICK SEARCH FORM ── */
+/* ── QUICK SEARCH ── */
 .quick-search { display: flex; gap: 10px; flex-wrap: wrap; }
 .quick-search input { min-width: 260px; flex: 1; }
 
