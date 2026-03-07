@@ -7,7 +7,7 @@ const DATA_URL = "./data/machines.json";
 const CATEGORY_META = {
   cars:         { title: "Cars",         emoji: "🚗" },
   aircraft:     { title: "Aircraft",     emoji: "✈️" },
-  airships:     { title: "Airships",     emoji: "🎈" },
+  airships:     { title: "Airships",     emoji: "🛸" },
   ships:        { title: "Ships",        emoji: "🚢" },
   military:     { title: "Military",     emoji: "⚔️" },
   trains:       { title: "Trains",       emoji: "🚂" },
@@ -39,15 +39,44 @@ function esc(s) {
     .replaceAll("'",  "&#39;");
 }
 
-const normKey = s => safeText(s, "").toLowerCase().trim();
-
-const hasPhoto = m =>
-  Array.isArray(m.images) && m.images.length > 0 && safeText(m.images[0], "") !== "";
+const normKey  = s => safeText(s, "").toLowerCase().trim();
+const hasPhoto = m => Array.isArray(m.images) && m.images.length > 0 && safeText(m.images[0], "") !== "";
 
 function categoryLabel(cat) {
   const meta = CATEGORY_META[cat];
   return meta ? `${meta.emoji} ${meta.title}` : cat;
 }
+
+/* ─────────────────────────────────────────
+   IMAGE ERROR HANDLERS  (no inline JSON.stringify)
+───────────────────────────────────────── */
+window._cardImgError = function(img) {
+  const media = img.closest(".card__media");
+  if (!media) return;
+  media.innerHTML = `
+    <div class="placeholder">
+      <div>
+        <div class="placeholder__name">${img.dataset.name || ""}</div>
+        <div class="placeholder__sub">${img.dataset.cat  || ""}</div>
+      </div>
+    </div>`;
+};
+
+window._mainImgError = function(img) {
+  const wrap = img.parentElement;
+  if (!wrap) return;
+  wrap.innerHTML = `
+    <div class="placeholder" style="aspect-ratio:16/10;min-height:220px">
+      <div>
+        <div class="placeholder__name">${img.dataset.name || ""}</div>
+        <div class="placeholder__sub">${img.dataset.cat  || ""}</div>
+      </div>
+    </div>`;
+};
+
+window._thumbError = function(img) {
+  img.remove();
+};
 
 /* ─────────────────────────────────────────
    LOAD DATA
@@ -90,29 +119,31 @@ function renderPlaceholder(m) {
         <div class="placeholder__name">${esc(safeText(m.name))}</div>
         <div class="placeholder__sub">${esc(categoryLabel(m.category))}</div>
       </div>
-    </div>
-  `;
+    </div>`;
 }
 
 function renderCard(m) {
-  const img = m.images?.[0] ?? "";
-  const phHTML = renderPlaceholder(m);
+  const imgSrc = m.images?.[0] ?? "";
+  const safeName = esc(safeText(m.name));
+  const safeCat  = esc(categoryLabel(m.category));
 
-  const media = img
+  const media = imgSrc
     ? `<img
-         src="${esc(img)}"
-         alt="${esc(safeText(m.name))}"
+         src="${esc(imgSrc)}"
+         alt="${safeName}"
          loading="lazy"
          decoding="async"
-         onerror="this.closest('.card__media').innerHTML = ${JSON.stringify(phHTML)};"
+         data-name="${safeName}"
+         data-cat="${safeCat}"
+         onerror="_cardImgError(this)"
        />`
-    : phHTML;
+    : renderPlaceholder(m);
 
   return `
     <a class="card" href="./machine.html?id=${encodeURIComponent(m.id)}">
       <div class="card__media">${media}</div>
       <div class="card__body">
-        <div class="card__title">${esc(safeText(m.name))}</div>
+        <div class="card__title">${safeName}</div>
         <div class="card__meta">
           ${esc(safeText(m.manufacturer, ""))}
           ${m.year ? `&bull; ${esc(m.year)}` : ""}
@@ -125,8 +156,7 @@ function renderCard(m) {
             : ""}
         </div>
       </div>
-    </a>
-  `;
+    </a>`;
 }
 
 /* ─────────────────────────────────────────
@@ -134,7 +164,7 @@ function renderCard(m) {
 ───────────────────────────────────────── */
 function renderHome(machines) {
 
-  /* ── Category grid ── */
+  /* Category grid */
   const catGrid = qs("#categoryGrid");
   if (catGrid) {
     const counts = machines.reduce((acc, m) => {
@@ -150,17 +180,16 @@ function renderHome(machines) {
           <div class="cat__emoji">${meta.emoji}</div>
           <div class="cat__title">${esc(meta.title)}</div>
           <div class="cat__count">${count} item${count === 1 ? "" : "s"}</div>
-        </a>
-      `;
+        </a>`;
     }).join("");
   }
 
-  /* ── Stats bar ── */
+  /* Stats bar */
   const statsEl = qs("#statsBar");
   if (statsEl) {
-    const catUsed      = new Set(machines.map(m => m.category)).size;
-    const countries    = new Set(machines.map(m => m.country).filter(Boolean)).size;
-    const withPhotos   = machines.filter(hasPhoto).length;
+    const catUsed    = new Set(machines.map(m => m.category)).size;
+    const countries  = new Set(machines.map(m => m.country).filter(Boolean)).size;
+    const withPhotos = machines.filter(hasPhoto).length;
 
     statsEl.innerHTML = `
       <div class="stat">
@@ -178,11 +207,10 @@ function renderHome(machines) {
       <div class="stat">
         <div class="stat__num">${withPhotos}</div>
         <div class="stat__label">With photos</div>
-      </div>
-    `;
+      </div>`;
   }
 
-  /* ── Newest grid (home bottom section) ── */
+  /* Newest grid */
   const newestEl = qs("#newestGrid");
   if (newestEl) {
     const sorted = [...machines].sort((a, b) => (b.year || 0) - (a.year || 0));
@@ -228,7 +256,6 @@ function initCatalog(machines) {
 
   fillSubcats(catEl.value);
 
-  /* Apply filters + sort */
   function apply() {
     const q          = safeText(searchEl?.value, "").trim();
     const c          = normKey(catEl?.value || "");
@@ -262,12 +289,7 @@ function initCatalog(machines) {
       countEl.textContent = `${filtered.length} result${filtered.length === 1 ? "" : "s"}`;
   }
 
-  /* Event listeners */
-  catEl.addEventListener("change", () => {
-    fillSubcats(catEl.value);
-    subEl.value = "";
-    apply();
-  });
+  catEl.addEventListener("change", () => { fillSubcats(catEl.value); subEl.value = ""; apply(); });
   subEl?.addEventListener("change", apply);
   searchEl?.addEventListener("input", apply);
   sortEl?.addEventListener("change", apply);
@@ -287,8 +309,7 @@ function renderSpecsTable(specs) {
     <tr>
       <th>${esc(String(k).replaceAll("_", " "))}</th>
       <td>${esc(safeText(v))}</td>
-    </tr>
-  `).join("");
+    </tr>`).join("");
 
   return `<table class="specs"><tbody>${rows}</tbody></table>`;
 }
@@ -300,7 +321,6 @@ function initMachine(machines) {
   const id = getParam("id");
   const m  = machines.find(x => x.id === id);
 
-  /* Not found */
   if (!m) {
     root.innerHTML = `
       <div class="panel">
@@ -309,28 +329,31 @@ function initMachine(machines) {
         <div style="margin-top:14px">
           <a class="btn" href="./catalog.html">← Back to catalog</a>
         </div>
-      </div>
-    `;
+      </div>`;
     return;
   }
 
-  /* Update browser tab title */
   document.title = `${safeText(m.name)} • SYSTEM ARCHIVE`;
 
-  /* Gallery */
-  const imgs = (m.images || []).filter(Boolean);
-  const phHTML = renderPlaceholder(m);
+  const imgs     = (m.images || []).filter(Boolean);
+  const safeName = esc(safeText(m.name));
+  const safeCat  = esc(categoryLabel(m.category));
 
+  /* Gallery */
   const gallery = imgs.length
     ? `
       <div class="gallery">
-        <img
-          class="gallery__main"
-          id="mainImg"
-          src="${esc(imgs[0])}"
-          alt="${esc(safeText(m.name))}"
-          onerror="this.outerHTML = ${JSON.stringify(phHTML)};"
-        />
+        <div class="gallery__main-wrap">
+          <img
+            class="gallery__main"
+            id="mainImg"
+            src="${esc(imgs[0])}"
+            alt="${safeName}"
+            data-name="${safeName}"
+            data-cat="${safeCat}"
+            onerror="_mainImgError(this)"
+          />
+        </div>
         ${imgs.length > 1 ? `
           <div class="gallery__thumbs">
             ${imgs.map((src, i) => `
@@ -339,29 +362,29 @@ function initMachine(machines) {
                 src="${esc(src)}"
                 alt="thumb ${i + 1}"
                 data-src="${esc(src)}"
-                onerror="this.remove();"
-              />
-            `).join("")}
-          </div>
-        ` : ""}
-      </div>
-    `
-    : `<div class="gallery">${phHTML}</div>`;
+                onerror="_thumbError(this)"
+              />`).join("")}
+          </div>` : ""}
+      </div>`
+    : `
+      <div class="gallery">
+        <div class="gallery__main-wrap">
+          ${renderPlaceholder(m)}
+        </div>
+      </div>`;
 
-  /* Sources list */
+  /* Sources */
   const sourcesHTML = (m.sources || []).length
     ? `<ul class="links">
-        ${(m.sources).map(s => `
+        ${m.sources.map(s => `
           <li>
             <a href="${esc(safeText(s.url, "#"))}" target="_blank" rel="noreferrer">
               ${esc(safeText(s.title, "Source"))}
             </a>
-          </li>
-        `).join("")}
+          </li>`).join("")}
       </ul>`
     : `<div class="muted">No sources yet.</div>`;
 
-  /* Render page */
   root.innerHTML = `
     <div class="panel">
 
@@ -371,11 +394,9 @@ function initMachine(machines) {
         <a href="./catalog.html?category=${encodeURIComponent(m.category)}">
           ${esc(categoryLabel(m.category))}
         </a>
+        ${m.subcategory ? `<span>›</span><span>${esc(m.subcategory)}</span>` : ""}
         <span>›</span>
-        ${m.subcategory
-          ? `<a href="./catalog.html?category=${encodeURIComponent(m.category)}">${esc(m.subcategory)}</a><span>›</span>`
-          : ""}
-        <span>${esc(safeText(m.name))}</span>
+        <span>${safeName}</span>
       </div>
 
       <div class="machine">
@@ -383,7 +404,7 @@ function initMachine(machines) {
         <div>${gallery}</div>
 
         <div class="machine__info">
-          <h1>${esc(safeText(m.name))}</h1>
+          <h1>${safeName}</h1>
           <div class="muted" style="margin-top:4px">
             ${esc(safeText(m.manufacturer, ""))}
             ${m.country ? `&bull; ${esc(m.country)}` : ""}
@@ -407,8 +428,9 @@ function initMachine(machines) {
           <h2>Sources</h2>
           ${sourcesHTML}
 
-          <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap">
-            <a class="btn btn--ghost" href="./catalog.html?category=${encodeURIComponent(m.category)}">
+          <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn btn--ghost"
+               href="./catalog.html?category=${encodeURIComponent(m.category)}">
               ← Back to ${esc(safeText(m.category))}
             </a>
             <a class="btn" href="./catalog.html">All catalog</a>
@@ -416,8 +438,7 @@ function initMachine(machines) {
         </div>
 
       </div>
-    </div>
-  `;
+    </div>`;
 
   /* Thumbnail click → swap main image */
   qsa(".thumb").forEach(t => {
