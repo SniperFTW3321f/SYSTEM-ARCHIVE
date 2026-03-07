@@ -1,112 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>SYSTEM ARCHIVE — Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SYSTEM ARCHIVE</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
-<body class="page-home">
-
-  <!-- NAV -->
-  <header class="topbar">
-    <a class="brand" href="index.html">
-      <span class="brand__mark">SA</span>
-      <span class="brand__text">SYSTEM ARCHIVE</span>
-    </a>
-    <nav class="nav">
-      <a href="index.html" class="nav__link is-active">Home</a>
-      <a href="catalog.html" class="nav__link">Full Catalog</a>
-      <a href="catalog.html?type=Fighter+Jet" class="nav__link">Fighter Jets</a>
-      <a href="catalog.html?type=Cargo+Plane" class="nav__link">Cargo</a>
-      <a href="catalog.html?type=Passenger+Plane" class="nav__link">Passenger</a>
-    </nav>
-    <a class="cta" href="https://github.com/SniperFTW3321f" target="_blank" rel="noreferrer">GitHub ↗</a>
+<body>
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="./index.html">SYSTEM ARCHIVE</a>
+      <nav class="nav">
+        <a href="./catalog.html">Catalog</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-
-    <!-- HERO -->
-    <section class="home-hero">
-      <div class="home-hero__bg"></div>
-      <div class="home-hero__content">
-        <div class="label-pill">🗂 Open Database</div>
-        <h1>The Machine Archive</h1>
-        <p>
-          Fighter jets, cargo planes, ships, tanks, trains, rockets, drones and more —
-          all in one place. Browse by category or search the full catalog.
-        </p>
-        <div class="home-hero__actions">
-          <a class="btn btn--primary" href="catalog.html">Browse Full Catalog →</a>
-          <a class="btn" href="catalog.html?type=Fighter+Jet">Fighter Jets</a>
-          <a class="btn" href="catalog.html?type=Tank">Tanks</a>
-          <a class="btn" href="catalog.html?type=Rocket+%2F+Space">Space</a>
-        </div>
+  <main class="wrap">
+    <div class="hero panel">
+      <h1>Machines, vehicles, and more</h1>
+      <p class="muted">Browse by category, then open each machine for full info.</p>
+      <div class="hero__actions">
+        <a class="btn" href="./catalog.html">Open catalog</a>
       </div>
-    </section>
-
-    <!-- STATS BAR -->
-    <div class="statsbar">
-      <div class="stat">
-        <span id="stat-total">—</span>
-        <em>Total Entries</em>
-      </div>
-      <div class="stat">
-        <span id="stat-cats">—</span>
-        <em>Categories</em>
-      </div>
-      <div class="stat">
-        <span id="stat-countries">—</span>
-        <em>Countries</em>
-      </div>
-      <div class="stat">
-        <span id="stat-eras">—</span>
-        <em>Eras</em>
-      </div>
+      <div id="fatalError" class="error"></div>
     </div>
 
-    <!-- CATEGORY CARDS -->
-    <section class="section">
-      <div class="section__head">
-        <h2>Browse by Category</h2>
-        <a href="catalog.html" class="link-subtle">View all →</a>
-      </div>
-      <div class="cat-grid" id="cat-grid">
-        <!-- Populated by home.js -->
-      </div>
+    <section class="panel">
+      <h2>Categories</h2>
+      <div id="categoryGrid" class="catgrid"></div>
     </section>
-
-    <!-- SEARCH SHORTCUT -->
-    <section class="section">
-      <div class="panel panel--cta">
-        <div>
-          <h2>Quick Search</h2>
-          <p>Search across all 55+ entries by name, manufacturer, role, or country.</p>
-        </div>
-        <form action="catalog.html" method="get" class="quick-search">
-          <input name="q" type="search" placeholder="e.g. Su-27, Boeing, tank…" autocomplete="off"/>
-          <button class="btn btn--primary" type="submit">Search →</button>
-        </form>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> SYSTEM ARCHIVE — Powered by GitHub Pages</p>
-    <div class="footer-links">
-      <a href="catalog.html?type=Fighter+Jet">Fighter Jets</a>
-      <a href="catalog.html?type=Cargo+Plane">Cargo Planes</a>
-      <a href="catalog.html?type=Passenger+Plane">Passenger Planes</a>
-      <a href="catalog.html?type=Ship">Ships</a>
-      <a href="catalog.html?type=Tank">Tanks</a>
-      <a href="catalog.html?type=Rocket+%2F+Space">Space</a>
-    </div>
+  <footer class="foot">
+    <div class="wrap muted">Built with HTML/CSS/JS • GitHub Pages friendly</div>
   </footer>
 
-  <script src="js/home.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>

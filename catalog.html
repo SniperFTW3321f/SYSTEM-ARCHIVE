@@ -1,156 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title id="page-title">SYSTEM ARCHIVE — Catalog</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catalog • SYSTEM ARCHIVE</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
-<body class="page-catalog">
-
-  <!-- NAV -->
-  <header class="topbar">
-    <a class="brand" href="index.html">
-      <span class="brand__mark">SA</span>
-      <span class="brand__text">SYSTEM ARCHIVE</span>
-    </a>
-    <nav class="nav">
-      <a href="index.html" class="nav__link">Home</a>
-      <a href="catalog.html" class="nav__link" id="nav-all">Full Catalog</a>
-      <a href="catalog.html?type=Fighter+Jet" class="nav__link">Fighter Jets</a>
-      <a href="catalog.html?type=Cargo+Plane" class="nav__link">Cargo</a>
-      <a href="catalog.html?type=Passenger+Plane" class="nav__link">Passenger</a>
-    </nav>
-    <a class="cta" href="https://github.com/SniperFTW3321f" target="_blank" rel="noreferrer">GitHub ↗</a>
+<body>
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="./index.html">SYSTEM ARCHIVE</a>
+      <nav class="nav">
+        <a href="./catalog.html" aria-current="page">Catalog</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-
-    <!-- HERO / PAGE HEADER -->
-    <section class="page-header">
-      <div class="page-header__bg"></div>
-      <div class="page-header__content">
-        <div class="breadcrumb">
-          <a href="index.html">Home</a>
-          <span>/</span>
-          <span id="breadcrumb-current">Catalog</span>
-        </div>
-        <h1 id="page-heading">Full Catalog</h1>
-        <p id="page-desc">Browse all entries across every category, country, and era.</p>
-
-        <!-- FILTERS -->
-        <div class="controls">
-          <div class="field">
-            <label for="q">🔍 Search</label>
-            <input id="q" type="search" placeholder="Name, manufacturer, role…" autocomplete="off"/>
-          </div>
-          <div class="field">
-            <label for="f-type">Category</label>
-            <select id="f-type">
-              <option value="all">All categories</option>
-              <option value="Fighter Jet">Fighter Jet</option>
-              <option value="Cargo Plane">Cargo Plane</option>
-              <option value="Passenger Plane">Passenger Plane</option>
-              <option value="Helicopter">Helicopter</option>
-              <option value="Bomber">Bomber</option>
-              <option value="Attack Aircraft">Attack Aircraft</option>
-              <option value="Ship">Ship</option>
-              <option value="Submarine">Submarine</option>
-              <option value="Car">Car</option>
-              <option value="Tank">Tank</option>
-              <option value="APC / IFV">APC / IFV</option>
-              <option value="Train">Train</option>
-              <option value="Rocket / Space">Rocket / Space</option>
-              <option value="Drone / UAV">Drone / UAV</option>
-              <option value="Industrial">Industrial</option>
-              <option value="Motorcycle">Motorcycle</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-country">Country</label>
-            <select id="f-country">
-              <option value="all">All countries</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-era">Era</label>
-            <select id="f-era">
-              <option value="all">All eras</option>
-              <option value="WW2">WW2</option>
-              <option value="Cold War">Cold War</option>
-              <option value="Modern">Modern</option>
-              <option value="Future">Future</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-status">Status</label>
-            <select id="f-status">
-              <option value="all">All statuses</option>
-              <option value="Active">Active</option>
-              <option value="Retired">Retired</option>
-              <option value="Destroyed">Destroyed</option>
-              <option value="Development">Development</option>
-              <option value="Limited">Limited</option>
-            </select>
-          </div>
-          <button id="reset" class="btn" type="button">✕ Reset</button>
-        </div>
-
-        <!-- CHIP FILTERS -->
-        <div class="chips" id="chips">
-          <button class="chip is-active" data-type="all">All</button>
-          <button class="chip" data-type="Fighter Jet">✈ Fighter Jets</button>
-          <button class="chip" data-type="Cargo Plane">📦 Cargo</button>
-          <button class="chip" data-type="Passenger Plane">🛫 Passenger</button>
-          <button class="chip" data-type="Helicopter">🚁 Helicopters</button>
-          <button class="chip" data-type="Bomber">💣 Bombers</button>
-          <button class="chip" data-type="Attack Aircraft">🎯 Attack</button>
-          <button class="chip" data-type="Ship">🚢 Ships</button>
-          <button class="chip" data-type="Submarine">🤿 Subs</button>
-          <button class="chip" data-type="Tank">🪖 Tanks</button>
-          <button class="chip" data-type="APC / IFV">🛡 APC/IFV</button>
-          <button class="chip" data-type="Train">🚄 Trains</button>
-          <button class="chip" data-type="Rocket / Space">🚀 Space</button>
-          <button class="chip" data-type="Drone / UAV">🛸 Drones</button>
-          <button class="chip" data-type="Car">🚗 Cars</button>
-          <button class="chip" data-type="Industrial">⚙️ Industrial</button>
-          <button class="chip" data-type="Motorcycle">🏍 Bikes</button>
-        </div>
+  <main class="wrap">
+    <section class="panel">
+      <div class="row">
+        <h1 style="margin:0">Catalog</h1>
+        <div id="resultsCount" class="muted">0 results</div>
       </div>
+
+      <div class="filters">
+        <input id="searchInput" class="input" placeholder="Search name, manufacturer, country..." />
+        <select id="categorySelect" class="input"></select>
+        <select id="subcategorySelect" class="input"></select>
+      </div>
+
+      <div id="fatalError" class="error"></div>
     </section>
 
-    <!-- CATALOG GRID -->
-    <section class="section">
-      <div class="section__head">
-        <h2 id="results-heading">Results</h2>
-        <p id="count">Loading…</p>
-      </div>
-      <div id="grid" class="grid" aria-live="polite"></div>
-      <div id="empty" class="empty" hidden>
-        <span>🔎</span>
-        <h3>No results found</h3>
-        <p>Try a different search term or reset the filters.</p>
-        <button class="btn btn--primary" onclick="document.getElementById('reset').click()">Reset filters</button>
-      </div>
-    </section>
-
+    <section class="grid" id="resultsGrid"></section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> SYSTEM ARCHIVE — Powered by GitHub Pages</p>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="catalog.html?type=Fighter+Jet">Fighter Jets</a>
-      <a href="catalog.html?type=Cargo+Plane">Cargo Planes</a>
-      <a href="catalog.html?type=Passenger+Plane">Passenger Planes</a>
-      <a href="catalog.html?type=Ship">Ships</a>
-      <a href="catalog.html?type=Tank">Tanks</a>
-    </div>
+  <footer class="foot">
+    <div class="wrap muted">Tip: click a card to open the full info page.</div>
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>

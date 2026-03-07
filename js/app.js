@@ -1,186 +1,312 @@
-"use strict";
+/* ── CONFIG ── */
+const DATA_URL = "./data/machines.json";
 
-// ── DOM ──
-const qInput      = document.getElementById("q");
-const typeSelect  = document.getElementById("f-type");
-const countrySelect=document.getElementById("f-country");
-const eraSelect   = document.getElementById("f-era");
-const statusSelect= document.getElementById("f-status");
-const resetBtn    = document.getElementById("reset");
-const chipsEl     = document.getElementById("chips");
-const gridEl      = document.getElementById("grid");
-const emptyEl     = document.getElementById("empty");
-const countEl     = document.getElementById("count");
+const CATEGORY_META = {
+  cars:         { title: "Cars",          emoji: "🚗" },
+  aircraft:     { title: "Aircraft",      emoji: "✈️" },
+  airships:     { title: "Airships",      emoji: "🎈" },
+  ships:        { title: "Ships",         emoji: "🚢" },
+  military:     { title: "Military",      emoji: "🪖" },
+  trains:       { title: "Trains",        emoji: "🚂" },
+  motorcycles:  { title: "Motorcycles",   emoji: "🏍️" },
+  space:        { title: "Space",         emoji: "🚀" },
+  construction: { title: "Construction",  emoji: "🏗️" }
+};
 
-// ── STATE ──
-const state = { all: [], q: "", type: "all", country: "all", era: "all", status: "all" };
+/* ── UTILS ── */
+function qs(sel)  { return document.querySelector(sel); }
+function qsa(sel) { return Array.from(document.querySelectorAll(sel)); }
 
-// ── URL PARAMS ──
-function readParams() {
-  const p = new URLSearchParams(window.location.search);
-  if (p.get("q"))       state.q       = p.get("q");
-  if (p.get("type"))    state.type    = p.get("type");
-  if (p.get("country")) state.country = p.get("country");
-  if (p.get("era"))     state.era     = p.get("era");
+function getParam(name) {
+  return new URL(window.location.href).searchParams.get(name);
 }
 
-// ── HELPERS ──
-function norm(s) { return String(s ?? "").toLowerCase().trim(); }
-function unique(arr) { return Array.from(new Set(arr.filter(Boolean))).sort((a,b)=>a.localeCompare(b)); }
-
-function matches(item) {
-  const q   = norm(state.q);
-  const hay = norm([item.name, item.type, item.manufacturer, item.country, item.role, item.class, (item.tags||[]).join(" ")].join(" "));
-  return (
-    (!q                || hay.includes(q))                         &&
-    (state.type    === "all" || item.type    === state.type)       &&
-    (state.country === "all" || item.country === state.country)    &&
-    (state.era     === "all" || item.era     === state.era)        &&
-    (state.status  === "all" || item.status  === state.status)
-  );
+function safeText(v, fallback = "—") {
+  if (v === null || v === undefined) return fallback;
+  const s = String(v).trim();
+  return s ? s : fallback;
 }
 
-// ── PAGE META (title + heading) ──
-function updateMeta() {
-  const ICONS = {
-    "Fighter Jet":"✈️","Cargo Plane":"📦","Passenger Plane":"🛫","Helicopter":"🚁",
-    "Bomber":"💣","Attack Aircraft":"🎯","Ship":"🚢","Submarine":"🤿","Car":"🚗",
-    "Tank":"🪖","APC / IFV":"🛡️","Train":"🚄","Rocket / Space":"🚀",
-    "Drone / UAV":"🛸","Industrial":"⚙️","Motorcycle":"🏍️"
-  };
-  const DESCS = {
-    "Fighter Jet":     "Air superiority and multirole combat aircraft from around the world.",
-    "Cargo Plane":     "Strategic and tactical heavy-lift transport aircraft.",
-    "Passenger Plane": "Commercial airliners from regional jets to wide-body giants.",
-    "Helicopter":      "Attack, utility, and transport rotary-wing aircraft.",
-    "Bomber":          "Strategic and tactical bomber aircraft.",
-    "Attack Aircraft": "Close air support and ground-attack aircraft.",
-    "Ship":            "Destroyers, carriers, battlecruisers and more.",
-    "Submarine":       "Nuclear and diesel-electric submarines.",
-    "Car":             "Hypercars, supercars and high-performance road machines.",
-    "Tank":            "Main battle tanks from the Cold War to today.",
-    "APC / IFV":       "Armored personnel carriers and infantry fighting vehicles.",
-    "Train":           "High-speed rail and bullet trains.",
-    "Rocket / Space":  "Launch vehicles and spacecraft.",
-    "Drone / UAV":     "Unmanned aerial vehicles for ISR and strike missions.",
-    "Industrial":      "Heavy machinery, mining equipment and industrial giants.",
-    "Motorcycle":      "High-performance and racing motorcycles.",
-  };
-
-  const t    = state.type;
-  const icon = ICONS[t] || "🗂";
-  const lbl  = t === "all" ? "Full Catalog" : t;
-  const desc = t === "all"
-    ? "Browse all entries across every category, country, and era."
-    : (DESCS[t] || "");
-
-  document.getElementById("page-title").textContent       = `SYSTEM ARCHIVE — ${lbl}`;
-  document.getElementById("page-heading").textContent     = t === "all" ? "Full Catalog" : `${icon} ${lbl}`;
-  document.getElementById("page-desc").textContent        = desc;
-  document.getElementById("breadcrumb-current").textContent = lbl;
-  document.getElementById("results-heading").textContent  = t === "all" ? "All Machines" : lbl;
+/* ── DATA ── */
+async function loadMachines() {
+  const res = await fetch(DATA_URL);
+  if (!res.ok) throw new Error(`Could not load machines.json (HTTP ${res.status})`);
+  return await res.json();
 }
 
-// ── RENDER ──
-function render() {
-  updateMeta();
-  const filtered = state.all.filter(matches);
-  countEl.textContent = `${filtered.length} / ${state.all.length} entries`;
+/* ── SEARCH ── */
+function matchesText(machine, query) {
+  if (!query) return true;
+  const q = query.toLowerCase();
+  const hay = [
+    machine.name,
+    machine.manufacturer,
+    machine.country,
+    machine.category,
+    machine.subcategory,
+    machine.shortDescription,
+    machine.fullDescription
+  ].filter(Boolean).join(" ").toLowerCase();
+  return hay.includes(q);
+}
 
-  if (filtered.length === 0) {
-    gridEl.innerHTML = "";
-    emptyEl.hidden   = false;
-    return;
-  }
-  emptyEl.hidden = true;
-
-  gridEl.innerHTML = filtered.map((item, i) => `
-    <article class="card" style="animation-delay:${Math.min(i,20) * 0.03}s">
-      <div class="card__top">
-        <div class="kicker">
-          <span class="badge badge--type">${item.type}</span>
-          <span class="badge badge--country">${item.country}</span>
-          ${item.year ? `<span class="badge">${item.year}</span>` : ""}
+/* ── CARD ── */
+function renderCard(machine) {
+  const img = machine.images?.[0] ?? "";
+  return `
+    <a class="card" href="./machine.html?id=${encodeURIComponent(machine.id)}">
+      <div class="card__media">
+        ${img
+          ? `<img src="${img}" alt="${safeText(machine.name)}" loading="lazy">`
+          : `<div class="card__placeholder">No image</div>`
+        }
+      </div>
+      <div class="card__body">
+        <div class="card__title">${safeText(machine.name)}</div>
+        <div class="card__meta">${safeText(machine.manufacturer)} &bull; ${safeText(machine.year)}</div>
+        <div class="card__desc">${safeText(machine.shortDescription, "")}</div>
+        <div class="chiprow">
+          <span class="chip">${safeText(machine.category)}</span>
+          ${machine.subcategory ? `<span class="chip chip--muted">${safeText(machine.subcategory)}</span>` : ""}
         </div>
-        <h3 class="card__title">${item.name}</h3>
-        <p class="card__role">
-          ${item.manufacturer ? `<strong>${item.manufacturer}</strong> &mdash; ` : ""}
-          ${item.role || "&mdash;"}
-        </p>
       </div>
-      <div class="card__bottom">
-        <div class="spec"><span>Status</span><strong>${item.status || "—"}</strong></div>
-        <div class="spec"><span>Era</span><strong>${item.era || "—"}</strong></div>
-        <div class="spec"><span>Class</span><strong>${item.class || "—"}</strong></div>
-      </div>
-    </article>
-  `).join("");
+    </a>
+  `;
 }
 
-// ── COUNTRY DROPDOWN ──
-function fillCountries() {
-  const countries = unique(state.all.map(x => x.country));
-  countrySelect.innerHTML =
-    `<option value="all">All countries</option>` +
-    countries.map(c => `<option value="${c}">${c}</option>`).join("");
+/* ── HOME — category grid ── */
+function renderHomeCategories(machines) {
+  const el = qs("#categoryGrid");
+  if (!el) return;
+
+  const counts = machines.reduce((acc, m) => {
+    acc[m.category] = (acc[m.category] || 0) + 1;
+    return acc;
+  }, {});
+
+  const keys = Object.keys(CATEGORY_META).filter(k => counts[k] > 0);
+
+  el.innerHTML = keys.map(key => {
+    const meta = CATEGORY_META[key];
+    const count = counts[key] || 0;
+    return `
+      <a class="cat" href="./catalog.html?category=${encodeURIComponent(key)}">
+        <div class="cat__emoji">${meta.emoji}</div>
+        <div class="cat__title">${meta.title}</div>
+        <div class="cat__count">${count} item${count !== 1 ? "s" : ""}</div>
+      </a>
+    `;
+  }).join("");
+
+  /* stats bar on home */
+  const statsEl = qs("#statsBar");
+  if (statsEl) {
+    statsEl.innerHTML = `
+      <div class="stat"><div class="stat__num">${machines.length}</div><div class="stat__label">Total machines</div></div>
+      <div class="stat"><div class="stat__num">${keys.length}</div><div class="stat__label">Categories</div></div>
+      <div class="stat"><div class="stat__num">${new Set(machines.map(m => m.country).filter(Boolean)).size}</div><div class="stat__label">Countries</div></div>
+    `;
+  }
 }
 
-// ── SET TYPE (chip + select sync) ──
-function setType(val) {
-  state.type       = val;
-  typeSelect.value = val;
-  document.querySelectorAll(".chip").forEach(c => {
-    c.classList.toggle("is-active", c.dataset.type === val);
+/* ── CATALOG — filters + grid ── */
+function initCatalog(machines) {
+  const grid     = qs("#resultsGrid");
+  if (!grid) return;
+
+  const searchEl  = qs("#searchInput");
+  const catEl     = qs("#categorySelect");
+  const subEl     = qs("#subcategorySelect");
+  const countEl   = qs("#resultsCount");
+  const sortEl    = qs("#sortSelect");
+
+  /* populate category dropdown */
+  const allCategories = Array.from(new Set(machines.map(m => m.category))).sort();
+  catEl.innerHTML = `<option value="">All categories</option>` +
+    allCategories.map(c => {
+      const meta = CATEGORY_META[c];
+      const label = meta ? `${meta.emoji} ${meta.title}` : c;
+      return `<option value="${c}">${label}</option>`;
+    }).join("");
+
+  /* auto-select from URL param */
+  const urlCat = getParam("category") || "";
+  if (urlCat) catEl.value = urlCat;
+
+  fillSubcategories(catEl.value);
+
+  function fillSubcategories(category) {
+    const subs = machines
+      .filter(m => !category || m.category === category)
+      .map(m => m.subcategory)
+      .filter(Boolean);
+    const unique = Array.from(new Set(subs)).sort();
+    subEl.innerHTML = `<option value="">All subcategories</option>` +
+      unique.map(s => `<option value="${s}">${s}</option>`).join("");
+  }
+
+  function apply() {
+    const q   = (searchEl?.value || "").trim();
+    const c   = catEl?.value || "";
+    const s   = subEl?.value || "";
+    const srt = sortEl?.value || "name_asc";
+
+    let filtered = machines.filter(m => {
+      if (c && m.category    !== c) return false;
+      if (s && m.subcategory !== s) return false;
+      return matchesText(m, q);
+    });
+
+    /* sort */
+    filtered.sort((a, b) => {
+      switch (srt) {
+        case "name_asc":  return safeText(a.name).localeCompare(safeText(b.name));
+        case "name_desc": return safeText(b.name).localeCompare(safeText(a.name));
+        case "year_asc":  return (a.year || 0) - (b.year || 0);
+        case "year_desc": return (b.year || 0) - (a.year || 0);
+        default: return 0;
+      }
+    });
+
+    grid.innerHTML = filtered.length
+      ? filtered.map(renderCard).join("")
+      : `<div class="no-results">No machines found. Try a different search.</div>`;
+
+    if (countEl) countEl.textContent = `${filtered.length} result${filtered.length !== 1 ? "s" : ""}`;
+  }
+
+  catEl.addEventListener("change", () => {
+    fillSubcategories(catEl.value);
+    subEl.value = "";
+    apply();
   });
-  render();
+  subEl?.addEventListener("change", apply);
+  searchEl?.addEventListener("input", apply);
+  sortEl?.addEventListener("change", apply);
+
+  apply();
 }
 
-// ── INIT ──
-async function init() {
-  document.getElementById("year").textContent = new Date().getFullYear();
-  readParams();
+/* ── MACHINE — detail page ── */
+function renderSpecsTable(specs) {
+  if (!specs || typeof specs !== "object" || !Object.keys(specs).length) {
+    return `<p class="muted">No specs available.</p>`;
+  }
+  const rows = Object.entries(specs).map(([k, v]) =>
+    `<tr>
+      <th>${safeText(k).replaceAll("_", " ")}</th>
+      <td>${safeText(v)}</td>
+    </tr>`
+  ).join("");
+  return `<table class="specs"><tbody>${rows}</tbody></table>`;
+}
 
-  try {
-    const res = await fetch("data/machines.json", { cache: "no-store" });
-    state.all = await res.json();
-  } catch {
-    countEl.textContent = "⚠ Could not load data/machines.json";
+function initMachine(machines) {
+  const root = qs("#machineRoot");
+  if (!root) return;
+
+  const id = getParam("id");
+  const m  = machines.find(x => x.id === id);
+
+  if (!m) {
+    root.innerHTML = `
+      <div class="panel">
+        <h1>Machine not found</h1>
+        <p class="muted">No machine with id: <code>${safeText(id, "(missing)")}</code></p>
+        <a class="btn" href="./catalog.html" style="margin-top:14px">← Back to catalog</a>
+      </div>
+    `;
     return;
   }
 
-  fillCountries();
+  /* update page title */
+  document.title = `${safeText(m.name)} • SYSTEM ARCHIVE`;
 
-  // Apply URL params to form inputs
-  qInput.value        = state.q;
-  typeSelect.value    = state.type;
-  countrySelect.value = state.country;
-  eraSelect.value     = state.era;
+  /* images gallery */
+  const imgs = (m.images || []).filter(Boolean);
+  const galleryHTML = imgs.length
+    ? `<div class="gallery">
+        <img class="gallery__main" id="mainImg" src="${imgs[0]}" alt="${safeText(m.name)}">
+        ${imgs.length > 1
+          ? `<div class="gallery__thumbs">
+              ${imgs.map((src, i) =>
+                `<img class="thumb${i === 0 ? " active" : ""}" src="${src}" alt="image ${i+1}" data-src="${src}">`
+              ).join("")}
+            </div>`
+          : ""}
+      </div>`
+    : `<div class="card__placeholder" style="height:300px;border-radius:14px;border:1px solid var(--line)">No image</div>`;
 
-  // Sync chips with URL type
-  document.querySelectorAll(".chip").forEach(c => {
-    c.classList.toggle("is-active", c.dataset.type === state.type);
-  });
+  /* sources */
+  const sourcesHTML = (m.sources || []).length
+    ? `<ul class="links">${(m.sources).map(s =>
+        `<li><a href="${safeText(s.url,"#")}" target="_blank" rel="noreferrer">${safeText(s.title,"Source")}</a></li>`
+      ).join("")}</ul>`
+    : `<p class="muted">No sources yet.</p>`;
 
-  render();
+  root.innerHTML = `
+    <div class="panel">
+      <div class="crumbs">
+        <a href="./index.html">Home</a>
+        <span>›</span>
+        <a href="./catalog.html?category=${encodeURIComponent(m.category)}">${safeText(m.category)}</a>
+        <span>›</span>
+        ${m.subcategory ? `<a href="./catalog.html?category=${encodeURIComponent(m.category)}">${safeText(m.subcategory)}</a><span>›</span>` : ""}
+        <span>${safeText(m.name)}</span>
+      </div>
 
-  // Events
-  qInput.addEventListener("input",       e => { state.q       = e.target.value; render(); });
-  typeSelect.addEventListener("change",  e => { setType(e.target.value); });
-  countrySelect.addEventListener("change",e=>{ state.country  = e.target.value; render(); });
-  eraSelect.addEventListener("change",   e => { state.era     = e.target.value; render(); });
-  statusSelect.addEventListener("change",e => { state.status  = e.target.value; render(); });
+      <div class="machine">
+        <div class="machine__media">${galleryHTML}</div>
 
-  resetBtn.addEventListener("click", () => {
-    state.q = ""; state.type = "all"; state.country = "all"; state.era = "all"; state.status = "all";
-    qInput.value = ""; countrySelect.value = "all"; eraSelect.value = "all"; statusSelect.value = "all";
-    setType("all");
-    window.history.replaceState({}, "", "catalog.html");
-  });
+        <div class="machine__info">
+          <h1>${safeText(m.name)}</h1>
+          <div class="muted" style="margin-top:4px">
+            ${safeText(m.manufacturer)} &bull; ${safeText(m.country)} &bull; ${safeText(m.year)}
+          </div>
 
-  chipsEl.addEventListener("click", e => {
-    const btn = e.target.closest(".chip");
-    if (btn) setType(btn.dataset.type);
+          <div class="chiprow">
+            <span class="chip">${safeText(m.category)}</span>
+            ${m.subcategory ? `<span class="chip chip--muted">${safeText(m.subcategory)}</span>` : ""}
+          </div>
+
+          <p style="margin-top:14px">${safeText(m.fullDescription, safeText(m.shortDescription, ""))}</p>
+
+          <h2>Specifications</h2>
+          ${renderSpecsTable(m.specs)}
+
+          <h2>Sources</h2>
+          ${sourcesHTML}
+
+          <div style="margin-top:20px">
+            <a class="btn" href="./catalog.html?category=${encodeURIComponent(m.category)}">← Back to ${safeText(m.category)}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  /* thumbnail click → swap main image */
+  qsa(".thumb").forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      qs("#mainImg").src = thumb.dataset.src;
+      qsa(".thumb").forEach(t => t.classList.remove("active"));
+      thumb.classList.add("active");
+    });
   });
 }
 
-init();
+/* ── BOOT ── */
+async function boot() {
+  try {
+    const machines = await loadMachines();
+    renderHomeCategories(machines);
+    initCatalog(machines);
+    initMachine(machines);
+  } catch (err) {
+    const el = qs("#fatalError");
+    if (el) el.textContent = `⚠ ${err.message}`;
+    console.error(err);
+  }
+}
+
+boot();

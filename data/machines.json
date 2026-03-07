@@ -1,717 +1,743 @@
 [
   {
-    "id": "f16",
-    "type": "Fighter Jet",
-    "name": "F-16 Fighting Falcon",
-    "manufacturer": "General Dynamics / Lockheed Martin",
-    "country": "USA",
-    "year": 1978,
-    "era": "Cold War",
-    "class": "Multirole",
-    "role": "Multirole fighter",
-    "status": "Active",
-    "tags": ["jet", "multirole", "usaf"]
-  },
-  {
-    "id": "f22",
-    "type": "Fighter Jet",
-    "name": "F-22 Raptor",
-    "manufacturer": "Lockheed Martin",
-    "country": "USA",
-    "year": 2005,
-    "era": "Modern",
-    "class": "Air superiority",
-    "role": "Stealth air superiority fighter",
-    "status": "Active",
-    "tags": ["stealth", "5th gen", "usaf"]
-  },
-  {
-    "id": "f35",
-    "type": "Fighter Jet",
-    "name": "F-35 Lightning II",
-    "manufacturer": "Lockheed Martin",
-    "country": "USA",
-    "year": 2015,
-    "era": "Modern",
-    "class": "Multirole stealth",
-    "role": "Stealth multirole fighter",
-    "status": "Active",
-    "tags": ["stealth", "5th gen", "multirole"]
-  },
-  {
-    "id": "su27",
-    "type": "Fighter Jet",
-    "name": "Su-27 Flanker",
-    "manufacturer": "Sukhoi",
-    "country": "Russia",
-    "year": 1985,
-    "era": "Cold War",
-    "class": "Air superiority",
-    "role": "Air superiority fighter",
-    "status": "Active",
-    "tags": ["flanker", "soviet"]
-  },
-  {
-    "id": "su57",
-    "type": "Fighter Jet",
-    "name": "Su-57 Felon",
-    "manufacturer": "Sukhoi",
-    "country": "Russia",
-    "year": 2020,
-    "era": "Modern",
-    "class": "Multirole stealth",
-    "role": "Stealth multirole fighter",
-    "status": "Active",
-    "tags": ["stealth", "5th gen"]
-  },
-  {
-    "id": "mig29",
-    "type": "Fighter Jet",
-    "name": "MiG-29 Fulcrum",
-    "manufacturer": "Mikoyan",
-    "country": "Russia",
-    "year": 1983,
-    "era": "Cold War",
-    "class": "Air superiority",
-    "role": "Air superiority / ground attack",
-    "status": "Active",
-    "tags": ["soviet", "fulcrum"]
-  },
-  {
-    "id": "eurofighter",
-    "type": "Fighter Jet",
-    "name": "Eurofighter Typhoon",
-    "manufacturer": "Eurofighter GmbH",
-    "country": "EU",
-    "year": 2003,
-    "era": "Modern",
-    "class": "Multirole",
-    "role": "Air superiority / multirole",
-    "status": "Active",
-    "tags": ["european", "nato"]
-  },
-  {
-    "id": "rafale",
-    "type": "Fighter Jet",
-    "name": "Dassault Rafale",
-    "manufacturer": "Dassault Aviation",
+    "id": "bugatti_chiron_2016",
+    "name": "Bugatti Chiron",
+    "category": "cars",
+    "subcategory": "hypercars",
+    "manufacturer": "Bugatti",
     "country": "France",
-    "year": 2001,
-    "era": "Modern",
-    "class": "Multirole",
-    "role": "Omnirole multirole fighter",
-    "status": "Active",
-    "tags": ["french", "nato"]
+    "year": 2016,
+    "shortDescription": "Mid-engine hypercar with a quad-turbo W16 engine producing 1,500 hp.",
+    "fullDescription": "The Bugatti Chiron is a mid-engine two-seater sports car that succeeded the Veyron. Powered by an 8.0-litre quad-turbocharged W16 engine producing 1,500 hp and 1,600 Nm of torque, it is electronically limited to 420 km/h. The chassis is made of carbon fibre, and the suspension is a double wishbone setup at both axles. Only 500 units were planned for production.",
+    "specs": {
+      "engine": "8.0L quad-turbo W16",
+      "power": "1,500 hp",
+      "torque": "1,600 Nm",
+      "topSpeed": "420 km/h (limited)",
+      "0_100": "2.4 s",
+      "0_200": "6.1 s",
+      "drive": "AWD",
+      "transmission": "7-speed DSG",
+      "weight": "1,995 kg",
+      "length": "4,544 mm"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Bugatti Chiron", "url": "https://en.wikipedia.org/wiki/Bugatti_Chiron" }
+    ]
   },
   {
-    "id": "j20",
-    "type": "Fighter Jet",
-    "name": "Chengdu J-20 Mighty Dragon",
-    "manufacturer": "Chengdu Aerospace",
-    "country": "China",
-    "year": 2017,
-    "era": "Modern",
-    "class": "Multirole stealth",
-    "role": "Stealth air superiority fighter",
-    "status": "Active",
-    "tags": ["stealth", "5th gen", "china"]
-  },
-  {
-    "id": "an124",
-    "type": "Cargo Plane",
-    "name": "An-124 Ruslan",
-    "manufacturer": "Antonov",
-    "country": "Ukraine",
-    "year": 1986,
-    "era": "Cold War",
-    "class": "Strategic airlift",
-    "role": "Strategic heavy cargo transport",
-    "status": "Limited",
-    "tags": ["heavy", "cargo", "antonov"]
-  },
-  {
-    "id": "an225",
-    "type": "Cargo Plane",
-    "name": "An-225 Mriya",
-    "manufacturer": "Antonov",
-    "country": "Ukraine",
-    "year": 1988,
-    "era": "Cold War",
-    "class": "Super-heavy airlift",
-    "role": "Super-heavy strategic cargo",
-    "status": "Destroyed",
-    "tags": ["heaviest", "antonov", "unique"]
-  },
-  {
-    "id": "c17",
-    "type": "Cargo Plane",
-    "name": "Boeing C-17 Globemaster III",
-    "manufacturer": "Boeing",
-    "country": "USA",
-    "year": 1993,
-    "era": "Modern",
-    "class": "Strategic airlift",
-    "role": "Tactical and strategic airlift",
-    "status": "Active",
-    "tags": ["military", "usaf", "cargo"]
-  },
-  {
-    "id": "c130",
-    "type": "Cargo Plane",
-    "name": "Lockheed C-130 Hercules",
-    "manufacturer": "Lockheed Martin",
-    "country": "USA",
-    "year": 1956,
-    "era": "Cold War",
-    "class": "Tactical airlift",
-    "role": "Tactical military transport",
-    "status": "Active",
-    "tags": ["hercules", "military", "cargo"]
-  },
-  {
-    "id": "a380",
-    "type": "Passenger Plane",
-    "name": "Airbus A380",
-    "manufacturer": "Airbus",
-    "country": "EU",
-    "year": 2007,
-    "era": "Modern",
-    "class": "Double-deck wide-body",
-    "role": "Long-haul passenger airliner",
-    "status": "Active",
-    "tags": ["wide-body", "civil", "double deck"]
-  },
-  {
-    "id": "a320",
-    "type": "Passenger Plane",
-    "name": "Airbus A320",
-    "manufacturer": "Airbus",
-    "country": "EU",
-    "year": 1988,
-    "era": "Modern",
-    "class": "Narrow-body",
-    "role": "Short/medium-haul airliner",
-    "status": "Active",
-    "tags": ["civil", "narrow-body", "airliner"]
-  },
-  {
-    "id": "b747",
-    "type": "Passenger Plane",
-    "name": "Boeing 747",
-    "manufacturer": "Boeing",
-    "country": "USA",
-    "year": 1969,
-    "era": "Cold War",
-    "class": "Wide-body",
-    "role": "Long-haul passenger/cargo",
-    "status": "Active",
-    "tags": ["jumbo jet", "civil", "iconic"]
-  },
-  {
-    "id": "b787",
-    "type": "Passenger Plane",
-    "name": "Boeing 787 Dreamliner",
-    "manufacturer": "Boeing",
-    "country": "USA",
+    "id": "lamborghini_aventador_2011",
+    "name": "Lamborghini Aventador",
+    "category": "cars",
+    "subcategory": "supercars",
+    "manufacturer": "Lamborghini",
+    "country": "Italy",
     "year": 2011,
-    "era": "Modern",
-    "class": "Wide-body",
-    "role": "Long-haul passenger airliner",
-    "status": "Active",
-    "tags": ["composite", "civil", "wide-body"]
+    "shortDescription": "V12-powered flagship supercar with scissor doors and carbon fibre monocoque.",
+    "fullDescription": "The Aventador is Lamborghini's flagship V12 supercar, featuring a naturally aspirated 6.5L V12. The chassis is a carbon fibre monocoque and the body panels are also carbon fibre. It replaced the Murciélago and was produced until 2022 when the Revuelto took over. The LP 700-4 variant makes 700 hp and uses all-wheel drive.",
+    "specs": {
+      "engine": "6.5L naturally aspirated V12",
+      "power": "700 hp (LP700-4)",
+      "torque": "690 Nm",
+      "topSpeed": "350 km/h",
+      "0_100": "2.9 s",
+      "drive": "AWD",
+      "transmission": "7-speed ISR",
+      "weight": "1,575 kg",
+      "length": "4,780 mm"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Lamborghini Aventador", "url": "https://en.wikipedia.org/wiki/Lamborghini_Aventador" }
+    ]
   },
   {
-    "id": "concorde",
-    "type": "Passenger Plane",
+    "id": "ford_gt40_1964",
+    "name": "Ford GT40",
+    "category": "cars",
+    "subcategory": "race cars",
+    "manufacturer": "Ford",
+    "country": "United States",
+    "year": 1964,
+    "shortDescription": "Le Mans-winning race car that ended Ferrari's dominance in the 1960s.",
+    "fullDescription": "The Ford GT40 was built to compete at the 24 Hours of Le Mans and defeat Ferrari. After two failed attempts, Ford won Le Mans four consecutive times from 1966 to 1969. The Mk II variant used a 7.0L V8 producing around 485 hp. The name GT40 comes from its height of exactly 40 inches (1,016 mm).",
+    "specs": {
+      "engine": "7.0L V8 (Mk II)",
+      "power": "~485 hp",
+      "topSpeed": "~335 km/h",
+      "drive": "RWD",
+      "transmission": "4-speed manual",
+      "weight": "1,020 kg",
+      "height": "1,016 mm (40 inches)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Ford GT40", "url": "https://en.wikipedia.org/wiki/Ford_GT40" }
+    ]
+  },
+  {
+    "id": "tesla_model_s_plaid_2021",
+    "name": "Tesla Model S Plaid",
+    "category": "cars",
+    "subcategory": "electric",
+    "manufacturer": "Tesla",
+    "country": "United States",
+    "year": 2021,
+    "shortDescription": "Tri-motor all-electric sedan with over 1,000 hp and a sub-2-second 0–60 time.",
+    "fullDescription": "The Tesla Model S Plaid uses three electric motors (two rear, one front) to produce over 1,020 hp. It features a 100 kWh battery and can travel up to 637 km on a single charge (WLTP). The interior features a large yoke-style steering wheel and a 17-inch horizontal touchscreen. It is one of the fastest-accelerating production cars ever made.",
+    "specs": {
+      "motors": "3× electric (tri-motor)",
+      "power": "1,020 hp",
+      "topSpeed": "322 km/h",
+      "0_100": "~2.1 s",
+      "range": "637 km (WLTP)",
+      "battery": "100 kWh",
+      "drive": "AWD",
+      "weight": "2,162 kg"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Tesla Model S", "url": "https://en.wikipedia.org/wiki/Tesla_Model_S" }
+    ]
+  },
+  {
+    "id": "porsche_911_gt3_2021",
+    "name": "Porsche 911 GT3",
+    "category": "cars",
+    "subcategory": "sports cars",
+    "manufacturer": "Porsche",
+    "country": "Germany",
+    "year": 2021,
+    "shortDescription": "Naturally aspirated track-focused sports car with a 9,000 rpm flat-six.",
+    "fullDescription": "The 992-generation GT3 uses a naturally aspirated 4.0L flat-six engine that revs to 9,000 rpm, producing 510 hp. It features a racing-derived double-wishbone front suspension and a rear-axle steering system. The GT3 can lap the Nürburgring Nordschleife in 6:59.927, making it one of the fastest road-legal cars on that circuit.",
+    "specs": {
+      "engine": "4.0L naturally aspirated flat-six",
+      "power": "510 hp",
+      "torque": "470 Nm",
+      "topSpeed": "318 km/h",
+      "0_100": "3.4 s",
+      "redline": "9,000 rpm",
+      "drive": "RWD",
+      "transmission": "7-speed PDK",
+      "weight": "1,435 kg"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Porsche 911 GT3", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT3" }
+    ]
+  },
+
+  {
+    "id": "boeing_747_1969",
+    "name": "Boeing 747",
+    "category": "aircraft",
+    "subcategory": "airliners",
+    "manufacturer": "Boeing",
+    "country": "United States",
+    "year": 1969,
+    "shortDescription": "Wide-body long-range airliner — the iconic Jumbo Jet.",
+    "fullDescription": "The Boeing 747 is a wide-body commercial jetliner first flown in 1969. Its distinctive upper deck hump gives it an unmistakable silhouette. The 747-8, the latest variant, is the longest commercial aircraft ever built at 76.3 m. More than 1,500 units have been delivered to airlines worldwide. It is powered by four high-bypass turbofan engines.",
+    "specs": {
+      "type": "Wide-body airliner",
+      "length": "76.3 m (747-8)",
+      "wingspan": "68.4 m (747-8)",
+      "engines": "4× GEnx-2B turbofan",
+      "range": "14,310 km (747-8)",
+      "cruisingSpeed": "903 km/h",
+      "maxPassengers": "605 (747-8)",
+      "crew": "2 (flight deck)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Boeing 747", "url": "https://en.wikipedia.org/wiki/Boeing_747" }
+    ]
+  },
+  {
+    "id": "concorde_1969",
     "name": "Concorde",
+    "category": "aircraft",
+    "subcategory": "supersonic",
     "manufacturer": "Aérospatiale / BAC",
-    "country": "France / UK",
-    "year": 1976,
-    "era": "Cold War",
-    "class": "Supersonic airliner",
-    "role": "Supersonic passenger transport",
-    "status": "Retired",
-    "tags": ["supersonic", "iconic", "civil"]
+    "country": "France / United Kingdom",
+    "year": 1969,
+    "shortDescription": "Supersonic passenger jet capable of crossing the Atlantic in under 3.5 hours.",
+    "fullDescription": "Concorde was a turbojet-powered supersonic passenger airliner operated by British Airways and Air France from 1976 to 2003. It cruised at Mach 2.04 (2,179 km/h) at an altitude of 18,300 m. The London–New York route took only 3 hours 30 minutes. Only 20 aircraft were built. The nose drooped 12.5° on landing to give pilots visibility.",
+    "specs": {
+      "type": "Supersonic airliner",
+      "cruisingSpeed": "Mach 2.04 (~2,179 km/h)",
+      "cruisingAltitude": "18,300 m",
+      "engines": "4× Rolls-Royce/Snecma Olympus 593",
+      "range": "7,223 km",
+      "passengers": "92–128",
+      "length": "61.66 m",
+      "wingspan": "25.6 m"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Concorde", "url": "https://en.wikipedia.org/wiki/Concorde" }
+    ]
   },
   {
-    "id": "ah64",
-    "type": "Helicopter",
-    "name": "Boeing AH-64 Apache",
-    "manufacturer": "Boeing",
-    "country": "USA",
-    "year": 1986,
-    "era": "Cold War",
-    "class": "Attack helicopter",
-    "role": "Anti-armor attack helicopter",
-    "status": "Active",
-    "tags": ["attack", "military", "rotary"]
+    "id": "sr71_blackbird_1964",
+    "name": "Lockheed SR-71 Blackbird",
+    "category": "aircraft",
+    "subcategory": "reconnaissance",
+    "manufacturer": "Lockheed Skunk Works",
+    "country": "United States",
+    "year": 1964,
+    "shortDescription": "Mach 3+ strategic reconnaissance aircraft — the fastest air-breathing jet ever built.",
+    "fullDescription": "The SR-71 Blackbird is a long-range, high-altitude, Mach 3+ strategic reconnaissance aircraft developed by Lockheed's Skunk Works. It holds the record as the fastest air-breathing manned aircraft, reaching speeds above Mach 3.3 (3,540 km/h). Its airframe was made primarily of titanium to withstand the heat generated by air friction at top speed. The aircraft was operational from 1966 to 1998.",
+    "specs": {
+      "type": "Strategic reconnaissance aircraft",
+      "topSpeed": "Mach 3.3+ (~3,540 km/h)",
+      "serviceceiling": "25,908 m",
+      "engines": "2× Pratt & Whitney J58-P4",
+      "range": "5,400 km",
+      "crew": "2",
+      "length": "32.74 m",
+      "wingspan": "16.94 m"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — SR-71 Blackbird", "url": "https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird" }
+    ]
   },
   {
-    "id": "uh60",
-    "type": "Helicopter",
-    "name": "Sikorsky UH-60 Black Hawk",
-    "manufacturer": "Sikorsky",
-    "country": "USA",
-    "year": 1979,
-    "era": "Cold War",
-    "class": "Utility helicopter",
-    "role": "Utility / transport helicopter",
-    "status": "Active",
-    "tags": ["utility", "military", "rotary"]
-  },
-  {
-    "id": "mi28",
-    "type": "Helicopter",
-    "name": "Mil Mi-28 Havoc",
-    "manufacturer": "Mil Moscow Helicopter Plant",
-    "country": "Russia",
-    "year": 1996,
-    "era": "Modern",
-    "class": "Attack helicopter",
-    "role": "Anti-armor attack helicopter",
-    "status": "Active",
-    "tags": ["attack", "soviet", "rotary"]
-  },
-  {
-    "id": "b2",
-    "type": "Bomber",
-    "name": "Northrop Grumman B-2 Spirit",
-    "manufacturer": "Northrop Grumman",
-    "country": "USA",
+    "id": "f22_raptor_1997",
+    "name": "F-22 Raptor",
+    "category": "aircraft",
+    "subcategory": "fighter jets",
+    "manufacturer": "Lockheed Martin / Boeing",
+    "country": "United States",
     "year": 1997,
-    "era": "Modern",
-    "class": "Strategic bomber",
-    "role": "Stealth strategic bomber",
-    "status": "Active",
-    "tags": ["stealth", "bomber", "flying wing"]
+    "shortDescription": "5th-generation stealth air superiority fighter with supercruise capability.",
+    "fullDescription": "The F-22 Raptor is a fifth-generation stealth fighter combining advanced aerodynamics, supercruise (supersonic flight without afterburner), supermaneuverability, stealth, and sensor fusion. It entered service with the USAF in 2005. The aircraft can cruise at Mach 1.82 without afterburners, and can reach Mach 2+ with them. Its radar cross-section is estimated to be around 0.0001 m².",
+    "specs": {
+      "type": "Stealth air superiority fighter",
+      "topSpeed": "Mach 2.25+ (~2,414 km/h)",
+      "supercruise": "Mach 1.82",
+      "engines": "2× Pratt & Whitney F119-PW-100",
+      "thrust": "2× 156 kN (afterburner)",
+      "range": "2,960 km",
+      "crew": "1",
+      "length": "18.92 m",
+      "wingspan": "13.56 m"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — F-22 Raptor", "url": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor" }
+    ]
+  },
+
+  {
+    "id": "hindenburg_lz129_1936",
+    "name": "LZ 129 Hindenburg",
+    "category": "airships",
+    "subcategory": "rigid airships",
+    "manufacturer": "Luftschiffbau Zeppelin",
+    "country": "Germany",
+    "year": 1936,
+    "shortDescription": "The largest aircraft ever built — a hydrogen-filled rigid airship for transatlantic travel.",
+    "fullDescription": "The LZ 129 Hindenburg was a large German commercial passenger-carrying rigid airship. At 245 m it remains the largest aircraft ever built by volume. It flew transatlantic routes between Germany and North America. On May 6, 1937, it caught fire and was destroyed while attempting to dock at Lakehurst, New Jersey, killing 36 of the 97 people on board and effectively ending the era of passenger airships.",
+    "specs": {
+      "type": "Rigid airship",
+      "length": "245 m",
+      "diameter": "41.2 m",
+      "volume": "200,000 m³",
+      "liftGas": "Hydrogen",
+      "engines": "4× Daimler-Benz DB 602 diesel",
+      "maxSpeed": "135 km/h",
+      "range": "~16,000 km",
+      "passengers": "50–72"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1520975958225-0902b2b9a0d4?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Hindenburg", "url": "https://en.wikipedia.org/wiki/LZ_129_Hindenburg" }
+    ]
   },
   {
-    "id": "b52",
-    "type": "Bomber",
-    "name": "Boeing B-52 Stratofortress",
-    "manufacturer": "Boeing",
-    "country": "USA",
-    "year": 1955,
-    "era": "Cold War",
-    "class": "Strategic bomber",
-    "role": "Long-range strategic bomber",
-    "status": "Active",
-    "tags": ["strategic", "cold war", "iconic"]
+    "id": "graf_zeppelin_1928",
+    "name": "LZ 127 Graf Zeppelin",
+    "category": "airships",
+    "subcategory": "rigid airships",
+    "manufacturer": "Luftschiffbau Zeppelin",
+    "country": "Germany",
+    "year": 1928,
+    "shortDescription": "First aircraft to complete a passenger-carrying circumnavigation of the globe.",
+    "fullDescription": "The LZ 127 Graf Zeppelin was a German hydrogen-filled rigid airship that made the first circumnavigation of the Earth by an aircraft carrying passengers in 1929. It completed 590 flights, travelling over 1.7 million km in its 9-year operational life. It used a unique blau gas fuel system which had approximately the same density as air, avoiding ballast issues.",
+    "specs": {
+      "type": "Rigid airship",
+      "length": "236.6 m",
+      "diameter": "30.5 m",
+      "volume": "105,000 m³",
+      "liftGas": "Hydrogen",
+      "engines": "5× Maybach VL II",
+      "maxSpeed": "128 km/h",
+      "range": "10,000+ km",
+      "passengers": "~20"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — LZ 127 Graf Zeppelin", "url": "https://en.wikipedia.org/wiki/LZ_127_Graf_Zeppelin" }
+    ]
+  },
+
+  {
+    "id": "titanic_1912",
+    "name": "RMS Titanic",
+    "category": "ships",
+    "subcategory": "ocean liners",
+    "manufacturer": "Harland and Wolff",
+    "country": "United Kingdom",
+    "year": 1912,
+    "shortDescription": "Olympic-class British ocean liner that sank on her maiden voyage after hitting an iceberg.",
+    "fullDescription": "RMS Titanic was a British ocean liner that sank on 15 April 1912 after striking an iceberg on her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making it one of the deadliest peacetime maritime disasters in history. She was the largest ship afloat at the time of her launching and was considered unsinkable.",
+    "specs": {
+      "type": "Ocean liner",
+      "length": "269.1 m",
+      "beam": "28.2 m",
+      "grossTonnage": "46,328 GT",
+      "propulsion": "2× triple-expansion reciprocating engines + 1× Parsons turbine",
+      "topSpeed": "23 knots (~43 km/h)",
+      "passengers": "2,435 (capacity)",
+      "crew": "892"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Titanic", "url": "https://en.wikipedia.org/wiki/Titanic" }
+    ]
   },
   {
-    "id": "tu160",
-    "type": "Bomber",
-    "name": "Tupolev Tu-160 Blackjack",
-    "manufacturer": "Tupolev",
-    "country": "Russia",
-    "year": 1987,
-    "era": "Cold War",
-    "class": "Strategic bomber",
-    "role": "Supersonic strategic bomber",
-    "status": "Active",
-    "tags": ["supersonic", "strategic", "soviet"]
-  },
-  {
-    "id": "a10",
-    "type": "Attack Aircraft",
-    "name": "Fairchild Republic A-10 Thunderbolt II",
-    "manufacturer": "Fairchild Republic",
-    "country": "USA",
-    "year": 1977,
-    "era": "Cold War",
-    "class": "Close air support",
-    "role": "Anti-armor ground attack",
-    "status": "Active",
-    "tags": ["warthog", "cas", "tank buster"]
-  },
-  {
-    "id": "su25",
-    "type": "Attack Aircraft",
-    "name": "Sukhoi Su-25 Frogfoot",
-    "manufacturer": "Sukhoi",
-    "country": "Russia",
-    "year": 1981,
-    "era": "Cold War",
-    "class": "Close air support",
-    "role": "Close air support",
-    "status": "Active",
-    "tags": ["cas", "soviet", "ground attack"]
-  },
-  {
-    "id": "nimitz",
-    "type": "Ship",
+    "id": "uss_nimitz_1975",
     "name": "USS Nimitz (CVN-68)",
+    "category": "ships",
+    "subcategory": "aircraft carriers",
     "manufacturer": "Newport News Shipbuilding",
-    "country": "USA",
+    "country": "United States",
     "year": 1975,
-    "era": "Cold War",
-    "class": "Aircraft carrier",
-    "role": "Nuclear-powered aircraft carrier",
-    "status": "Active",
-    "tags": ["carrier", "navy", "nuclear"]
+    "shortDescription": "Lead ship of the Nimitz class — the world's largest warships for decades.",
+    "fullDescription": "USS Nimitz is a supercarrier and the lead ship of her class. She is powered by two Westinghouse A4W nuclear reactors driving four propeller shafts. The ship can carry 90+ aircraft and has a crew of over 6,000. Nimitz-class carriers have a displacement of over 100,000 tonnes and a flight deck of 332.8 m. She has been in continuous service since 1975.",
+    "specs": {
+      "type": "Nuclear-powered aircraft carrier",
+      "length": "332.8 m",
+      "beam": "76.8 m (flight deck)",
+      "displacement": "~104,600 tonnes (full load)",
+      "propulsion": "2× Westinghouse A4W nuclear reactors, 4 shafts",
+      "topSpeed": "30+ knots (~56 km/h)",
+      "aircraft": "90+",
+      "crew": "~6,012"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — USS Nimitz", "url": "https://en.wikipedia.org/wiki/USS_Nimitz" }
+    ]
   },
   {
-    "id": "arleigh-burke",
-    "type": "Ship",
-    "name": "Arleigh Burke-class Destroyer",
-    "manufacturer": "Bath Iron Works",
-    "country": "USA",
-    "year": 1991,
-    "era": "Modern",
-    "class": "Destroyer",
-    "role": "Guided missile destroyer",
-    "status": "Active",
-    "tags": ["destroyer", "navy", "missile"]
+    "id": "bismarck_battleship_1940",
+    "name": "German Battleship Bismarck",
+    "category": "ships",
+    "subcategory": "battleships",
+    "manufacturer": "Blohm & Voss",
+    "country": "Germany",
+    "year": 1940,
+    "shortDescription": "One of the largest battleships ever built by Germany, sunk in 1941 after just one mission.",
+    "fullDescription": "Bismarck was the lead ship of her class of battleships built for Nazi Germany's Kriegsmarine. She and her sister ship Tirpitz were the largest battleships ever built by Germany. During her only foray into the Atlantic, she sank the British battlecruiser HMS Hood before being hunted down and sunk by the Royal Navy on 27 May 1941, just 8 days after leaving port.",
+    "specs": {
+      "type": "Battleship",
+      "length": "251 m",
+      "beam": "36 m",
+      "displacement": "50,300 tonnes (full load)",
+      "propulsion": "3 steam turbines, 3 shafts",
+      "topSpeed": "30 knots (~56 km/h)",
+      "mainArmament": "8× 38 cm SK C/34 guns",
+      "crew": "~2,200"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — German battleship Bismarck", "url": "https://en.wikipedia.org/wiki/German_battleship_Bismarck" }
+    ]
   },
+
   {
-    "id": "peter-great",
-    "type": "Ship",
-    "name": "Kirov-class Battlecruiser",
-    "manufacturer": "Baltic Shipyard",
-    "country": "Russia",
-    "year": 1980,
-    "era": "Cold War",
-    "class": "Battlecruiser",
-    "role": "Nuclear-powered battlecruiser",
-    "status": "Limited",
-    "tags": ["battlecruiser", "nuclear", "soviet"]
-  },
-  {
-    "id": "type45",
-    "type": "Ship",
-    "name": "Type 45 Destroyer",
-    "manufacturer": "BAE Systems",
-    "country": "UK",
-    "year": 2009,
-    "era": "Modern",
-    "class": "Destroyer",
-    "role": "Air defence destroyer",
-    "status": "Active",
-    "tags": ["destroyer", "royal navy", "air defense"]
-  },
-  {
-    "id": "ohioclass",
-    "type": "Submarine",
-    "name": "Ohio-class SSBN",
-    "manufacturer": "General Dynamics",
-    "country": "USA",
-    "year": 1981,
-    "era": "Cold War",
-    "class": "SSBN",
-    "role": "Nuclear ballistic missile submarine",
-    "status": "Active",
-    "tags": ["nuclear", "submarine", "ballistic"]
-  },
-  {
-    "id": "yasen",
-    "type": "Submarine",
-    "name": "Yasen-class SSGN",
-    "manufacturer": "Sevmash",
-    "country": "Russia",
-    "year": 2014,
-    "era": "Modern",
-    "class": "SSGN",
-    "role": "Nuclear-powered cruise missile submarine",
-    "status": "Active",
-    "tags": ["nuclear", "submarine", "cruise missile"]
-  },
-  {
-    "id": "abrams",
-    "type": "Tank",
-    "name": "M1A2 Abrams",
+    "id": "m1_abrams_1980",
+    "name": "M1 Abrams",
+    "category": "military",
+    "subcategory": "tanks",
     "manufacturer": "General Dynamics Land Systems",
-    "country": "USA",
-    "year": 1992,
-    "era": "Modern",
-    "class": "MBT",
-    "role": "Main battle tank",
-    "status": "Active",
-    "tags": ["armor", "tracked", "mbt"]
+    "country": "United States",
+    "year": 1980,
+    "shortDescription": "American main battle tank with a gas turbine engine and Chobham-style composite armour.",
+    "fullDescription": "The M1 Abrams is a third-generation American main battle tank designed by Chrysler Defense (now General Dynamics Land Systems). It is powered by a Honeywell AGT1500 multi-fuel turbine engine and features advanced composite armour. The M1A2 SEP v3 is the current production variant. The Abrams has seen combat in the Gulf War, Iraq War, and multiple other conflicts, and is operated by the US and several allied nations.",
+    "specs": {
+      "type": "Main battle tank",
+      "weight": "54.4–73.6 tonnes (varies by variant)",
+      "length": "9.77 m (hull)",
+      "engine": "Honeywell AGT1500 gas turbine",
+      "power": "1,500 hp",
+      "topSpeed": "67 km/h (road)",
+      "mainArmament": "120 mm M256 smoothbore gun",
+      "crew": "4",
+      "armour": "Chobham-style composite + depleted uranium"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — M1 Abrams", "url": "https://en.wikipedia.org/wiki/M1_Abrams" }
+    ]
   },
   {
-    "id": "t90",
-    "type": "Tank",
-    "name": "T-90M Proryv",
-    "manufacturer": "Uralvagonzavod",
-    "country": "Russia",
-    "year": 1993,
-    "era": "Modern",
-    "class": "MBT",
-    "role": "Main battle tank",
-    "status": "Active",
-    "tags": ["armor", "tracked", "soviet"]
-  },
-  {
-    "id": "leopard2",
-    "type": "Tank",
-    "name": "Leopard 2A7",
-    "manufacturer": "Krauss-Maffei Wegmann",
+    "id": "tiger_tank_1942",
+    "name": "Tiger I",
+    "category": "military",
+    "subcategory": "tanks",
+    "manufacturer": "Henschel & Son",
     "country": "Germany",
-    "year": 2014,
-    "era": "Modern",
-    "class": "MBT",
-    "role": "Main battle tank",
-    "status": "Active",
-    "tags": ["armor", "tracked", "nato"]
+    "year": 1942,
+    "shortDescription": "WWII German heavy tank feared for its 88 mm gun and thick armour.",
+    "fullDescription": "The Tiger I was a German heavy tank of World War II. It was developed in response to the unexpectedly formidable Soviet armour encountered in the early stages of Operation Barbarossa. The Tiger's 88 mm gun could penetrate any Allied tank at combat ranges, and its 100–120 mm frontal armour was proof against most Allied anti-tank weapons of the time. About 1,347 were produced between 1942 and 1944.",
+    "specs": {
+      "type": "Heavy tank",
+      "weight": "54 tonnes",
+      "length": "8.45 m",
+      "engine": "Maybach HL 230 P45 V12",
+      "power": "700 hp",
+      "topSpeed": "45.4 km/h (road)",
+      "mainArmament": "88 mm KwK 36 L/56",
+      "armour": "25–120 mm",
+      "crew": "5"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1519939211984-6a1b853c7f43?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Tiger I", "url": "https://en.wikipedia.org/wiki/Tiger_I" }
+    ]
   },
   {
-    "id": "challenger3",
-    "type": "Tank",
-    "name": "Challenger 3",
-    "manufacturer": "BAE Systems",
-    "country": "UK",
-    "year": 2025,
-    "era": "Modern",
-    "class": "MBT",
-    "role": "Main battle tank",
-    "status": "Active",
-    "tags": ["armor", "tracked", "british"]
+    "id": "ah64_apache_1975",
+    "name": "Boeing AH-64 Apache",
+    "category": "military",
+    "subcategory": "helicopters",
+    "manufacturer": "Boeing Defense",
+    "country": "United States",
+    "year": 1975,
+    "shortDescription": "Primary attack helicopter of the US Army, armed with Hellfire missiles and a 30 mm chain gun.",
+    "fullDescription": "The AH-64 Apache is a four-blade, twin-turboshaft attack helicopter. It features a Target Acquisition Designation Sight (TADS) and a Pilot Night Vision Sensor (PNVS) for all-weather operation. The AH-64E Guardian is the latest variant with improved engines and digital connectivity. It can carry up to 16 AGM-114 Hellfire missiles or 76 unguided rockets.",
+    "specs": {
+      "type": "Attack helicopter",
+      "engines": "2× General Electric T700-GE-701D turboshaft",
+      "power": "2× 1,994 shp",
+      "topSpeed": "293 km/h",
+      "range": "476 km",
+      "armament": "M230 30mm chain gun, Hellfire missiles, Hydra 70 rockets",
+      "crew": "2",
+      "length": "17.73 m (fuselage)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1569702132792-e6fc4e8dea59?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — AH-64 Apache", "url": "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache" }
+    ]
   },
   {
-    "id": "bradleyifv",
-    "type": "APC / IFV",
-    "name": "M2 Bradley IFV",
-    "manufacturer": "BAE Systems",
-    "country": "USA",
-    "year": 1981,
-    "era": "Cold War",
-    "class": "IFV",
-    "role": "Infantry fighting vehicle",
-    "status": "Active",
-    "tags": ["ifv", "tracked", "infantry"]
-  },
-  {
-    "id": "bmp3",
-    "type": "APC / IFV",
-    "name": "BMP-3",
-    "manufacturer": "Kurganmashzavod",
-    "country": "Russia",
-    "year": 1987,
-    "era": "Cold War",
-    "class": "IFV",
-    "role": "Infantry fighting vehicle",
-    "status": "Active",
-    "tags": ["ifv", "tracked", "soviet"]
-  },
-  {
-    "id": "tgv",
-    "type": "Train",
-    "name": "TGV (Train à Grande Vitesse)",
-    "manufacturer": "Alstom",
-    "country": "France",
-    "year": 1981,
-    "era": "Modern",
-    "class": "High-speed rail",
-    "role": "High-speed passenger train",
-    "status": "Active",
-    "tags": ["high speed", "rail", "electric"]
-  },
-  {
-    "id": "shinkansen",
-    "type": "Train",
-    "name": "Shinkansen N700S",
-    "manufacturer": "Kawasaki / Hitachi",
-    "country": "Japan",
-    "year": 2020,
-    "era": "Modern",
-    "class": "High-speed rail",
-    "role": "High-speed passenger train",
-    "status": "Active",
-    "tags": ["bullet train", "electric", "japan"]
-  },
-  {
-    "id": "cr400",
-    "type": "Train",
-    "name": "CR400BF Fuxing",
-    "manufacturer": "CRRC",
-    "country": "China",
-    "year": 2018,
-    "era": "Modern",
-    "class": "High-speed rail",
-    "role": "High-speed passenger train",
-    "status": "Active",
-    "tags": ["high speed", "electric", "china"]
-  },
-  {
-    "id": "falcon9",
-    "type": "Rocket / Space",
-    "name": "SpaceX Falcon 9",
-    "manufacturer": "SpaceX",
-    "country": "USA",
-    "year": 2010,
-    "era": "Modern",
-    "class": "Orbital rocket",
-    "role": "Reusable orbital launch vehicle",
-    "status": "Active",
-    "tags": ["reusable", "orbital", "spacex"]
-  },
-  {
-    "id": "starship",
-    "type": "Rocket / Space",
-    "name": "SpaceX Starship",
-    "manufacturer": "SpaceX",
-    "country": "USA",
-    "year": 2023,
-    "era": "Modern",
-    "class": "Super heavy lift",
-    "role": "Fully reusable super heavy launch system",
-    "status": "Development",
-    "tags": ["reusable", "super heavy", "spacex"]
-  },
-  {
-    "id": "sls",
-    "type": "Rocket / Space",
-    "name": "NASA Space Launch System (SLS)",
-    "manufacturer": "Boeing / Northrop Grumman",
-    "country": "USA",
-    "year": 2022,
-    "era": "Modern",
-    "class": "Super heavy lift",
-    "role": "Deep space launch vehicle",
-    "status": "Active",
-    "tags": ["nasa", "artemis", "super heavy"]
-  },
-  {
-    "id": "ariane6",
-    "type": "Rocket / Space",
-    "name": "Ariane 6",
-    "manufacturer": "ArianeGroup",
-    "country": "EU",
-    "year": 2024,
-    "era": "Modern",
-    "class": "Heavy lift",
-    "role": "Commercial orbital launch vehicle",
-    "status": "Active",
-    "tags": ["orbital", "esa", "european"]
-  },
-  {
-    "id": "mq9",
-    "type": "Drone / UAV",
-    "name": "MQ-9 Reaper",
-    "manufacturer": "General Atomics",
-    "country": "USA",
-    "year": 2007,
-    "era": "Modern",
-    "class": "MALE UAV",
-    "role": "ISR and precision strike UAV",
-    "status": "Active",
-    "tags": ["drone", "strike", "isr"]
-  },
-  {
-    "id": "bayraktar",
-    "type": "Drone / UAV",
-    "name": "Bayraktar TB2",
-    "manufacturer": "Baykar",
-    "country": "Turkey",
-    "year": 2014,
-    "era": "Modern",
-    "class": "MALE UAV",
-    "role": "Armed tactical UAV",
-    "status": "Active",
-    "tags": ["drone", "armed", "tactical"]
-  },
-  {
-    "id": "rq4",
-    "type": "Drone / UAV",
-    "name": "Northrop Grumman RQ-4 Global Hawk",
+    "id": "b2_spirit_1989",
+    "name": "Northrop Grumman B-2 Spirit",
+    "category": "military",
+    "subcategory": "bomber aircraft",
     "manufacturer": "Northrop Grumman",
-    "country": "USA",
-    "year": 2001,
-    "era": "Modern",
-    "class": "HALE UAV",
-    "role": "High-altitude long-endurance ISR",
-    "status": "Active",
-    "tags": ["isr", "hale", "surveillance"]
+    "country": "United States",
+    "year": 1989,
+    "shortDescription": "Stealth strategic bomber with a flying wing design and intercontinental range.",
+    "fullDescription": "The B-2 Spirit is an American stealth heavy strategic bomber with a flying wing design. It is capable of deploying both conventional and thermonuclear weapons. The B-2 has a very low radar cross-section due to its composite materials and smooth shape. It can reach any target on Earth within hours from its base at Whiteman AFB. Only 21 aircraft were built at a cost of approximately $2.1 billion each.",
+    "specs": {
+      "type": "Stealth strategic bomber",
+      "engines": "4× General Electric F118-GE-100 turbofan",
+      "topSpeed": "Mach 0.95 (~1,010 km/h)",
+      "range": "11,100 km (unrefuelled)",
+      "payload": "18,144 kg",
+      "crew": "2",
+      "wingspan": "52.4 m",
+      "length": "21.0 m"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1532968961801-d5a52568b7c8?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — B-2 Spirit", "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_B-2_Spirit" }
+    ]
+  },
+
+  {
+    "id": "shinkansen_n700_2007",
+    "name": "Shinkansen N700 Series",
+    "category": "trains",
+    "subcategory": "high-speed rail",
+    "manufacturer": "Kawasaki Heavy Industries / Hitachi",
+    "country": "Japan",
+    "year": 2007,
+    "shortDescription": "High-speed bullet train operating on Japan's Tokaido and Sanyo Shinkansen lines.",
+    "fullDescription": "The N700 Series Shinkansen is a high-speed electric multiple unit (EMU) train operated by JR Central and JR West. It features aerodynamic nose cones, active suspension, and regenerative braking. The N700S variant (introduced 2020) uses next-generation SiC traction motors and can operate during earthquakes with its onboard battery system. It is one of the most technologically advanced trains in the world.",
+    "specs": {
+      "type": "High-speed electric multiple unit",
+      "topSpeed": "320 km/h (operational)",
+      "length": "414.8 m (16 cars)",
+      "cars": "16",
+      "capacity": "1,323 passengers",
+      "propulsion": "Electric (25 kV AC)",
+      "traction": "64× 305 kW motors"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Shinkansen N700", "url": "https://en.wikipedia.org/wiki/N700_Series_Shinkansen" }
+    ]
   },
   {
-    "id": "bugattiveyron",
-    "type": "Car",
-    "name": "Bugatti Veyron",
-    "manufacturer": "Bugatti Automobiles",
-    "country": "France",
-    "year": 2005,
-    "era": "Modern",
-    "class": "Hypercar",
-    "role": "Ultra-high performance road car",
-    "status": "Retired",
-    "tags": ["hypercar", "w16", "supercar"]
+    "id": "maglev_scmaglev_2003",
+    "name": "SCMaglev L0 Series",
+    "category": "trains",
+    "subcategory": "maglev",
+    "manufacturer": "Central Japan Railway / Mitsubishi",
+    "country": "Japan",
+    "year": 2003,
+    "shortDescription": "Superconducting maglev train — the fastest land vehicle ever tested at 603 km/h.",
+    "fullDescription": "The SCMaglev L0 Series is a superconducting magnetic levitation (maglev) train under development by Central Japan Railway Company (JR Central). On 21 April 2015, a manned test train reached 603 km/h, setting the world land speed record for a rail vehicle. It uses onboard superconducting electromagnets that interact with coils in the guideway. A commercial line between Tokyo and Nagoya is planned.",
+    "specs": {
+      "type": "Superconducting maglev",
+      "topSpeed": "603 km/h (test record)",
+      "operationalSpeed": "500 km/h (planned)",
+      "levitationHeight": "~100 mm",
+      "propulsion": "Linear induction motor",
+      "Tokyo_Nagoya": "40 minutes (planned)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1569701813229-33284b643e3c?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — SCMaglev", "url": "https://en.wikipedia.org/wiki/SCMaglev" }
+    ]
   },
+
   {
-    "id": "koenigsegg",
-    "type": "Car",
-    "name": "Koenigsegg Jesko Absolut",
-    "manufacturer": "Koenigsegg",
-    "country": "Sweden",
-    "year": 2020,
-    "era": "Modern",
-    "class": "Hypercar",
-    "role": "Top speed record contender",
-    "status": "Production",
-    "tags": ["hypercar", "top speed", "supercar"]
-  },
-  {
-    "id": "catd11",
-    "type": "Industrial",
-    "name": "Caterpillar D11 Bulldozer",
-    "manufacturer": "Caterpillar Inc.",
-    "country": "USA",
-    "year": 1986,
-    "era": "Modern",
-    "class": "Crawler dozer",
-    "role": "Large-scale earthmoving / mining",
-    "status": "Active",
-    "tags": ["bulldozer", "mining", "cat"]
-  },
-  {
-    "id": "bagger288",
-    "type": "Industrial",
-    "name": "Bagger 288",
-    "manufacturer": "Krupp / ThyssenKrupp",
-    "country": "Germany",
-    "year": 1978,
-    "era": "Modern",
-    "class": "Bucket-wheel excavator",
-    "role": "Open-pit lignite mining",
-    "status": "Active",
-    "tags": ["excavator", "mining", "giant"]
-  },
-  {
-    "id": "belaz75710",
-    "type": "Industrial",
-    "name": "BelAZ 75710",
-    "manufacturer": "BelAZ",
-    "country": "Belarus",
-    "year": 2013,
-    "era": "Modern",
-    "class": "Haul truck",
-    "role": "World's largest dump truck",
-    "status": "Active",
-    "tags": ["dump truck", "mining", "giant"]
-  },
-  {
-    "id": "ducatipanigale",
-    "type": "Motorcycle",
-    "name": "Ducati Panigale V4 R",
+    "id": "ducati_panigale_v4_2018",
+    "name": "Ducati Panigale V4",
+    "category": "motorcycles",
+    "subcategory": "superbikes",
     "manufacturer": "Ducati",
     "country": "Italy",
-    "year": 2019,
-    "era": "Modern",
-    "class": "Superbike",
-    "role": "Track / superbike",
-    "status": "Active",
-    "tags": ["superbike", "racing", "v4"]
+    "year": 2018,
+    "shortDescription": "Italian V4-powered superbike derived directly from MotoGP technology.",
+    "fullDescription": "The Ducati Panigale V4 is a sport motorcycle introduced in 2018. It uses a 1,103cc Desmosedici Stradale V4 engine derived directly from Ducati's MotoGP machine. The bike features a front frame acting as an airbox, a full cornering ABS system, six-axis IMU, and traction control. The V4 R variant, intended for racing homologation, produces 221 hp.",
+    "specs": {
+      "engine": "1,103cc Desmosedici Stradale V4",
+      "power": "214 hp (standard) / 221 hp (V4 R)",
+      "torque": "124 Nm",
+      "topSpeed": "299 km/h",
+      "weight": "195 kg (dry)",
+      "frame": "Front frame as airbox",
+      "electronics": "6-axis IMU, cornering ABS, traction control"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1558981852-426c349010ea?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Ducati Panigale V4", "url": "https://en.wikipedia.org/wiki/Ducati_Panigale_V4" }
+    ]
   },
   {
-    "id": "kawasakih2r",
-    "type": "Motorcycle",
+    "id": "kawasaki_h2r_2015",
     "name": "Kawasaki Ninja H2R",
+    "category": "motorcycles",
+    "subcategory": "superbikes",
     "manufacturer": "Kawasaki",
     "country": "Japan",
     "year": 2015,
-    "era": "Modern",
-    "class": "Supercharged hyperbike",
-    "role": "Track-only supercharged hyperbike",
-    "status": "Active",
-    "tags": ["supercharged", "hyperbike", "track"]
+    "shortDescription": "Supercharged track-only motorcycle — the most powerful production motorcycle ever made.",
+    "fullDescription": "The Kawasaki Ninja H2R is a track-only motorcycle powered by a supercharged 998cc inline-four engine producing 310 hp in ram-air conditions. It was designed by Kawasaki's aerospace, jet engine, and motorcycle divisions working together. The H2R holds a motorcycle land speed record of 400 km/h and is not street legal. The supercharger is entirely designed and manufactured in-house by Kawasaki.",
+    "specs": {
+      "engine": "998cc supercharged inline-4",
+      "power": "310 hp (with ram-air)",
+      "torque": "165 Nm",
+      "topSpeed": "400 km/h (tested)",
+      "weight": "216 kg (dry)",
+      "supercharger": "Kawasaki-designed centrifugal",
+      "streetLegal": "No (track only)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Kawasaki Ninja H2R", "url": "https://en.wikipedia.org/wiki/Kawasaki_Ninja_H2" }
+    ]
+  },
+
+  {
+    "id": "saturn_v_1967",
+    "name": "Saturn V",
+    "category": "space",
+    "subcategory": "rockets",
+    "manufacturer": "Boeing / North American / Douglas",
+    "country": "United States",
+    "year": 1967,
+    "shortDescription": "The most powerful rocket ever flown — carried Apollo astronauts to the Moon.",
+    "fullDescription": "The Saturn V was an American super heavy-lift launch vehicle used by NASA between 1967 and 1973. Developed under the direction of Wernher von Braun, it remains the most powerful, heaviest, and largest rocket ever brought to operational status. A total of 13 Saturn Vs were launched, all successfully, carrying Apollo missions 4 through 17 and the Skylab space station.",
+    "specs": {
+      "type": "Super heavy-lift launch vehicle",
+      "height": "110.6 m",
+      "diameter": "10.1 m",
+      "mass": "2,970,000 kg (fuelled)",
+      "stages": "3",
+      "LEO_payload": "140,000 kg",
+      "TLI_payload": "48,600 kg (Trans-Lunar Injection)",
+      "firstFlight": "November 9, 1967",
+      "engines": "5× F-1 (stage 1) + 5× J-2 (stage 2) + 1× J-2 (stage 3)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1457364887197-9150188c107b?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Saturn V", "url": "https://en.wikipedia.org/wiki/Saturn_V" }
+    ]
+  },
+  {
+    "id": "spacex_starship_2023",
+    "name": "SpaceX Starship",
+    "category": "space",
+    "subcategory": "rockets",
+    "manufacturer": "SpaceX",
+    "country": "United States",
+    "year": 2023,
+    "shortDescription": "The largest and most powerful rocket ever built — fully reusable two-stage system.",
+    "fullDescription": "SpaceX Starship is a fully reusable super heavy-lift launch vehicle under development by SpaceX. When combined with the Super Heavy booster, it stands 121 m tall and is the largest rocket ever built. The system is designed for crewed missions to the Moon and Mars. Both stages are designed to be fully reusable — the booster is caught by mechanical arms at the launch tower. The upper stage (Starship) uses six Raptor engines.",
+    "specs": {
+      "type": "Fully reusable super heavy-lift launch vehicle",
+      "height": "121 m (full stack)",
+      "diameter": "9 m",
+      "LEO_payload": "150,000 kg (fully expendable)",
+      "propellant": "Liquid oxygen / liquid methane",
+      "engines": "33× Raptor (booster) + 6× Raptor (Starship)",
+      "thrust": "~74.4 MN (sea level, full stack)",
+      "reusability": "Full — booster + ship"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1517976547714-720226b864c1?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — SpaceX Starship", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship" }
+    ]
+  },
+  {
+    "id": "space_shuttle_1981",
+    "name": "Space Shuttle",
+    "category": "space",
+    "subcategory": "spacecraft",
+    "manufacturer": "Rockwell International / Thiokol",
+    "country": "United States",
+    "year": 1981,
+    "shortDescription": "NASA's partially reusable crewed spacecraft that flew 135 missions from 1981 to 2011.",
+    "fullDescription": "The Space Shuttle was a partially reusable low Earth orbital spacecraft system operated by NASA. The system comprised a reusable orbiter, two recoverable solid rocket boosters, and an expendable external tank. It flew 135 missions, launched the Hubble Space Telescope, and served as the primary vehicle for ISS assembly. The programme retired in 2011 after the orbiter fleet accumulated 1,322 days in space.",
+    "specs": {
+      "type": "Partially reusable crewed orbital spacecraft",
+      "orbiterLength": "37.24 m",
+      "wingspan": "23.79 m",
+      "LEO_payload": "24,400 kg",
+      "crew": "Up to 8",
+      "engines": "3× RS-25 SSMEs + 2× SRBs",
+      "missions": "135 total",
+      "service": "1981–2011"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1541873676-a18131494184?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Space Shuttle", "url": "https://en.wikipedia.org/wiki/Space_Shuttle" }
+    ]
+  },
+
+  {
+    "id": "caterpillar_797f_2008",
+    "name": "Caterpillar 797F",
+    "category": "construction",
+    "subcategory": "mining trucks",
+    "manufacturer": "Caterpillar Inc.",
+    "country": "United States",
+    "year": 2008,
+    "shortDescription": "One of the largest haul trucks in the world with a 363-tonne payload capacity.",
+    "fullDescription": "The Caterpillar 797F is an ultra-class, two-axle, mechanical-drive, off-highway truck used in surface mining. With a payload capacity of 363 tonnes, it is among the largest haul trucks ever built. It is powered by a 4,000 hp Cat C175-20 diesel engine. The truck's tyres alone are 4 m tall and cost around $42,500 each. It is used primarily in copper and oil sands mines.",
+    "specs": {
+      "type": "Ultra-class mining haul truck",
+      "payloadCapacity": "363 tonnes",
+      "grossVehicleWeight": "~623 tonnes",
+      "engine": "Cat C175-20 V20 diesel",
+      "power": "4,000 hp",
+      "topSpeed": "68 km/h (loaded)",
+      "tyreSize": "59/80R63 (4 m tall)",
+      "fuelCapacity": "6,814 L"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Wikipedia — Caterpillar 797", "url": "https://en.wikipedia.org/wiki/Caterpillar_797" }
+    ]
+  },
+  {
+    "id": "liebherr_ltm_11200_2014",
+    "name": "Liebherr LTM 11200-9.1",
+    "category": "construction",
+    "subcategory": "cranes",
+    "manufacturer": "Liebherr",
+    "country": "Germany",
+    "year": 2014,
+    "shortDescription": "The world's most powerful mobile crane with a 1,200-tonne lifting capacity.",
+    "fullDescription": "The Liebherr LTM 11200-9.1 is a mobile all-terrain crane with a maximum lifting capacity of 1,200 tonnes. It is the most powerful mobile crane in the world. The main boom can extend to 100 m, and with the luffing jib attached the maximum hook height reaches 188 m. It has 9 axles and is designed for on-road travel at up to 75 km/h.",
+    "specs": {
+      "type": "Mobile all-terrain crane",
+      "maxLiftCapacity": "1,200 tonnes",
+      "mainBoom": "100 m",
+      "maxHookHeight": "188 m (with luffing jib)",
+      "engine": "Liebherr diesel",
+      "axles": "9",
+      "travelSpeed": "75 km/h",
+      "weight": "~108 tonnes (carrier)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "sources": [
+      { "title": "Liebherr LTM 11200-9.1 official page", "url": "https://www.liebherr.com/en/usa/products/mobile-and-crawler-cranes/mobile-cranes/ltm-mobile-cranes/ltm-11200-9.1.html" }
+    ]
   }
 ]
