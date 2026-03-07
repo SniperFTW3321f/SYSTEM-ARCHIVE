@@ -21,9 +21,7 @@
       "weight": "1,995 kg",
       "length": "4,544 mm"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d41cc70d8bcdd5abbc56bab0f85f7d344c6e18c2.jpg"],
     "sources": [
       { "title": "Wikipedia — Bugatti Chiron", "url": "https://en.wikipedia.org/wiki/Bugatti_Chiron" }
     ]
@@ -49,9 +47,7 @@
       "weight": "1,575 kg",
       "length": "4,780 mm"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4f45ec94de5e2c643e343ad43b6f4e0b0e80d725.jpg"],
     "sources": [
       { "title": "Wikipedia — Lamborghini Aventador", "url": "https://en.wikipedia.org/wiki/Lamborghini_Aventador" }
     ]
@@ -75,9 +71,7 @@
       "weight": "1,020 kg",
       "height": "1,016 mm (40 inches)"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/a/a6/GT40_at_Goodwood.jpg"],
     "sources": [
       { "title": "Wikipedia — Ford GT40", "url": "https://en.wikipedia.org/wiki/Ford_GT40" }
     ]
@@ -102,9 +96,7 @@
       "drive": "AWD",
       "weight": "2,162 kg"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/98777646c2eb9323d50a14e64e11b53b6230eee3.jpg"],
     "sources": [
       { "title": "Wikipedia — Tesla Model S", "url": "https://en.wikipedia.org/wiki/Tesla_Model_S" }
     ]
@@ -130,14 +122,11 @@
       "transmission": "7-speed PDK",
       "weight": "1,435 kg"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/daeb76dabd349aed50b7e117cb1b0d007227481d.jpg"],
     "sources": [
       { "title": "Wikipedia — Porsche 911 GT3", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT3" }
     ]
   },
-
   {
     "id": "boeing_747_1969",
     "name": "Boeing 747",
@@ -158,9 +147,7 @@
       "maxPassengers": "605 (747-8)",
       "crew": "2 (flight deck)"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f6809a4a059625503e2c997020792edaa52fa005.jpg"],
     "sources": [
       { "title": "Wikipedia — Boeing 747", "url": "https://en.wikipedia.org/wiki/Boeing_747" }
     ]
@@ -185,9 +172,7 @@
       "length": "61.66 m",
       "wingspan": "25.6 m"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/b7d45cb66f8161141799eed0d65401286d7fda9a.jpg"],
     "sources": [
       { "title": "Wikipedia — Concorde", "url": "https://en.wikipedia.org/wiki/Concorde" }
     ]
@@ -205,16 +190,14 @@
     "specs": {
       "type": "Strategic reconnaissance aircraft",
       "topSpeed": "Mach 3.3+ (~3,540 km/h)",
-      "serviceceiling": "25,908 m",
+      "serviceCeiling": "25,908 m",
       "engines": "2× Pratt & Whitney J58-P4",
       "range": "5,400 km",
       "crew": "2",
       "length": "32.74 m",
       "wingspan": "16.94 m"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/fe673e63fcdebf3c20db6f49b7eab281c4178ce1.jpg"],
     "sources": [
       { "title": "Wikipedia — SR-71 Blackbird", "url": "https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird" }
     ]
@@ -240,14 +223,11 @@
       "length": "18.92 m",
       "wingspan": "13.56 m"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg"],
     "sources": [
       { "title": "Wikipedia — F-22 Raptor", "url": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor" }
     ]
   },
-
   {
     "id": "hindenburg_lz129_1936",
     "name": "LZ 129 Hindenburg",
@@ -257,7 +237,7 @@
     "country": "Germany",
     "year": 1936,
     "shortDescription": "The largest aircraft ever built — a hydrogen-filled rigid airship for transatlantic travel.",
-    "fullDescription": "The LZ 129 Hindenburg was a large German commercial passenger-carrying rigid airship. At 245 m it remains the largest aircraft ever built by volume. It flew transatlantic routes between Germany and North America. On May 6, 1937, it caught fire and was destroyed while attempting to dock at Lakehurst, New Jersey, killing 36 of the 97 people on board and effectively ending the era of passenger airships.",
+    "fullDescription": "The LZ 129 Hindenburg was a large German commercial passenger-carrying rigid airship. At 245 m it remains the largest aircraft ever built by volume. It flew transatlantic routes between Germany and North America. On May 6, 1937, it caught fire and was destroyed while attempting to dock at Lakehurst, New Jersey, killing 36 of the 97 people on board.",
     "specs": {
       "type": "Rigid airship",
       "length": "245 m",
@@ -269,9 +249,7 @@
       "range": "~16,000 km",
       "passengers": "50–72"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1520975958225-0902b2b9a0d4?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hindenburg_at_lakehurst.jpg/1280px-Hindenburg_at_lakehurst.jpg"],
     "sources": [
       { "title": "Wikipedia — Hindenburg", "url": "https://en.wikipedia.org/wiki/LZ_129_Hindenburg" }
     ]
@@ -297,14 +275,11 @@
       "range": "10,000+ km",
       "passengers": "~20"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/LZ127-1.jpg/1280px-LZ127-1.jpg"],
     "sources": [
       { "title": "Wikipedia — LZ 127 Graf Zeppelin", "url": "https://en.wikipedia.org/wiki/LZ_127_Graf_Zeppelin" }
     ]
   },
-
   {
     "id": "titanic_1912",
     "name": "RMS Titanic",
@@ -314,7 +289,7 @@
     "country": "United Kingdom",
     "year": 1912,
     "shortDescription": "Olympic-class British ocean liner that sank on her maiden voyage after hitting an iceberg.",
-    "fullDescription": "RMS Titanic was a British ocean liner that sank on 15 April 1912 after striking an iceberg on her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making it one of the deadliest peacetime maritime disasters in history. She was the largest ship afloat at the time of her launching and was considered unsinkable.",
+    "fullDescription": "RMS Titanic was a British ocean liner that sank on 15 April 1912 after striking an iceberg on her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making it one of the deadliest peacetime maritime disasters in history. She was the largest ship afloat at the time of her launching.",
     "specs": {
       "type": "Ocean liner",
       "length": "269.1 m",
@@ -325,9 +300,7 @@
       "passengers": "2,435 (capacity)",
       "crew": "892"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d962c0c364b252104784516461792c1b0099dd8e.jpg"],
     "sources": [
       { "title": "Wikipedia — Titanic", "url": "https://en.wikipedia.org/wiki/Titanic" }
     ]
@@ -341,7 +314,7 @@
     "country": "United States",
     "year": 1975,
     "shortDescription": "Lead ship of the Nimitz class — the world's largest warships for decades.",
-    "fullDescription": "USS Nimitz is a supercarrier and the lead ship of her class. She is powered by two Westinghouse A4W nuclear reactors driving four propeller shafts. The ship can carry 90+ aircraft and has a crew of over 6,000. Nimitz-class carriers have a displacement of over 100,000 tonnes and a flight deck of 332.8 m. She has been in continuous service since 1975.",
+    "fullDescription": "USS Nimitz is a supercarrier and the lead ship of her class. She is powered by two Westinghouse A4W nuclear reactors driving four propeller shafts. The ship can carry 90+ aircraft and has a crew of over 6,000. Nimitz-class carriers have a displacement of over 100,000 tonnes and a flight deck of 332.8 m.",
     "specs": {
       "type": "Nuclear-powered aircraft carrier",
       "length": "332.8 m",
@@ -352,9 +325,7 @@
       "aircraft": "90+",
       "crew": "~6,012"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/USS_Nimitz_%28CVN-68%29.jpg/1280px-USS_Nimitz_%28CVN-68%29.jpg"],
     "sources": [
       { "title": "Wikipedia — USS Nimitz", "url": "https://en.wikipedia.org/wiki/USS_Nimitz" }
     ]
@@ -379,14 +350,11 @@
       "mainArmament": "8× 38 cm SK C/34 guns",
       "crew": "~2,200"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Bundesarchiv_DVM_10_Bild-23-63-06%2C_Schlachtschiff_Bismarck.jpg/1280px-Bundesarchiv_DVM_10_Bild-23-63-06%2C_Schlachtschiff_Bismarck.jpg"],
     "sources": [
       { "title": "Wikipedia — German battleship Bismarck", "url": "https://en.wikipedia.org/wiki/German_battleship_Bismarck" }
     ]
   },
-
   {
     "id": "m1_abrams_1980",
     "name": "M1 Abrams",
@@ -395,11 +363,11 @@
     "manufacturer": "General Dynamics Land Systems",
     "country": "United States",
     "year": 1980,
-    "shortDescription": "American main battle tank with a gas turbine engine and Chobham-style composite armour.",
-    "fullDescription": "The M1 Abrams is a third-generation American main battle tank designed by Chrysler Defense (now General Dynamics Land Systems). It is powered by a Honeywell AGT1500 multi-fuel turbine engine and features advanced composite armour. The M1A2 SEP v3 is the current production variant. The Abrams has seen combat in the Gulf War, Iraq War, and multiple other conflicts, and is operated by the US and several allied nations.",
+    "shortDescription": "American main battle tank with a gas turbine engine and composite armour.",
+    "fullDescription": "The M1 Abrams is a third-generation American main battle tank. It is powered by a Honeywell AGT1500 multi-fuel turbine engine and features advanced composite armour. The M1A2 SEP v3 is the current production variant. The Abrams has seen combat in the Gulf War, Iraq War, and multiple other conflicts.",
     "specs": {
       "type": "Main battle tank",
-      "weight": "54.4–73.6 tonnes (varies by variant)",
+      "weight": "54.4–73.6 tonnes",
       "length": "9.77 m (hull)",
       "engine": "Honeywell AGT1500 gas turbine",
       "power": "1,500 hp",
@@ -408,9 +376,7 @@
       "crew": "4",
       "armour": "Chobham-style composite + depleted uranium"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/M1A2_Abrams.jpg/1280px-M1A2_Abrams.jpg"],
     "sources": [
       { "title": "Wikipedia — M1 Abrams", "url": "https://en.wikipedia.org/wiki/M1_Abrams" }
     ]
@@ -424,7 +390,7 @@
     "country": "Germany",
     "year": 1942,
     "shortDescription": "WWII German heavy tank feared for its 88 mm gun and thick armour.",
-    "fullDescription": "The Tiger I was a German heavy tank of World War II. It was developed in response to the unexpectedly formidable Soviet armour encountered in the early stages of Operation Barbarossa. The Tiger's 88 mm gun could penetrate any Allied tank at combat ranges, and its 100–120 mm frontal armour was proof against most Allied anti-tank weapons of the time. About 1,347 were produced between 1942 and 1944.",
+    "fullDescription": "The Tiger I was a German heavy tank of World War II. It was developed in response to the unexpectedly formidable Soviet armour encountered in Operation Barbarossa. The Tiger's 88 mm gun could penetrate any Allied tank at combat ranges, and its 100–120 mm frontal armour was proof against most Allied anti-tank weapons. About 1,347 were produced between 1942 and 1944.",
     "specs": {
       "type": "Heavy tank",
       "weight": "54 tonnes",
@@ -436,9 +402,7 @@
       "armour": "25–120 mm",
       "crew": "5"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1519939211984-6a1b853c7f43?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Bundesarchiv_Bild_183-J14589%2C_Russland%2C_Panzer_VI_%28Tiger_I%29.jpg/1280px-Bundesarchiv_Bild_183-J14589%2C_Russland%2C_Panzer_VI_%28Tiger_I%29.jpg"],
     "sources": [
       { "title": "Wikipedia — Tiger I", "url": "https://en.wikipedia.org/wiki/Tiger_I" }
     ]
@@ -452,7 +416,7 @@
     "country": "United States",
     "year": 1975,
     "shortDescription": "Primary attack helicopter of the US Army, armed with Hellfire missiles and a 30 mm chain gun.",
-    "fullDescription": "The AH-64 Apache is a four-blade, twin-turboshaft attack helicopter. It features a Target Acquisition Designation Sight (TADS) and a Pilot Night Vision Sensor (PNVS) for all-weather operation. The AH-64E Guardian is the latest variant with improved engines and digital connectivity. It can carry up to 16 AGM-114 Hellfire missiles or 76 unguided rockets.",
+    "fullDescription": "The AH-64 Apache is a four-blade, twin-turboshaft attack helicopter. It features a Target Acquisition Designation Sight and Pilot Night Vision Sensor for all-weather operation. The AH-64E Guardian is the latest variant with improved engines and digital connectivity. It can carry up to 16 AGM-114 Hellfire missiles or 76 unguided rockets.",
     "specs": {
       "type": "Attack helicopter",
       "engines": "2× General Electric T700-GE-701D turboshaft",
@@ -463,9 +427,7 @@
       "crew": "2",
       "length": "17.73 m (fuselage)"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1569702132792-e6fc4e8dea59?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/6/66/AH-64D_Apache_Longbow.jpg"],
     "sources": [
       { "title": "Wikipedia — AH-64 Apache", "url": "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache" }
     ]
@@ -479,7 +441,7 @@
     "country": "United States",
     "year": 1989,
     "shortDescription": "Stealth strategic bomber with a flying wing design and intercontinental range.",
-    "fullDescription": "The B-2 Spirit is an American stealth heavy strategic bomber with a flying wing design. It is capable of deploying both conventional and thermonuclear weapons. The B-2 has a very low radar cross-section due to its composite materials and smooth shape. It can reach any target on Earth within hours from its base at Whiteman AFB. Only 21 aircraft were built at a cost of approximately $2.1 billion each.",
+    "fullDescription": "The B-2 Spirit is an American stealth heavy strategic bomber with a flying wing design. It is capable of deploying both conventional and thermonuclear weapons. The B-2 has a very low radar cross-section due to its composite materials and smooth shape. Only 21 aircraft were built at a cost of approximately $2.1 billion each.",
     "specs": {
       "type": "Stealth strategic bomber",
       "engines": "4× General Electric F118-GE-100 turbofan",
@@ -490,14 +452,11 @@
       "wingspan": "52.4 m",
       "length": "21.0 m"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1532968961801-d5a52568b7c8?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/B-2_spirit_bombing.jpg/1280px-B-2_spirit_bombing.jpg"],
     "sources": [
       { "title": "Wikipedia — B-2 Spirit", "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_B-2_Spirit" }
     ]
   },
-
   {
     "id": "shinkansen_n700_2007",
     "name": "Shinkansen N700 Series",
@@ -507,7 +466,7 @@
     "country": "Japan",
     "year": 2007,
     "shortDescription": "High-speed bullet train operating on Japan's Tokaido and Sanyo Shinkansen lines.",
-    "fullDescription": "The N700 Series Shinkansen is a high-speed electric multiple unit (EMU) train operated by JR Central and JR West. It features aerodynamic nose cones, active suspension, and regenerative braking. The N700S variant (introduced 2020) uses next-generation SiC traction motors and can operate during earthquakes with its onboard battery system. It is one of the most technologically advanced trains in the world.",
+    "fullDescription": "The N700 Series Shinkansen is a high-speed electric multiple unit train operated by JR Central and JR West. It features aerodynamic nose cones, active suspension, and regenerative braking. The N700S variant uses next-generation SiC traction motors and can operate during earthquakes with its onboard battery system.",
     "specs": {
       "type": "High-speed electric multiple unit",
       "topSpeed": "320 km/h (operational)",
@@ -517,9 +476,7 @@
       "propulsion": "Electric (25 kV AC)",
       "traction": "64× 305 kW motors"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d50aa704c89eba4acc8ea587313475564daaaeb0.jpg"],
     "sources": [
       { "title": "Wikipedia — Shinkansen N700", "url": "https://en.wikipedia.org/wiki/N700_Series_Shinkansen" }
     ]
@@ -533,7 +490,7 @@
     "country": "Japan",
     "year": 2003,
     "shortDescription": "Superconducting maglev train — the fastest land vehicle ever tested at 603 km/h.",
-    "fullDescription": "The SCMaglev L0 Series is a superconducting magnetic levitation (maglev) train under development by Central Japan Railway Company (JR Central). On 21 April 2015, a manned test train reached 603 km/h, setting the world land speed record for a rail vehicle. It uses onboard superconducting electromagnets that interact with coils in the guideway. A commercial line between Tokyo and Nagoya is planned.",
+    "fullDescription": "The SCMaglev L0 Series is a superconducting magnetic levitation train under development by JR Central. On 21 April 2015, a manned test train reached 603 km/h, setting the world land speed record for a rail vehicle. It uses onboard superconducting electromagnets that interact with coils in the guideway.",
     "specs": {
       "type": "Superconducting maglev",
       "topSpeed": "603 km/h (test record)",
@@ -542,14 +499,11 @@
       "propulsion": "Linear induction motor",
       "Tokyo_Nagoya": "40 minutes (planned)"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1569701813229-33284b643e3c?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/L0-Series-Maglev.jpg/1280px-L0-Series-Maglev.jpg"],
     "sources": [
       { "title": "Wikipedia — SCMaglev", "url": "https://en.wikipedia.org/wiki/SCMaglev" }
     ]
   },
-
   {
     "id": "ducati_panigale_v4_2018",
     "name": "Ducati Panigale V4",
@@ -559,7 +513,7 @@
     "country": "Italy",
     "year": 2018,
     "shortDescription": "Italian V4-powered superbike derived directly from MotoGP technology.",
-    "fullDescription": "The Ducati Panigale V4 is a sport motorcycle introduced in 2018. It uses a 1,103cc Desmosedici Stradale V4 engine derived directly from Ducati's MotoGP machine. The bike features a front frame acting as an airbox, a full cornering ABS system, six-axis IMU, and traction control. The V4 R variant, intended for racing homologation, produces 221 hp.",
+    "fullDescription": "The Ducati Panigale V4 is a sport motorcycle introduced in 2018. It uses a 1,103cc Desmosedici Stradale V4 engine derived directly from Ducati's MotoGP machine. The bike features a full cornering ABS system, six-axis IMU, and traction control. The V4 R variant produces 221 hp.",
     "specs": {
       "engine": "1,103cc Desmosedici Stradale V4",
       "power": "214 hp (standard) / 221 hp (V4 R)",
@@ -569,9 +523,7 @@
       "frame": "Front frame as airbox",
       "electronics": "6-axis IMU, cornering ABS, traction control"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1558981852-426c349010ea?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0ed5b9d972e7d66d0bb4e05707ed8982e12cf33f.jpg"],
     "sources": [
       { "title": "Wikipedia — Ducati Panigale V4", "url": "https://en.wikipedia.org/wiki/Ducati_Panigale_V4" }
     ]
@@ -585,7 +537,7 @@
     "country": "Japan",
     "year": 2015,
     "shortDescription": "Supercharged track-only motorcycle — the most powerful production motorcycle ever made.",
-    "fullDescription": "The Kawasaki Ninja H2R is a track-only motorcycle powered by a supercharged 998cc inline-four engine producing 310 hp in ram-air conditions. It was designed by Kawasaki's aerospace, jet engine, and motorcycle divisions working together. The H2R holds a motorcycle land speed record of 400 km/h and is not street legal. The supercharger is entirely designed and manufactured in-house by Kawasaki.",
+    "fullDescription": "The Kawasaki Ninja H2R is a track-only motorcycle powered by a supercharged 998cc inline-four engine producing 310 hp in ram-air conditions. It was designed by Kawasaki's aerospace, jet engine, and motorcycle divisions. The H2R holds a motorcycle land speed record of 400 km/h and is not street legal.",
     "specs": {
       "engine": "998cc supercharged inline-4",
       "power": "310 hp (with ram-air)",
@@ -595,14 +547,11 @@
       "supercharger": "Kawasaki-designed centrifugal",
       "streetLegal": "No (track only)"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Kawasaki_Ninja_H2.jpg/1280px-Kawasaki_Ninja_H2.jpg"],
     "sources": [
       { "title": "Wikipedia — Kawasaki Ninja H2R", "url": "https://en.wikipedia.org/wiki/Kawasaki_Ninja_H2" }
     ]
   },
-
   {
     "id": "saturn_v_1967",
     "name": "Saturn V",
@@ -612,7 +561,7 @@
     "country": "United States",
     "year": 1967,
     "shortDescription": "The most powerful rocket ever flown — carried Apollo astronauts to the Moon.",
-    "fullDescription": "The Saturn V was an American super heavy-lift launch vehicle used by NASA between 1967 and 1973. Developed under the direction of Wernher von Braun, it remains the most powerful, heaviest, and largest rocket ever brought to operational status. A total of 13 Saturn Vs were launched, all successfully, carrying Apollo missions 4 through 17 and the Skylab space station.",
+    "fullDescription": "The Saturn V was an American super heavy-lift launch vehicle used by NASA between 1967 and 1973. Developed under Wernher von Braun, it remains the most powerful, heaviest, and largest rocket ever brought to operational status. All 13 Saturn Vs launched successfully, carrying Apollo missions 4 through 17 and the Skylab space station.",
     "specs": {
       "type": "Super heavy-lift launch vehicle",
       "height": "110.6 m",
@@ -620,13 +569,11 @@
       "mass": "2,970,000 kg (fuelled)",
       "stages": "3",
       "LEO_payload": "140,000 kg",
-      "TLI_payload": "48,600 kg (Trans-Lunar Injection)",
+      "TLI_payload": "48,600 kg",
       "firstFlight": "November 9, 1967",
       "engines": "5× F-1 (stage 1) + 5× J-2 (stage 2) + 1× J-2 (stage 3)"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1457364887197-9150188c107b?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/93cfc5c461663570f77948b398f5061d43671d4c.jpg"],
     "sources": [
       { "title": "Wikipedia — Saturn V", "url": "https://en.wikipedia.org/wiki/Saturn_V" }
     ]
@@ -640,7 +587,7 @@
     "country": "United States",
     "year": 2023,
     "shortDescription": "The largest and most powerful rocket ever built — fully reusable two-stage system.",
-    "fullDescription": "SpaceX Starship is a fully reusable super heavy-lift launch vehicle under development by SpaceX. When combined with the Super Heavy booster, it stands 121 m tall and is the largest rocket ever built. The system is designed for crewed missions to the Moon and Mars. Both stages are designed to be fully reusable — the booster is caught by mechanical arms at the launch tower. The upper stage (Starship) uses six Raptor engines.",
+    "fullDescription": "SpaceX Starship is a fully reusable super heavy-lift launch vehicle. When combined with the Super Heavy booster, it stands 121 m tall and is the largest rocket ever built. Both stages are designed to be fully reusable — the booster is caught by mechanical arms at the launch tower. The system is designed for crewed missions to the Moon and Mars.",
     "specs": {
       "type": "Fully reusable super heavy-lift launch vehicle",
       "height": "121 m (full stack)",
@@ -651,9 +598,7 @@
       "thrust": "~74.4 MN (sea level, full stack)",
       "reusability": "Full — booster + ship"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1517976547714-720226b864c1?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f90e70f07f0454d429b2223895db11a50ec48d8c.jpg"],
     "sources": [
       { "title": "Wikipedia — SpaceX Starship", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship" }
     ]
@@ -667,7 +612,7 @@
     "country": "United States",
     "year": 1981,
     "shortDescription": "NASA's partially reusable crewed spacecraft that flew 135 missions from 1981 to 2011.",
-    "fullDescription": "The Space Shuttle was a partially reusable low Earth orbital spacecraft system operated by NASA. The system comprised a reusable orbiter, two recoverable solid rocket boosters, and an expendable external tank. It flew 135 missions, launched the Hubble Space Telescope, and served as the primary vehicle for ISS assembly. The programme retired in 2011 after the orbiter fleet accumulated 1,322 days in space.",
+    "fullDescription": "The Space Shuttle was a partially reusable low Earth orbital spacecraft system operated by NASA. The system comprised a reusable orbiter, two recoverable solid rocket boosters, and an expendable external tank. It flew 135 missions, launched the Hubble Space Telescope, and served as the primary vehicle for ISS assembly.",
     "specs": {
       "type": "Partially reusable crewed orbital spacecraft",
       "orbiterLength": "37.24 m",
@@ -678,14 +623,11 @@
       "missions": "135 total",
       "service": "1981–2011"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1541873676-a18131494184?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/STS-134_launch.jpg/800px-STS-134_launch.jpg"],
     "sources": [
       { "title": "Wikipedia — Space Shuttle", "url": "https://en.wikipedia.org/wiki/Space_Shuttle" }
     ]
   },
-
   {
     "id": "caterpillar_797f_2008",
     "name": "Caterpillar 797F",
@@ -695,7 +637,7 @@
     "country": "United States",
     "year": 2008,
     "shortDescription": "One of the largest haul trucks in the world with a 363-tonne payload capacity.",
-    "fullDescription": "The Caterpillar 797F is an ultra-class, two-axle, mechanical-drive, off-highway truck used in surface mining. With a payload capacity of 363 tonnes, it is among the largest haul trucks ever built. It is powered by a 4,000 hp Cat C175-20 diesel engine. The truck's tyres alone are 4 m tall and cost around $42,500 each. It is used primarily in copper and oil sands mines.",
+    "fullDescription": "The Caterpillar 797F is an ultra-class off-highway mining truck. With a payload capacity of 363 tonnes, it is among the largest haul trucks ever built. It is powered by a 4,000 hp Cat C175-20 diesel engine. The truck's tyres alone are 4 m tall and cost around $42,500 each. Used primarily in copper and oil sands mines.",
     "specs": {
       "type": "Ultra-class mining haul truck",
       "payloadCapacity": "363 tonnes",
@@ -706,9 +648,7 @@
       "tyreSize": "59/80R63 (4 m tall)",
       "fuelCapacity": "6,814 L"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4a1895eb6b10b57cad57f26aa0484629af6fc580.jpg"],
     "sources": [
       { "title": "Wikipedia — Caterpillar 797", "url": "https://en.wikipedia.org/wiki/Caterpillar_797" }
     ]
@@ -722,20 +662,17 @@
     "country": "Germany",
     "year": 2014,
     "shortDescription": "The world's most powerful mobile crane with a 1,200-tonne lifting capacity.",
-    "fullDescription": "The Liebherr LTM 11200-9.1 is a mobile all-terrain crane with a maximum lifting capacity of 1,200 tonnes. It is the most powerful mobile crane in the world. The main boom can extend to 100 m, and with the luffing jib attached the maximum hook height reaches 188 m. It has 9 axles and is designed for on-road travel at up to 75 km/h.",
+    "fullDescription": "The Liebherr LTM 11200-9.1 is a mobile all-terrain crane with a maximum lifting capacity of 1,200 tonnes — the most powerful mobile crane in the world. The main boom can extend to 100 m, and with the luffing jib the maximum hook height reaches 188 m. It has 9 axles and travels at up to 75 km/h.",
     "specs": {
       "type": "Mobile all-terrain crane",
       "maxLiftCapacity": "1,200 tonnes",
       "mainBoom": "100 m",
       "maxHookHeight": "188 m (with luffing jib)",
-      "engine": "Liebherr diesel",
       "axles": "9",
       "travelSpeed": "75 km/h",
       "weight": "~108 tonnes (carrier)"
     },
-    "images": [
-      "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=1600&q=80"
-    ],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Liebherr_LTM_1500-8.1.jpg/1280px-Liebherr_LTM_1500-8.1.jpg"],
     "sources": [
       { "title": "Liebherr LTM 11200-9.1 official page", "url": "https://www.liebherr.com/en/usa/products/mobile-and-crawler-cranes/mobile-cranes/ltm-mobile-cranes/ltm-11200-9.1.html" }
     ]
