@@ -21,40 +21,41 @@
   <main>
     <div class="wrap">
 
-      <div class="panel">
+      <section class="panel">
         <div class="row">
           <h1 style="margin:0">Catalog</h1>
           <div id="resultsCount" class="muted">0 results</div>
         </div>
 
         <div class="filters">
-          <input
-            id="searchInput"
-            class="input"
-            type="search"
-            placeholder="Search name, manufacturer, country..."
-            autocomplete="off"
-          />
+          <input id="searchInput" class="input" type="search" placeholder="Search name, manufacturer, country..." autocomplete="off" />
           <select id="categorySelect" class="input"></select>
           <select id="subcategorySelect" class="input"></select>
           <select id="sortSelect" class="input">
             <option value="name_asc">Name A → Z</option>
             <option value="name_desc">Name Z → A</option>
-            <option value="year_asc">Year oldest first</option>
             <option value="year_desc">Year newest first</option>
+            <option value="year_asc">Year oldest first</option>
           </select>
         </div>
 
-        <div id="fatalError" class="error"></div>
-      </div>
+        <div class="toggles">
+          <label class="toggle">
+            <input id="onlyWithPhotos" type="checkbox" />
+            <span>Only with photos</span>
+          </label>
+        </div>
 
-      <div class="grid" id="resultsGrid"></div>
+        <div id="fatalError" class="error"></div>
+      </section>
+
+      <section class="grid" id="resultsGrid"></section>
 
     </div>
   </main>
 
   <footer class="foot">
-    <div class="wrap muted">Click any card to open the full machine info page.</div>
+    <div class="wrap muted">Tip: click a card to open the full info page.</div>
   </footer>
 
   <script src="./js/app.js"></script>
