@@ -7,36 +7,54 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+
   <header class="top">
     <div class="wrap top__inner">
       <a class="brand" href="./index.html">SYSTEM ARCHIVE</a>
       <nav class="nav">
+        <a href="./index.html">Home</a>
         <a href="./catalog.html" aria-current="page">Catalog</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="panel">
-      <div class="row">
-        <h1 style="margin:0">Catalog</h1>
-        <div id="resultsCount" class="muted">0 results</div>
+  <main>
+    <div class="wrap">
+
+      <div class="panel">
+        <div class="row">
+          <h1 style="margin:0">Catalog</h1>
+          <div id="resultsCount" class="muted">0 results</div>
+        </div>
+
+        <div class="filters">
+          <input
+            id="searchInput"
+            class="input"
+            type="search"
+            placeholder="Search name, manufacturer, country..."
+            autocomplete="off"
+          />
+          <select id="categorySelect" class="input"></select>
+          <select id="subcategorySelect" class="input"></select>
+          <select id="sortSelect" class="input">
+            <option value="name_asc">Name A → Z</option>
+            <option value="name_desc">Name Z → A</option>
+            <option value="year_asc">Year oldest first</option>
+            <option value="year_desc">Year newest first</option>
+          </select>
+        </div>
+
+        <div id="fatalError" class="error"></div>
       </div>
 
-      <div class="filters">
-        <input id="searchInput" class="input" placeholder="Search name, manufacturer, country..." />
-        <select id="categorySelect" class="input"></select>
-        <select id="subcategorySelect" class="input"></select>
-      </div>
+      <div class="grid" id="resultsGrid"></div>
 
-      <div id="fatalError" class="error"></div>
-    </section>
-
-    <section class="grid" id="resultsGrid"></section>
+    </div>
   </main>
 
   <footer class="foot">
-    <div class="wrap muted">Tip: click a card to open the full info page.</div>
+    <div class="wrap muted">Click any card to open the full machine info page.</div>
   </footer>
 
   <script src="./js/app.js"></script>
