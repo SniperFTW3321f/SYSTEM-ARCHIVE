@@ -9,7 +9,7 @@ const CATEGORY_META = {
   aircraft:     { title: "Aircraft",     emoji: "✈️" },
   airships:     { title: "Airships",     emoji: "🎈" },
   ships:        { title: "Ships",        emoji: "🚢" },
-  military:     { title: "Military",     emoji: "🪖" },
+  military:     { title: "Military",     emoji: "⚔️" },
   trains:       { title: "Trains",       emoji: "🚂" },
   motorcycles:  { title: "Motorcycles",  emoji: "🏍️" },
   space:        { title: "Space",        emoji: "🚀" },
