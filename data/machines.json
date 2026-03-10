@@ -8,20 +8,18 @@
     "country": "France",
     "year": 2016,
     "shortDescription": "Mid-engine hypercar with a quad-turbo W16 engine producing 1,500 hp.",
-    "fullDescription": "The Bugatti Chiron is a mid-engine two-seater sports car that succeeded the Veyron. Powered by an 8.0-litre quad-turbocharged W16 engine producing 1,500 hp and 1,600 Nm of torque, it is electronically limited to 420 km/h. The chassis is made of carbon fibre with a double wishbone suspension at both axles. Only 500 units were planned for production.",
+    "fullDescription": "The Bugatti Chiron is a mid-engine two-seater sports car that succeeded the Veyron. Powered by an 8.0-litre quad-turbocharged W16 engine producing 1,500 hp and 1,600 Nm of torque, it is electronically limited to 420 km/h. Only 500 units were planned for production.",
     "specs": {
       "engine": "8.0L quad-turbo W16",
       "power": "1,500 hp",
       "torque": "1,600 Nm",
       "topSpeed": "420 km/h (limited)",
       "0_100": "2.4 s",
-      "0_200": "6.1 s",
       "drive": "AWD",
       "transmission": "7-speed DSG",
-      "weight": "1,995 kg",
-      "length": "4,544 mm"
+      "weight": "1,995 kg"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d41cc70d8bcdd5abbc56bab0f85f7d344c6e18c2.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Bugatti_Chiron_-_Goodwood_Festival_of_Speed_2016_-_01.jpg/1280px-Bugatti_Chiron_-_Goodwood_Festival_of_Speed_2016_-_01.jpg"],
     "sources": [{ "title": "Wikipedia — Bugatti Chiron", "url": "https://en.wikipedia.org/wiki/Bugatti_Chiron" }]
   },
   {
@@ -33,7 +31,7 @@
     "country": "Italy",
     "year": 2011,
     "shortDescription": "V12-powered flagship supercar with scissor doors and carbon fibre monocoque.",
-    "fullDescription": "The Aventador is Lamborghini's flagship V12 supercar featuring a naturally aspirated 6.5L V12. The chassis is a carbon fibre monocoque and the body panels are also carbon fibre. It replaced the Murciélago and was produced until 2022 when the Revuelto took over. The LP 700-4 variant makes 700 hp with all-wheel drive.",
+    "fullDescription": "The Aventador is Lamborghini's flagship V12 supercar. The chassis is a carbon fibre monocoque. The LP 700-4 variant makes 700 hp with all-wheel drive. It was produced until 2022.",
     "specs": {
       "engine": "6.5L naturally aspirated V12",
       "power": "700 hp (LP700-4)",
@@ -42,10 +40,9 @@
       "0_100": "2.9 s",
       "drive": "AWD",
       "transmission": "7-speed ISR",
-      "weight": "1,575 kg",
-      "length": "4,780 mm"
+      "weight": "1,575 kg"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4f45ec94de5e2c643e343ad43b6f4e0b0e80d725.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Lamborghini_Aventador_LP_700-4.jpg/1280px-Lamborghini_Aventador_LP_700-4.jpg"],
     "sources": [{ "title": "Wikipedia — Lamborghini Aventador", "url": "https://en.wikipedia.org/wiki/Lamborghini_Aventador" }]
   },
   {
@@ -57,17 +54,16 @@
     "country": "United States",
     "year": 1964,
     "shortDescription": "Le Mans-winning race car that ended Ferrari's dominance in the 1960s.",
-    "fullDescription": "The Ford GT40 was built to compete at the 24 Hours of Le Mans and defeat Ferrari. After two failed attempts, Ford won Le Mans four consecutive times from 1966 to 1969. The Mk II variant used a 7.0L V8 producing around 485 hp. The name GT40 comes from its height of exactly 40 inches (1,016 mm).",
+    "fullDescription": "The Ford GT40 was built to compete at the 24 Hours of Le Mans and defeat Ferrari. Ford won Le Mans four consecutive times from 1966 to 1969. The name GT40 comes from its height of exactly 40 inches.",
     "specs": {
       "engine": "7.0L V8 (Mk II)",
       "power": "~485 hp",
       "topSpeed": "~335 km/h",
       "drive": "RWD",
       "transmission": "4-speed manual",
-      "weight": "1,020 kg",
-      "height": "1,016 mm (40 inches)"
+      "weight": "1,020 kg"
     },
-    "images": ["https://upload.wikimedia.org/wikipedia/commons/a/a6/GT40_at_Goodwood.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/GT40_at_Goodwood.jpg/1280px-GT40_at_Goodwood.jpg"],
     "sources": [{ "title": "Wikipedia — Ford GT40", "url": "https://en.wikipedia.org/wiki/Ford_GT40" }]
   },
   {
@@ -79,7 +75,7 @@
     "country": "United States",
     "year": 2021,
     "shortDescription": "Tri-motor all-electric sedan with over 1,000 hp and a sub-2-second 0–100 time.",
-    "fullDescription": "The Tesla Model S Plaid uses three electric motors to produce over 1,020 hp. It features a 100 kWh battery and can travel up to 637 km on a single charge (WLTP). The interior has a yoke-style steering wheel and a 17-inch horizontal touchscreen. It is one of the fastest-accelerating production cars ever made.",
+    "fullDescription": "The Tesla Model S Plaid uses three electric motors to produce over 1,020 hp. It features a 100 kWh battery and can travel up to 637 km on a single charge. One of the fastest-accelerating production cars ever made.",
     "specs": {
       "motors": "3× electric (tri-motor)",
       "power": "1,020 hp",
@@ -90,7 +86,7 @@
       "drive": "AWD",
       "weight": "2,162 kg"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/98777646c2eb9323d50a14e64e11b53b6230eee3.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/2021_Tesla_Model_S_Plaid%2C_Front_8.4.21.jpg/1280px-2021_Tesla_Model_S_Plaid%2C_Front_8.4.21.jpg"],
     "sources": [{ "title": "Wikipedia — Tesla Model S", "url": "https://en.wikipedia.org/wiki/Tesla_Model_S" }]
   },
   {
@@ -102,7 +98,7 @@
     "country": "Germany",
     "year": 2021,
     "shortDescription": "Naturally aspirated track-focused sports car with a 9,000 rpm flat-six.",
-    "fullDescription": "The 992-generation GT3 uses a naturally aspirated 4.0L flat-six engine that revs to 9,000 rpm, producing 510 hp. It features a racing-derived double-wishbone front suspension and rear-axle steering. The GT3 can lap the Nürburgring Nordschleife in 6:59.927.",
+    "fullDescription": "The 992-generation GT3 uses a naturally aspirated 4.0L flat-six engine revving to 9,000 rpm, producing 510 hp. It features racing-derived suspension and can lap the Nürburgring in 6:59.",
     "specs": {
       "engine": "4.0L naturally aspirated flat-six",
       "power": "510 hp",
@@ -114,7 +110,7 @@
       "transmission": "7-speed PDK",
       "weight": "1,435 kg"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/daeb76dabd349aed50b7e117cb1b0d007227481d.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Porsche_992_GT3_%28cropped%29.jpg/1280px-Porsche_992_GT3_%28cropped%29.jpg"],
     "sources": [{ "title": "Wikipedia — Porsche 911 GT3", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT3" }]
   },
   {
@@ -126,9 +122,9 @@
     "country": "Italy",
     "year": 2013,
     "shortDescription": "Ferrari's hybrid hypercar flagship combining a V12 with HY-KERS electric system.",
-    "fullDescription": "LaFerrari is a limited-production hybrid hypercar and Ferrari's flagship of its era. It combines a 6.3L V12 with an electric motor for a combined output of 963 hp. Only 499 coupes and 210 Apertas were built. The car uses F1-derived HY-KERS (Kinetic Energy Recovery System) technology.",
+    "fullDescription": "LaFerrari combines a 6.3L V12 with an electric motor for 963 hp combined. Only 499 coupes and 210 Apertas were built. It uses F1-derived HY-KERS technology.",
     "specs": {
-      "engine": "6.3L V12 + HY-KERS electric motor",
+      "engine": "6.3L V12 + HY-KERS electric",
       "power": "963 hp (combined)",
       "topSpeed": ">350 km/h",
       "0_100": "<3.0 s",
@@ -136,7 +132,7 @@
       "weight": "1,255 kg",
       "unitsBuilt": "499 coupes"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ferrari_LaFerrari_1.jpg/1280px-Ferrari_LaFerrari_1.jpg"],
     "sources": [{ "title": "Wikipedia — LaFerrari", "url": "https://en.wikipedia.org/wiki/LaFerrari" }]
   },
   {
@@ -148,9 +144,9 @@
     "country": "United Kingdom",
     "year": 2013,
     "shortDescription": "Hybrid hypercar with extreme aero and track-focused performance.",
-    "fullDescription": "The McLaren P1 is a limited-production hybrid hypercar. It combines a twin-turbo 3.8L V8 with an electric motor for 916 hp combined. It features active aerodynamics with a large DRS rear wing and can generate over 600 kg of downforce. Only 375 were built.",
+    "fullDescription": "The McLaren P1 combines a twin-turbo 3.8L V8 with an electric motor for 916 hp combined. It features active aerodynamics and can generate over 600 kg of downforce. Only 375 were built.",
     "specs": {
-      "engine": "3.8L twin-turbo V8 + electric motor",
+      "engine": "3.8L twin-turbo V8 + electric",
       "power": "916 hp (combined)",
       "torque": "900 Nm",
       "topSpeed": "350 km/h (limited)",
@@ -159,7 +155,7 @@
       "weight": "1,395 kg",
       "unitsBuilt": "375"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/McLaren_P1.jpg/1280px-McLaren_P1.jpg"],
     "sources": [{ "title": "Wikipedia — McLaren P1", "url": "https://en.wikipedia.org/wiki/McLaren_P1" }]
   },
   {
@@ -171,7 +167,7 @@
     "country": "Sweden",
     "year": 2019,
     "shortDescription": "Modern Swedish hypercar built for both track performance and top speed.",
-    "fullDescription": "The Koenigsegg Jesko is available in two variants: the Jesko (track-focused, up to 1,600 hp on E85) and the Jesko Absolut (top speed-focused, designed to exceed 480 km/h). It uses a 5.0L twin-turbo V8 and an innovative 9-speed Light Speed Transmission (LST). Only 125 units were produced total.",
+    "fullDescription": "The Koenigsegg Jesko uses a 5.0L twin-turbo V8 and an innovative 9-speed Light Speed Transmission. Available as the track-focused Jesko (1,600 hp on E85) or the Jesko Absolut designed to exceed 480 km/h. Only 125 units total.",
     "specs": {
       "engine": "5.0L twin-turbo V8",
       "power": "1,600 hp (E85)",
@@ -181,7 +177,7 @@
       "transmission": "9-speed LST",
       "unitsBuilt": "125 total"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Koenigsegg_Jesko%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0826%29.jpg/1280px-Koenigsegg_Jesko%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0826%29.jpg"],
     "sources": [{ "title": "Wikipedia — Koenigsegg Jesko", "url": "https://en.wikipedia.org/wiki/Koenigsegg_Jesko" }]
   },
   {
@@ -192,18 +188,17 @@
     "manufacturer": "Toyota",
     "country": "Japan",
     "year": 1993,
-    "shortDescription": "Iconic 1990s Japanese sports car with a legendary inline-six engine.",
-    "fullDescription": "The fourth-generation Toyota Supra (A80) is one of the most iconic Japanese sports cars. It is powered by the 2JZ-GTE twin-turbo 3.0L inline-six, which became legendary in tuning culture for its extreme power potential. The Supra was produced from 1993 to 2002.",
+    "shortDescription": "Iconic 1990s Japanese sports car with a legendary 2JZ inline-six engine.",
+    "fullDescription": "The fourth-generation Toyota Supra is powered by the 2JZ-GTE twin-turbo inline-six, legendary in tuning culture for its extreme power potential. Produced from 1993 to 2002.",
     "specs": {
       "engine": "3.0L 2JZ-GTE twin-turbo inline-6",
       "power": "330 hp (stock)",
       "torque": "451 Nm",
       "topSpeed": "250 km/h (limited)",
-      "0_100": "~5.0 s (stock)",
       "drive": "RWD",
-      "transmission": "6-speed manual (Getrag)"
+      "transmission": "6-speed Getrag manual"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Toyota_Supra_SZ_%28A80%29_front.jpg/1280px-Toyota_Supra_SZ_%28A80%29_front.jpg"],
     "sources": [{ "title": "Wikipedia — Toyota Supra", "url": "https://en.wikipedia.org/wiki/Toyota_Supra" }]
   },
   {
@@ -215,7 +210,7 @@
     "country": "United States",
     "year": 1992,
     "shortDescription": "American V10 sports car known for raw, unfiltered driving experience.",
-    "fullDescription": "The Dodge Viper is an American sports car powered by a massive 8.4L V10 engine. It is known for its raw, unassisted driving experience with no electronic driving aids in early models. The ACR variant holds numerous track records. The Viper was produced from 1992 to 2017 with a brief revival.",
+    "fullDescription": "The Dodge Viper is an American sports car powered by a massive 8.4L V10. Known for its raw driving experience with no electronic aids in early models. The ACR variant holds numerous track records.",
     "specs": {
       "engine": "8.4L V10",
       "power": "645 hp (final gen)",
@@ -225,7 +220,7 @@
       "drive": "RWD",
       "transmission": "6-speed manual"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/SRT_Viper_GTS_blue-3.jpg/1280px-SRT_Viper_GTS_blue-3.jpg"],
     "sources": [{ "title": "Wikipedia — Dodge Viper", "url": "https://en.wikipedia.org/wiki/Dodge_Viper" }]
   },
 
@@ -238,7 +233,7 @@
     "country": "United States",
     "year": 1969,
     "shortDescription": "Wide-body long-range airliner — the iconic Jumbo Jet.",
-    "fullDescription": "The Boeing 747 is a wide-body commercial jetliner first flown in 1969. Its distinctive upper-deck hump is unmistakable. The 747-8, the latest variant, is the longest commercial aircraft ever built at 76.3 m. More than 1,500 units have been delivered worldwide.",
+    "fullDescription": "The Boeing 747 is a wide-body commercial jetliner first flown in 1969. The 747-8 is the longest commercial aircraft ever built at 76.3 m. More than 1,500 units have been delivered worldwide.",
     "specs": {
       "type": "Wide-body airliner",
       "length": "76.3 m (747-8)",
@@ -249,7 +244,7 @@
       "maxPassengers": "605",
       "crew": "2"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f6809a4a059625503e2c997020792edaa52fa005.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Boeing_747-8F_N5573L_on_final_approach_%28cropped%29.jpg/1280px-Boeing_747-8F_N5573L_on_final_approach_%28cropped%29.jpg"],
     "sources": [{ "title": "Wikipedia — Boeing 747", "url": "https://en.wikipedia.org/wiki/Boeing_747" }]
   },
   {
@@ -261,7 +256,7 @@
     "country": "Europe",
     "year": 2005,
     "shortDescription": "The world's largest passenger aircraft — a double-deck wide-body jet.",
-    "fullDescription": "The Airbus A380 is a double-deck, wide-body, four-engine jet airliner and the world's largest passenger aircraft. It can carry up to 853 passengers in an all-economy configuration or 555 in a typical three-class layout. First delivered in 2007, it operates on high-density long-haul routes.",
+    "fullDescription": "The Airbus A380 is the world's largest passenger aircraft. It can carry up to 853 passengers in all-economy configuration. First delivered in 2007, it operates on high-density long-haul routes.",
     "specs": {
       "type": "Wide-body double-deck airliner",
       "length": "72.72 m",
@@ -272,7 +267,7 @@
       "maxPassengers": "853 (all-economy)",
       "crew": "2"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/A380_first_flight.jpg/1280px-A380_first_flight.jpg"],
     "sources": [{ "title": "Wikipedia — Airbus A380", "url": "https://en.wikipedia.org/wiki/Airbus_A380" }]
   },
   {
@@ -284,7 +279,7 @@
     "country": "France / United Kingdom",
     "year": 1969,
     "shortDescription": "Supersonic passenger jet that crossed the Atlantic in under 3.5 hours.",
-    "fullDescription": "Concorde was a turbojet-powered supersonic passenger airliner operated by British Airways and Air France from 1976 to 2003. It cruised at Mach 2.04 at 18,300 m altitude. The London–New York route took only 3h 30min. Only 20 aircraft were built.",
+    "fullDescription": "Concorde operated from 1976 to 2003 at Mach 2.04 at 18,300 m altitude. The London–New York route took only 3h 30min. Only 20 aircraft were built.",
     "specs": {
       "type": "Supersonic airliner",
       "cruisingSpeed": "Mach 2.04 (~2,179 km/h)",
@@ -295,7 +290,7 @@
       "length": "61.66 m",
       "wingspan": "25.6 m"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/b7d45cb66f8161141799eed0d65401286d7fda9a.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Concorde_at_Filton.jpg/1280px-Concorde_at_Filton.jpg"],
     "sources": [{ "title": "Wikipedia — Concorde", "url": "https://en.wikipedia.org/wiki/Concorde" }]
   },
   {
@@ -307,7 +302,7 @@
     "country": "United States",
     "year": 1964,
     "shortDescription": "Mach 3+ strategic reconnaissance aircraft — the fastest air-breathing jet ever built.",
-    "fullDescription": "The SR-71 Blackbird holds the record as the fastest air-breathing manned aircraft at Mach 3.3+. Its airframe was made primarily of titanium to withstand aero-heating. Operational from 1966 to 1998, it was used for high-altitude strategic reconnaissance.",
+    "fullDescription": "The SR-71 holds the record as the fastest air-breathing manned aircraft at Mach 3.3+. Its airframe was made primarily of titanium. Operational from 1966 to 1998.",
     "specs": {
       "type": "Strategic reconnaissance aircraft",
       "topSpeed": "Mach 3.3+ (~3,540 km/h)",
@@ -318,7 +313,7 @@
       "length": "32.74 m",
       "wingspan": "16.94 m"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/fe673e63fcdebf3c20db6f49b7eab281c4178ce1.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Lockheed_SR-71_Blackbird.jpg/1280px-Lockheed_SR-71_Blackbird.jpg"],
     "sources": [{ "title": "Wikipedia — SR-71 Blackbird", "url": "https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird" }]
   },
   {
@@ -330,7 +325,7 @@
     "country": "United States",
     "year": 1997,
     "shortDescription": "5th-generation stealth air superiority fighter with supercruise capability.",
-    "fullDescription": "The F-22 Raptor is a fifth-generation stealth fighter combining supercruise, supermaneuverability, and sensor fusion. It entered USAF service in 2005 and can cruise at Mach 1.82 without afterburners.",
+    "fullDescription": "The F-22 Raptor is a fifth-generation stealth fighter combining supercruise, supermaneuverability, and sensor fusion. Entered USAF service in 2005.",
     "specs": {
       "type": "Stealth air superiority fighter",
       "topSpeed": "Mach 2.25+",
@@ -341,7 +336,7 @@
       "length": "18.92 m",
       "wingspan": "13.56 m"
     },
-    "images": ["https://upload.wikimedia.org/wikipedia/commons/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg/1280px-F-22_Raptor_edit1_%28cropped%29.jpg"],
     "sources": [{ "title": "Wikipedia — F-22 Raptor", "url": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor" }]
   },
   {
@@ -352,18 +347,18 @@
     "manufacturer": "General Dynamics / Lockheed Martin",
     "country": "United States",
     "year": 1974,
-    "shortDescription": "Multi-role lightweight fighter widely used worldwide.",
-    "fullDescription": "The F-16 is one of the most successful and widely exported fighter aircraft ever built, with over 4,600 produced. It introduced fly-by-wire controls and a side-stick controller. Used by 25+ air forces worldwide.",
+    "shortDescription": "Multi-role lightweight fighter widely used by 25+ air forces worldwide.",
+    "fullDescription": "The F-16 is one of the most successful and widely exported fighter aircraft ever built, with over 4,600 produced. It introduced fly-by-wire controls and a side-stick controller.",
     "specs": {
       "type": "Multi-role fighter",
       "topSpeed": "Mach 2.05",
-      "engine": "1× F110-GE-129 or F100-PW-229",
+      "engine": "1× F110-GE-129",
       "range": "4,220 km (ferry)",
       "crew": "1",
       "length": "15.06 m",
       "wingspan": "9.96 m"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/F-16_Fighting_Falcon_%282151950948%29.jpg/1280px-F-16_Fighting_Falcon_%282151950948%29.jpg"],
     "sources": [{ "title": "Wikipedia — F-16", "url": "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon" }]
   },
   {
@@ -375,7 +370,7 @@
     "country": "Soviet Union / Russia",
     "year": 1977,
     "shortDescription": "Twin-engine Soviet-era air superiority fighter widely exported.",
-    "fullDescription": "The MiG-29 was designed to counter new Western fighters like the F-16 and F/A-18. It features excellent maneuverability and IRST sensors. It has been exported to over 30 countries and remains in service in various upgraded forms.",
+    "fullDescription": "The MiG-29 was designed to counter new Western fighters. It features excellent maneuverability and IRST sensors. Exported to over 30 countries.",
     "specs": {
       "type": "Air superiority fighter",
       "topSpeed": "Mach 2.25",
@@ -385,7 +380,7 @@
       "length": "17.32 m",
       "wingspan": "11.36 m"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MiG-29_2547.JPG/1280px-MiG-29_2547.JPG"],
     "sources": [{ "title": "Wikipedia — MiG-29", "url": "https://en.wikipedia.org/wiki/Mikoyan_MiG-29" }]
   },
   {
@@ -397,7 +392,7 @@
     "country": "United States",
     "year": 1952,
     "shortDescription": "Long-serving American strategic bomber still operational today.",
-    "fullDescription": "The B-52 Stratofortress has been in USAF service since 1955 and is expected to continue until 2050+, making it the longest-serving military aircraft ever. It can carry nuclear and conventional weapons and has participated in every major US conflict since Vietnam.",
+    "fullDescription": "The B-52 has been in USAF service since 1955 and is expected to continue until 2050+, making it the longest-serving military aircraft ever. It has participated in every major US conflict since Vietnam.",
     "specs": {
       "type": "Strategic bomber",
       "topSpeed": "1,046 km/h",
@@ -408,7 +403,7 @@
       "wingspan": "56.39 m",
       "length": "48.5 m"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/B-52_Stratofortress.jpg/1280px-B-52_Stratofortress.jpg"],
     "sources": [{ "title": "Wikipedia — B-52", "url": "https://en.wikipedia.org/wiki/Boeing_B-52_Stratofortress" }]
   },
 
@@ -421,7 +416,7 @@
     "country": "Germany",
     "year": 1936,
     "shortDescription": "The largest aircraft ever built — hydrogen-filled transatlantic airship.",
-    "fullDescription": "At 245 m, LZ 129 Hindenburg remains the largest aircraft ever built by volume. It flew transatlantic routes until it caught fire and was destroyed at Lakehurst, NJ on May 6, 1937, killing 36 people.",
+    "fullDescription": "At 245 m, LZ 129 Hindenburg remains the largest aircraft ever built by volume. It caught fire at Lakehurst, NJ on May 6, 1937, killing 36 people.",
     "specs": {
       "type": "Rigid airship",
       "length": "245 m",
@@ -444,7 +439,7 @@
     "country": "Germany",
     "year": 1928,
     "shortDescription": "First aircraft to complete a passenger-carrying circumnavigation of the globe.",
-    "fullDescription": "LZ 127 Graf Zeppelin completed 590 flights and over 1.7 million km in its 9-year operational life. In 1929 it became the first aircraft to circumnavigate the Earth with passengers aboard.",
+    "fullDescription": "LZ 127 Graf Zeppelin completed 590 flights and over 1.7 million km in 9 years. In 1929 it became the first aircraft to circumnavigate the Earth with passengers.",
     "specs": {
       "type": "Rigid airship",
       "length": "236.6 m",
@@ -468,7 +463,7 @@
     "country": "United Kingdom",
     "year": 1912,
     "shortDescription": "Olympic-class ocean liner that sank on her maiden voyage in 1912.",
-    "fullDescription": "RMS Titanic sank on 15 April 1912 after striking an iceberg on her maiden voyage. Over 1,500 of the 2,224 aboard died. She was the largest ship afloat at the time of her launch.",
+    "fullDescription": "RMS Titanic sank on 15 April 1912 after striking an iceberg. Over 1,500 of the 2,224 aboard died. She was the largest ship afloat at the time of her launch.",
     "specs": {
       "type": "Ocean liner",
       "length": "269.1 m",
@@ -479,7 +474,7 @@
       "passengers": "2,435 (capacity)",
       "crew": "892"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d962c0c364b252104784516461792c1b0099dd8e.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/1280px-RMS_Titanic_3.jpg"],
     "sources": [{ "title": "Wikipedia — Titanic", "url": "https://en.wikipedia.org/wiki/Titanic" }]
   },
   {
@@ -491,7 +486,7 @@
     "country": "United States",
     "year": 1975,
     "shortDescription": "Lead ship of the Nimitz class — nuclear-powered supercarrier.",
-    "fullDescription": "USS Nimitz is powered by two Westinghouse A4W nuclear reactors. The ship carries 90+ aircraft and over 6,000 crew. Nimitz-class carriers displace over 100,000 tonnes and have been the backbone of US naval aviation since 1975.",
+    "fullDescription": "USS Nimitz is powered by two Westinghouse A4W nuclear reactors. The ship carries 90+ aircraft and over 6,000 crew.",
     "specs": {
       "type": "Nuclear-powered aircraft carrier",
       "length": "332.8 m",
@@ -514,7 +509,7 @@
     "country": "Germany",
     "year": 1940,
     "shortDescription": "Largest German WWII battleship — sunk after just one mission.",
-    "fullDescription": "Bismarck sank HMS Hood before being hunted down and sunk by the Royal Navy on 27 May 1941, only 8 days after leaving port. She and her sister Tirpitz were the largest battleships Germany ever built.",
+    "fullDescription": "Bismarck sank HMS Hood before being hunted down and sunk by the Royal Navy on 27 May 1941, only 8 days after leaving port.",
     "specs": {
       "type": "Battleship",
       "length": "251 m",
@@ -537,7 +532,7 @@
     "country": "Japan",
     "year": 1940,
     "shortDescription": "The heaviest and most powerfully armed battleship ever constructed.",
-    "fullDescription": "Yamato was the lead ship of her class and the heaviest battleship ever built at 72,000 tonnes fully loaded. She carried nine 46 cm guns — the largest naval guns ever fitted to a warship. She was sunk by US aircraft on 7 April 1945 during Operation Ten-Go.",
+    "fullDescription": "Yamato was the heaviest battleship ever built at 72,000 tonnes fully loaded. She carried nine 46 cm guns — the largest naval guns ever on a warship. Sunk by US aircraft on 7 April 1945.",
     "specs": {
       "type": "Battleship",
       "length": "263 m",
@@ -548,7 +543,7 @@
       "armour": "650 mm (turret face)",
       "crew": "~2,778"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Yamato_under_air_attack_April_1945.jpg/1280px-Yamato_under_air_attack_April_1945.jpg"],
     "sources": [{ "title": "Wikipedia — Yamato", "url": "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato" }]
   },
 
@@ -561,7 +556,7 @@
     "country": "United States",
     "year": 1980,
     "shortDescription": "American main battle tank with gas turbine engine and composite armour.",
-    "fullDescription": "The M1 Abrams is a third-generation MBT powered by a Honeywell AGT1500 turbine engine. It features advanced composite armour and has seen combat in the Gulf War and Iraq War. The M1A2 SEP v3 is the current variant.",
+    "fullDescription": "The M1 Abrams is a third-generation MBT powered by a Honeywell AGT1500 turbine engine. It features advanced composite armour and has seen combat in the Gulf War and Iraq War.",
     "specs": {
       "type": "Main battle tank",
       "weight": "54.4–73.6 tonnes",
@@ -570,8 +565,7 @@
       "power": "1,500 hp",
       "topSpeed": "67 km/h (road)",
       "mainArmament": "120 mm M256 smoothbore gun",
-      "crew": "4",
-      "armour": "Chobham-style composite + depleted uranium"
+      "crew": "4"
     },
     "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/M1A2_Abrams.jpg/1280px-M1A2_Abrams.jpg"],
     "sources": [{ "title": "Wikipedia — M1 Abrams", "url": "https://en.wikipedia.org/wiki/M1_Abrams" }]
@@ -584,8 +578,8 @@
     "manufacturer": "Krauss-Maffei Wegmann",
     "country": "Germany",
     "year": 1979,
-    "shortDescription": "German main battle tank exported to over 20 countries.",
-    "fullDescription": "The Leopard 2 is a widely exported German MBT first introduced in 1979. It features a 120 mm Rheinmetall smoothbore gun and advanced composite armour. The A7 variant is the most modern. It is used by 18+ nations including many NATO members.",
+    "shortDescription": "German main battle tank exported to over 18 NATO nations.",
+    "fullDescription": "The Leopard 2 is a widely exported German MBT first introduced in 1979. It features a 120 mm Rheinmetall smoothbore gun and advanced composite armour. Used by 18+ nations.",
     "specs": {
       "type": "Main battle tank",
       "weight": "62.5 tonnes (A7)",
@@ -593,10 +587,10 @@
       "engine": "MTU MB 873 Ka-501 diesel",
       "power": "1,500 hp",
       "topSpeed": "72 km/h (road)",
-      "mainArmament": "120 mm Rheinmetall L/44 smoothbore",
+      "mainArmament": "120 mm Rheinmetall L/44",
       "crew": "4"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leopard2A5_001.jpg/1280px-Leopard2A5_001.jpg"],
     "sources": [{ "title": "Wikipedia — Leopard 2", "url": "https://en.wikipedia.org/wiki/Leopard_2" }]
   },
   {
@@ -608,7 +602,7 @@
     "country": "Russia",
     "year": 1992,
     "shortDescription": "Russian main battle tank derived from the T-72 family.",
-    "fullDescription": "The T-90 is a Russian MBT derived from the T-72. It features the Kontakt-5 explosive reactive armour and Shtora-1 active protection system. The T-90M Proryv is the most advanced current variant. Over 1,000 are in Russian service.",
+    "fullDescription": "The T-90 is a Russian MBT derived from the T-72. It features Kontakt-5 explosive reactive armour and the Shtora-1 active protection system. The T-90M Proryv is the most advanced current variant.",
     "specs": {
       "type": "Main battle tank",
       "weight": "46.5 tonnes",
@@ -619,7 +613,7 @@
       "crew": "3",
       "armour": "Composite + ERA"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/T-90_in_Nizhny_Tagil_2011.jpg/1280px-T-90_in_Nizhny_Tagil_2011.jpg"],
     "sources": [{ "title": "Wikipedia — T-90", "url": "https://en.wikipedia.org/wiki/T-90" }]
   },
   {
@@ -631,7 +625,7 @@
     "country": "Germany",
     "year": 1942,
     "shortDescription": "WWII German heavy tank feared for its powerful 88 mm gun.",
-    "fullDescription": "The Tiger I was a German heavy tank that could penetrate any Allied tank at combat ranges. About 1,347 were produced from 1942–1944. Despite its power, it was mechanical complex and expensive to produce.",
+    "fullDescription": "The Tiger I could penetrate any Allied tank at combat ranges. About 1,347 were produced from 1942–1944. Despite its power, it was mechanically complex and expensive.",
     "specs": {
       "type": "Heavy tank",
       "weight": "54 tonnes",
@@ -655,18 +649,18 @@
     "country": "United States",
     "year": 1975,
     "shortDescription": "Primary US Army attack helicopter armed with Hellfire missiles.",
-    "fullDescription": "The AH-64 Apache is the US Army's primary attack helicopter. It features a Target Acquisition Designation Sight and Pilot Night Vision Sensor for all-weather operation. The AH-64E Guardian is the current variant.",
+    "fullDescription": "The AH-64 Apache is the US Army's primary attack helicopter. It features a Target Acquisition Designation Sight and Pilot Night Vision Sensor for all-weather operation.",
     "specs": {
       "type": "Attack helicopter",
       "engines": "2× General Electric T700-GE-701D",
       "power": "2× 1,994 shp",
       "topSpeed": "293 km/h",
       "range": "476 km",
-      "armament": "M230 30mm chain gun, Hellfire missiles, Hydra 70 rockets",
+      "armament": "M230 30mm chain gun, Hellfire missiles",
       "crew": "2",
       "length": "17.73 m"
     },
-    "images": ["https://upload.wikimedia.org/wikipedia/commons/6/66/AH-64D_Apache_Longbow.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/AH-64D_Apache_Longbow.jpg/1280px-AH-64D_Apache_Longbow.jpg"],
     "sources": [{ "title": "Wikipedia — AH-64 Apache", "url": "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache" }]
   },
   {
@@ -678,7 +672,7 @@
     "country": "United States",
     "year": 1989,
     "shortDescription": "Stealth flying-wing strategic bomber with intercontinental range.",
-    "fullDescription": "The B-2 Spirit is an American stealth strategic bomber with a flying-wing design. Only 21 were built at ~$2.1 billion each. It can deliver nuclear and conventional weapons anywhere on Earth unrefuelled.",
+    "fullDescription": "The B-2 Spirit is a stealth strategic bomber with a flying-wing design. Only 21 were built at ~$2.1 billion each. It can deliver nuclear and conventional weapons anywhere on Earth unrefuelled.",
     "specs": {
       "type": "Stealth strategic bomber",
       "engines": "4× General Electric F118-GE-100",
@@ -701,9 +695,9 @@
     "country": "United States",
     "year": 2001,
     "shortDescription": "Medium-altitude long-endurance hunter-killer UAV.",
-    "fullDescription": "The MQ-9 Reaper is a remotely piloted aircraft used for reconnaissance and strike missions. It can carry Hellfire missiles and GBU-12 bombs. With an endurance of 27+ hours, it can loiter over a target area for extended periods.",
+    "fullDescription": "The MQ-9 Reaper is used for reconnaissance and strike missions. It can carry Hellfire missiles and has an endurance of 27+ hours.",
     "specs": {
-      "type": "MALE UAV (unmanned aerial vehicle)",
+      "type": "MALE UAV",
       "engine": "Honeywell TPE331-10 turboprop",
       "topSpeed": "482 km/h",
       "endurance": "27 hours",
@@ -712,7 +706,7 @@
       "wingspan": "20 m",
       "crew": "0 (remotely piloted)"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/MQ-9_Reaper_in_flight_%28MQ-9_Reaper_cropped%29.jpg/1280px-MQ-9_Reaper_in_flight_%28MQ-9_Reaper_cropped%29.jpg"],
     "sources": [{ "title": "Wikipedia — MQ-9 Reaper", "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-9_Reaper" }]
   },
 
@@ -725,37 +719,36 @@
     "country": "Japan",
     "year": 2007,
     "shortDescription": "High-speed bullet train on Japan's Tokaido and Sanyo Shinkansen lines.",
-    "fullDescription": "The N700 Series features aerodynamic nose cones, active suspension, and regenerative braking. The N700S variant uses next-gen SiC traction motors and can operate during earthquakes via onboard batteries.",
+    "fullDescription": "The N700 Series features aerodynamic nose cones, active suspension, and regenerative braking. The N700S variant uses next-gen SiC traction motors.",
     "specs": {
       "type": "High-speed EMU",
       "topSpeed": "320 km/h",
       "length": "414.8 m (16 cars)",
       "cars": "16",
       "capacity": "1,323 passengers",
-      "propulsion": "Electric (25 kV AC)",
-      "traction": "64× 305 kW motors"
+      "propulsion": "Electric (25 kV AC)"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d50aa704c89eba4acc8ea587313475564daaaeb0.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/N700S_Shinkansen_J2_20200701.jpg/1280px-N700S_Shinkansen_J2_20200701.jpg"],
     "sources": [{ "title": "Wikipedia — Shinkansen N700", "url": "https://en.wikipedia.org/wiki/N700_Series_Shinkansen" }]
   },
   {
     "id": "tgv_1981",
-    "name": "TGV (Train à Grande Vitesse)",
+    "name": "TGV",
     "category": "trains",
     "subcategory": "high-speed rail",
     "manufacturer": "Alstom",
     "country": "France",
     "year": 1981,
-    "shortDescription": "French high-speed rail system — holds the wheeled train speed record.",
-    "fullDescription": "The TGV (Train à Grande Vitesse) entered service in 1981 and set the world rail speed record of 574.8 km/h in 2007. It operates across France and into neighboring countries. The latest Avelia Horizon is designed for 350 km/h service.",
+    "shortDescription": "French high-speed rail system — holds the wheeled train speed record of 574.8 km/h.",
+    "fullDescription": "The TGV entered service in 1981 and set the world rail speed record of 574.8 km/h in 2007. It operates across France and into neighboring countries.",
     "specs": {
       "type": "High-speed articulated train",
       "topSpeed": "574.8 km/h (record)",
       "operationalSpeed": "320 km/h",
-      "propulsion": "Electric (25 kV AC or 1.5 kV DC)",
+      "propulsion": "Electric (25 kV AC / 1.5 kV DC)",
       "capacity": "Up to 1,000 passengers (duplex)"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/TGV_Duplex_rame_201_Lyon.jpg/1280px-TGV_Duplex_rame_201_Lyon.jpg"],
     "sources": [{ "title": "Wikipedia — TGV", "url": "https://en.wikipedia.org/wiki/TGV" }]
   },
   {
@@ -767,14 +760,13 @@
     "country": "Japan",
     "year": 2003,
     "shortDescription": "Fastest land vehicle ever tested — 603 km/h world record in 2015.",
-    "fullDescription": "The SCMaglev L0 uses superconducting magnetic levitation. On 21 April 2015 it set the world land speed record for a rail vehicle at 603 km/h. A commercial Tokyo–Nagoya line is planned.",
+    "fullDescription": "The SCMaglev L0 set the world land speed record for a rail vehicle at 603 km/h on 21 April 2015. A commercial Tokyo–Nagoya line is planned.",
     "specs": {
       "type": "Superconducting maglev",
       "topSpeed": "603 km/h (test record)",
       "operationalSpeed": "500 km/h (planned)",
       "propulsion": "Linear induction motor",
-      "levitation": "~100 mm",
-      "Tokyo_Nagoya": "40 min (planned)"
+      "levitation": "~100 mm"
     },
     "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/L0-Series-Maglev.jpg/1280px-L0-Series-Maglev.jpg"],
     "sources": [{ "title": "Wikipedia — SCMaglev", "url": "https://en.wikipedia.org/wiki/SCMaglev" }]
@@ -788,7 +780,7 @@
     "country": "United States",
     "year": 1941,
     "shortDescription": "One of the largest and most powerful steam locomotives ever built.",
-    "fullDescription": "The Big Boy is an articulated 4-8-8-4 steam locomotive built by ALCO for Union Pacific. At 40 m long and 540 tonnes, it was designed to haul heavy freight over the Wasatch Mountains. Eight still survive, with several returned to operational condition.",
+    "fullDescription": "The Big Boy is an articulated 4-8-8-4 steam locomotive built for Union Pacific. At 40 m long and 540 tonnes, it was designed to haul heavy freight over the Wasatch Mountains.",
     "specs": {
       "type": "Articulated steam locomotive",
       "wheel_arrangement": "4-8-8-4",
@@ -798,7 +790,7 @@
       "topSpeed": "129 km/h",
       "unitsBuilt": "25"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/UP_4014_2019_restored.jpg/1280px-UP_4014_2019_restored.jpg"],
     "sources": [{ "title": "Wikipedia — Big Boy", "url": "https://en.wikipedia.org/wiki/Union_Pacific_Big_Boy" }]
   },
 
@@ -811,16 +803,16 @@
     "country": "Italy",
     "year": 2018,
     "shortDescription": "Italian V4 superbike derived directly from MotoGP technology.",
-    "fullDescription": "The Panigale V4 uses a 1,103cc Desmosedici Stradale V4 engine derived from Ducati's MotoGP machine. It features a 6-axis IMU, cornering ABS, and traction control. The V4 R produces 221 hp for racing homologation.",
+    "fullDescription": "The Panigale V4 uses a 1,103cc Desmosedici Stradale V4 derived from Ducati's MotoGP machine. It features a 6-axis IMU, cornering ABS, and traction control.",
     "specs": {
       "engine": "1,103cc Desmosedici Stradale V4",
-      "power": "214 hp (standard)",
+      "power": "214 hp",
       "torque": "124 Nm",
       "topSpeed": "299 km/h",
       "weight": "195 kg (dry)",
-      "electronics": "6-axis IMU, cornering ABS, traction control"
+      "electronics": "6-axis IMU, cornering ABS"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0ed5b9d972e7d66d0bb4e05707ed8982e12cf33f.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2018_Ducati_Panigale_V4S_%2843128569700%29.jpg/1280px-2018_Ducati_Panigale_V4S_%2843128569700%29.jpg"],
     "sources": [{ "title": "Wikipedia — Ducati Panigale V4", "url": "https://en.wikipedia.org/wiki/Ducati_Panigale_V4" }]
   },
   {
@@ -832,14 +824,13 @@
     "country": "Japan",
     "year": 2015,
     "shortDescription": "Supercharged track-only motorcycle — fastest production bike ever tested.",
-    "fullDescription": "The Ninja H2R is powered by a supercharged 998cc inline-four making 310 hp in ram-air conditions. Designed jointly by Kawasaki's aerospace, jet engine, and motorcycle divisions. Tested at 400 km/h, it is not street legal.",
+    "fullDescription": "The Ninja H2R is powered by a supercharged 998cc inline-four making 310 hp. Designed by Kawasaki's aerospace, jet engine, and motorcycle divisions. Tested at 400 km/h, not street legal.",
     "specs": {
       "engine": "998cc supercharged inline-4",
       "power": "310 hp (with ram-air)",
       "torque": "165 Nm",
       "topSpeed": "400 km/h (tested)",
       "weight": "216 kg (dry)",
-      "supercharger": "Kawasaki centrifugal",
       "streetLegal": "No (track only)"
     },
     "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Kawasaki_Ninja_H2.jpg/1280px-Kawasaki_Ninja_H2.jpg"],
@@ -854,16 +845,16 @@
     "country": "Japan",
     "year": 1998,
     "shortDescription": "Iconic litre-class superbike platform with MotoGP-derived tech.",
-    "fullDescription": "The YZF-R1 debuted in 1998 and redefined the litre-class superbike segment. The current M variant uses a crossplane inline-four with a 6-axis IMU and semi-active Öhlins suspension borrowed from Yamaha's MotoGP programme.",
+    "fullDescription": "The YZF-R1 debuted in 1998 and redefined the litre-class superbike. The current M variant uses a crossplane inline-four with a 6-axis IMU and semi-active Öhlins suspension from Yamaha's MotoGP programme.",
     "specs": {
       "engine": "998cc crossplane inline-4",
       "power": "200 hp (R1M)",
       "torque": "113 Nm",
       "topSpeed": "299 km/h",
-      "weight": "199 kg (R1M, dry)",
+      "weight": "199 kg (dry)",
       "electronics": "6-axis IMU, launch control, slide control"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/2015_Yamaha_YZF-R1M%2C_front_8.3.15.jpg/1280px-2015_Yamaha_YZF-R1M%2C_front_8.3.15.jpg"],
     "sources": [{ "title": "Wikipedia — Yamaha YZF-R1", "url": "https://en.wikipedia.org/wiki/Yamaha_YZF-R1" }]
   },
   {
@@ -882,7 +873,7 @@
       "type": "Cruiser",
       "era": "1948–1965"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Harley-Davidson_Panhead.jpg/1280px-Harley-Davidson_Panhead.jpg"],
     "sources": [{ "title": "Wikipedia — Harley-Davidson Panhead", "url": "https://en.wikipedia.org/wiki/Harley-Davidson_Panhead_engine" }]
   },
 
@@ -903,10 +894,9 @@
       "mass": "2,970,000 kg (fuelled)",
       "LEO_payload": "140,000 kg",
       "TLI_payload": "48,600 kg",
-      "stages": "3",
-      "engines": "5× F-1 (stage 1) + 5× J-2 (stage 2) + 1× J-2 (stage 3)"
+      "stages": "3"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/93cfc5c461663570f77948b398f5061d43671d4c.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ap11-S69-31742.jpg/800px-Ap11-S69-31742.jpg"],
     "sources": [{ "title": "Wikipedia — Saturn V", "url": "https://en.wikipedia.org/wiki/Saturn_V" }]
   },
   {
@@ -918,7 +908,7 @@
     "country": "United States",
     "year": 2023,
     "shortDescription": "Largest rocket ever built — fully reusable two-stage system for Moon and Mars.",
-    "fullDescription": "SpaceX Starship stands 121 m tall and is the largest rocket ever built. Both stages are fully reusable — the booster is caught by mechanical tower arms. Designed for crewed Moon and Mars missions.",
+    "fullDescription": "SpaceX Starship stands 121 m tall and is the largest rocket ever built. Both stages are fully reusable. Designed for crewed Moon and Mars missions.",
     "specs": {
       "type": "Fully reusable super heavy-lift launch vehicle",
       "height": "121 m (full stack)",
@@ -926,10 +916,9 @@
       "LEO_payload": "150,000 kg (expendable)",
       "propellant": "Liquid oxygen / liquid methane",
       "engines": "33× Raptor (booster) + 6× Raptor (ship)",
-      "thrust": "~74.4 MN (full stack)",
       "reusability": "Full — booster + ship"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f90e70f07f0454d429b2223895db11a50ec48d8c.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SpaceX_Starship_IFT-4_booster_catch.jpg/800px-SpaceX_Starship_IFT-4_booster_catch.jpg"],
     "sources": [{ "title": "Wikipedia — SpaceX Starship", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship" }]
   },
   {
@@ -941,16 +930,16 @@
     "country": "United States",
     "year": 2010,
     "shortDescription": "Orbital rocket with a reusable first stage — over 200 successful launches.",
-    "fullDescription": "Falcon 9 is a partially reusable medium-lift launch vehicle. Its first stage lands propulsively for reuse. It has been the world's most-launched orbital rocket since 2018 and carries crew to the ISS via Dragon capsule.",
+    "fullDescription": "Falcon 9 is a partially reusable medium-lift launch vehicle. Its first stage lands propulsively for reuse. It has been the world's most-launched orbital rocket since 2018.",
     "specs": {
       "type": "Partially reusable orbital launch vehicle",
       "height": "70 m",
       "diameter": "3.7 m",
       "LEO_payload": "22,800 kg",
-      "engines": "9× Merlin 1D (stage 1) + 1× Merlin Vacuum (stage 2)",
+      "engines": "9× Merlin 1D (stage 1)",
       "reusability": "First stage (booster)"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Falcon_9_rocket_family.jpg/800px-Falcon_9_rocket_family.jpg"],
     "sources": [{ "title": "Wikipedia — Falcon 9", "url": "https://en.wikipedia.org/wiki/Falcon_9" }]
   },
   {
@@ -962,14 +951,13 @@
     "country": "United States",
     "year": 1981,
     "shortDescription": "NASA's partially reusable crewed spacecraft — 135 missions from 1981 to 2011.",
-    "fullDescription": "The Space Shuttle flew 135 missions, launched the Hubble Space Telescope, and assembled the ISS. The orbiter fleet accumulated 1,322 days in space. It retired in 2011.",
+    "fullDescription": "The Space Shuttle flew 135 missions, launched the Hubble Space Telescope, and assembled the ISS. It retired in 2011 after 30 years of service.",
     "specs": {
       "type": "Partially reusable crewed orbital spacecraft",
       "orbiterLength": "37.24 m",
       "wingspan": "23.79 m",
       "LEO_payload": "24,400 kg",
       "crew": "Up to 8",
-      "engines": "3× RS-25 SSMEs + 2× SRBs",
       "missions": "135 total",
       "service": "1981–2011"
     },
@@ -986,7 +974,7 @@
     "country": "United States",
     "year": 2008,
     "shortDescription": "One of the largest haul trucks ever built — 363-tonne payload capacity.",
-    "fullDescription": "The Caterpillar 797F is an ultra-class off-highway mining truck with a 363-tonne payload. Powered by a 4,000 hp Cat C175-20 V20 diesel engine, its tyres alone stand 4 m tall and cost ~$42,500 each.",
+    "fullDescription": "The Caterpillar 797F has a 363-tonne payload and is powered by a 4,000 hp Cat C175-20 V20 diesel engine. Its tyres alone stand 4 m tall and cost ~$42,500 each.",
     "specs": {
       "type": "Ultra-class mining haul truck",
       "payloadCapacity": "363 tonnes",
@@ -997,7 +985,7 @@
       "tyreSize": "59/80R63 (4 m tall)",
       "fuelCapacity": "6,814 L"
     },
-    "images": ["https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4a1895eb6b10b57cad57f26aa0484629af6fc580.jpg"],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Caterpillar_797B.jpg/1280px-Caterpillar_797B.jpg"],
     "sources": [{ "title": "Wikipedia — Caterpillar 797", "url": "https://en.wikipedia.org/wiki/Caterpillar_797" }]
   },
   {
@@ -1009,18 +997,17 @@
     "country": "Germany",
     "year": 2014,
     "shortDescription": "The world's most powerful mobile crane — 1,200-tonne lifting capacity.",
-    "fullDescription": "The LTM 11200-9.1 has a maximum lifting capacity of 1,200 tonnes and a main boom of 100 m. With luffing jib the maximum hook height is 188 m. It has 9 axles and can travel on roads at 75 km/h.",
+    "fullDescription": "The LTM 11200-9.1 has a 1,200-tonne maximum lifting capacity, a 100 m main boom, and a maximum hook height of 188 m. It has 9 axles and travels at 75 km/h.",
     "specs": {
       "type": "Mobile all-terrain crane",
       "maxLiftCapacity": "1,200 tonnes",
       "mainBoom": "100 m",
       "maxHookHeight": "188 m (with luffing jib)",
       "axles": "9",
-      "travelSpeed": "75 km/h",
-      "weight": "~108 tonnes (carrier)"
+      "travelSpeed": "75 km/h"
     },
     "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Liebherr_LTM_1500-8.1.jpg/1280px-Liebherr_LTM_1500-8.1.jpg"],
-    "sources": [{ "title": "Liebherr official page", "url": "https://www.liebherr.com/en/usa/products/mobile-and-crawler-cranes/mobile-cranes/ltm-mobile-cranes/ltm-11200-9.1.html" }]
+    "sources": [{ "title": "Liebherr official page", "url": "https://www.liebherr.com" }]
   },
   {
     "id": "komatsu_d575a",
@@ -1031,7 +1018,7 @@
     "country": "Japan",
     "year": 1991,
     "shortDescription": "One of the largest bulldozers ever built — used in large-scale mining.",
-    "fullDescription": "The Komatsu D575A Super Dozer is among the largest production bulldozers ever made. It is used in large open-pit mines for pushing massive amounts of material. Its blade capacity is over 96 m³.",
+    "fullDescription": "The Komatsu D575A is among the largest production bulldozers ever made, used in open-pit mines. Its blade capacity is over 96 m³.",
     "specs": {
       "type": "Crawler bulldozer",
       "weight": "~152 tonnes",
@@ -1040,7 +1027,7 @@
       "bladeCapacity": "96.1 m³",
       "topSpeed": "11 km/h"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Komatsu_D575A-3_Super_Dozer.jpg/1280px-Komatsu_D575A-3_Super_Dozer.jpg"],
     "sources": [{ "title": "Wikipedia — Komatsu D575A", "url": "https://en.wikipedia.org/wiki/Komatsu_D575A" }]
   },
   {
@@ -1048,11 +1035,11 @@
     "name": "Bagger 288",
     "category": "construction",
     "subcategory": "excavators",
-    "manufacturer": "Krupp (now thyssenkrupp)",
+    "manufacturer": "Krupp (thyssenkrupp)",
     "country": "Germany",
     "year": 1978,
     "shortDescription": "The largest land vehicle ever built — a bucket-wheel excavator.",
-    "fullDescription": "Bagger 288 is a bucket-wheel excavator built by Krupp for the Rheinbraun mining company. At 96 m tall, 215 m long and 13,500 tonnes, it is the largest land vehicle ever built. It can excavate 240,000 tonnes of coal per day.",
+    "fullDescription": "Bagger 288 is a bucket-wheel excavator built for Rheinbraun mining. At 96 m tall, 215 m long, and 13,500 tonnes, it is the largest land vehicle ever built. It can excavate 240,000 tonnes of coal per day.",
     "specs": {
       "type": "Bucket-wheel excavator",
       "height": "96 m",
@@ -1062,7 +1049,7 @@
       "output": "240,000 tonnes/day",
       "power": "Electric (16.56 MW)"
     },
-    "images": [],
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bagger_288.jpg/1280px-Bagger_288.jpg"],
     "sources": [{ "title": "Wikipedia — Bagger 288", "url": "https://en.wikipedia.org/wiki/Bagger_288" }]
   }
 ]
