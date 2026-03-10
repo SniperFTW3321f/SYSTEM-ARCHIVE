@@ -521,18 +521,18 @@ async function boot() {
     initCatalog(machines);
     initMachine(machines);
     /* ── Footer live stats ── */
-function updateFooterStats(machines) {
-  const cats    = new Set(machines.map(m => m.category)).size;
-  const nations = new Set(machines.map(m => m.country).filter(Boolean)).size;
-  const photos  = machines.filter(hasPhoto).length;
-  const s1 = document.getElementById("fStat1");
-  const s2 = document.getElementById("fStat2");
-  const s3 = document.getElementById("fStat3");
-  const s4 = document.getElementById("fStat4");
-  if (s1) s1.textContent = machines.length;
-  if (s2) s2.textContent = cats;
-  if (s3) s3.textContent = nations;
-  if (s4) s4.textContent = photos;
+    function updateFooterStats(machines) {
+     const cats    = new Set(machines.map(m => m.category)).size;
+    const nations = new Set(machines.map(m => m.country).filter(Boolean)).size;
+    const photos  = machines.filter(hasPhoto).length;
+    const s1 = document.getElementById("fStat1");
+    const s2 = document.getElementById("fStat2");
+    const s3 = document.getElementById("fStat3");
+    const s4 = document.getElementById("fStat4");
+    if (s1) s1.textContent = machines.length;
+    if (s2) s2.textContent = cats;
+    if (s3) s3.textContent = nations;
+    if (s4) s4.textContent = photos;
 }
 updateFooterStats(machines);
 
