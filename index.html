@@ -60,9 +60,114 @@
     </div>
   </main>
 
-  <footer class="foot">
-    <div class="wrap muted">SYSTEM ARCHIVE — pure HTML / CSS / JS</div>
-  </footer>
+<footer class="foot">
+
+  <!-- ── Stats strip ── -->
+  <div class="foot__stats" id="footStats">
+    <div class="foot__stat">
+      <div class="foot__stat-num" id="fStat1">45</div>
+      <div class="foot__stat-label">Machines</div>
+    </div>
+    <div class="foot__stat">
+      <div class="foot__stat-num" id="fStat2">9</div>
+      <div class="foot__stat-label">Categories</div>
+    </div>
+    <div class="foot__stat">
+      <div class="foot__stat-num" id="fStat3">14</div>
+      <div class="foot__stat-label">Countries</div>
+    </div>
+    <div class="foot__stat">
+      <div class="foot__stat-num" id="fStat4">45</div>
+      <div class="foot__stat-label">With photos</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- ── Main grid ── -->
+    <div class="foot__main">
+
+      <!-- Brand -->
+      <div>
+        <div class="foot__brand-name">SYSTEM ARCHIVE</div>
+        <p class="foot__tagline">
+          A curated encyclopedia of the world's most remarkable machines —
+          cars, aircraft, ships, tanks, rockets and more.
+        </p>
+        <div class="foot__badges">
+          <span class="foot__badge">🌐 Open Data</span>
+          <span class="foot__badge">📷 Wikimedia</span>
+          <span class="foot__badge">⚡ No frameworks</span>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div>
+        <div class="foot__col-title">Categories</div>
+        <ul class="foot__links">
+          <li><a href="./catalog.html?category=cars"><span class="ficon">🚗</span> Cars</a></li>
+          <li><a href="./catalog.html?category=aircraft"><span class="ficon">✈️</span> Aircraft</a></li>
+          <li><a href="./catalog.html?category=ships"><span class="ficon">🚢</span> Ships</a></li>
+          <li><a href="./catalog.html?category=military"><span class="ficon">⚔️</span> Military</a></li>
+          <li><a href="./catalog.html?category=trains"><span class="ficon">🚂</span> Trains</a></li>
+          <li><a href="./catalog.html?category=motorcycles"><span class="ficon">🏍️</span> Motorcycles</a></li>
+          <li><a href="./catalog.html?category=space"><span class="ficon">🚀</span> Space</a></li>
+          <li><a href="./catalog.html?category=airships"><span class="ficon">🛸</span> Airships</a></li>
+          <li><a href="./catalog.html?category=construction"><span class="ficon">🏗️</span> Construction</a></li>
+        </ul>
+      </div>
+
+      <!-- Pages -->
+      <div>
+        <div class="foot__col-title">Pages</div>
+        <ul class="foot__links">
+          <li><a href="./index.html"><span class="ficon">🏠</span> Home</a></li>
+          <li><a href="./catalog.html"><span class="ficon">📚</span> Full Catalog</a></li>
+          <li><a href="./catalog.html?sort=year_desc"><span class="ficon">🆕</span> Newest First</a></li>
+          <li><a href="./catalog.html?sort=year_asc"><span class="ficon">🏛️</span> Oldest First</a></li>
+        </ul>
+      </div>
+
+      <!-- About -->
+      <div>
+        <div class="foot__col-title">About</div>
+        <ul class="foot__links">
+          <li><a href="https://en.wikipedia.org" target="_blank" rel="noreferrer"><span class="ficon">🌍</span> Wikipedia</a></li>
+          <li><a href="https://commons.wikimedia.org" target="_blank" rel="noreferrer"><span class="ficon">🖼️</span> Wikimedia Commons</a></li>
+        </ul>
+        <div style="margin-top:20px">
+          <div class="foot__col-title">Themes</div>
+          <ul class="foot__links">
+            <li><a href="#" onclick="applyTheme('nebula');return false"><span class="ficon">🌌</span> Nebula</a></li>
+            <li><a href="#" onclick="applyTheme('carbon');return false"><span class="ficon">💚</span> Carbon</a></li>
+            <li><a href="#" onclick="applyTheme('crimson');return false"><span class="ficon">🔴</span> Crimson</a></li>
+            <li><a href="#" onclick="applyTheme('arctic');return false"><span class="ficon">❄️</span> Arctic</a></li>
+            <li><a href="#" onclick="applyTheme('parchment');return false"><span class="ficon">📜</span> Parchment</a></li>
+            <li><a href="#" onclick="applyTheme('forest');return false"><span class="ficon">🌿</span> Forest</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /foot__main -->
+
+    <!-- ── Bottom bar ── -->
+    <div class="foot__bottom">
+      <div class="foot__copy">
+        © <strong>SYSTEM ARCHIVE</strong> 2026 —
+        Images via <a href="https://commons.wikimedia.org" target="_blank" rel="noreferrer" style="color:var(--link-color)">Wikimedia Commons</a>
+        under respective licences.
+      </div>
+      <div class="foot__tech">
+        <span class="foot__tech-pill">HTML5</span>
+        <span class="foot__tech-pill">CSS3</span>
+        <span class="foot__tech-pill">Vanilla JS</span>
+        <button class="foot__scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+      </div>
+    </div>
+
+  </div><!-- /wrap -->
+</footer>
+
 
   <script src="./js/app.js"></script>
 </body>
