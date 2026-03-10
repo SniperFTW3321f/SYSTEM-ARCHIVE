@@ -19,7 +19,7 @@
       "transmission": "7-speed DSG",
       "weight": "1,995 kg"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bugatti_Chiron_-_Goodwood_Festival_of_Speed_2016_-_01.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bugatti_Chiron_2017.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Bugatti Chiron", "url": "https://en.wikipedia.org/wiki/Bugatti_Chiron" }]
   },
   {
@@ -86,7 +86,7 @@
       "drive": "AWD",
       "weight": "2,162 kg"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/2021_Tesla_Model_S_Plaid,_Front_8.4.21.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tesla_Model_S_Plaid_Autofrühling_Ulm_IMG_9278.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Tesla Model S", "url": "https://en.wikipedia.org/wiki/Tesla_Model_S" }]
   },
   {
@@ -110,7 +110,7 @@
       "transmission": "7-speed PDK",
       "weight": "1,435 kg"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Porsche_992_GT3_(cropped).jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Porsche_911_GT3_(992,_2022)_(52228777602).jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Porsche 911 GT3", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT3" }]
   },
   {
@@ -198,7 +198,7 @@
       "drive": "RWD",
       "transmission": "6-speed Getrag manual"
     },
-    "images": ["https://i.redd.it/l5wlgron0kea1.jpg"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Toyota_Supra_SZ_(A80)_front.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Toyota Supra", "url": "https://en.wikipedia.org/wiki/Toyota_Supra" }]
   },
   {
@@ -244,7 +244,7 @@
       "maxPassengers": "605",
       "crew": "2"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Boeing_747-8_Intercontinental_N6067E.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Boeing_747-8F_N5573L.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Boeing 747", "url": "https://en.wikipedia.org/wiki/Boeing_747" }]
   },
   {
@@ -267,7 +267,7 @@
       "maxPassengers": "853 (all-economy)",
       "crew": "2"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/A380_first_flight.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Airbus_A380_MSN001_ILA_2006.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Airbus A380", "url": "https://en.wikipedia.org/wiki/Airbus_A380" }]
   },
   {
@@ -290,7 +290,7 @@
       "length": "61.66 m",
       "wingspan": "25.6 m"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Concorde_at_Filton.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Concorde_Air_France.JPG&width=800"],
     "sources": [{ "title": "Wikipedia — Concorde", "url": "https://en.wikipedia.org/wiki/Concorde" }]
   },
   {
@@ -450,7 +450,7 @@
       "maxSpeed": "128 km/h",
       "passengers": "~20"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/LZ127-1.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/LZ_127_Graf_Zeppelin_in_flight.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — LZ 127", "url": "https://en.wikipedia.org/wiki/LZ_127_Graf_Zeppelin" }]
   },
 
@@ -520,7 +520,7 @@
       "mainArmament": "8× 38 cm guns",
       "crew": "~2,200"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bundesarchiv_DVM_10_Bild-23-63-06,_Schlachtschiff_Bismarck.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bismarck-film.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Bismarck", "url": "https://en.wikipedia.org/wiki/German_battleship_Bismarck" }]
   },
   {
@@ -543,7 +543,7 @@
       "armour": "650 mm (turret face)",
       "crew": "~2,778"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Yamato_under_air_attack_April_1945.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Yamato_1941.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Yamato", "url": "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato" }]
   },
 
@@ -567,7 +567,7 @@
       "mainArmament": "120 mm M256 smoothbore gun",
       "crew": "4"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/M1A2_Abrams.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Abrams_in_formation.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — M1 Abrams", "url": "https://en.wikipedia.org/wiki/M1_Abrams" }]
   },
   {
@@ -590,7 +590,7 @@
       "mainArmament": "120 mm Rheinmetall L/44",
       "crew": "4"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Leopard2A5_001.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Leopard_2_on_the_move.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Leopard 2", "url": "https://en.wikipedia.org/wiki/Leopard_2" }]
   },
   {
@@ -613,7 +613,7 @@
       "crew": "3",
       "armour": "Composite + ERA"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/T-90_in_Nizhny_Tagil_2011.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/T-90A_in_2010.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — T-90", "url": "https://en.wikipedia.org/wiki/T-90" }]
   },
   {
@@ -637,7 +637,7 @@
       "armour": "25–120 mm",
       "crew": "5"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bundesarchiv_Bild_183-J14589,_Russland,_Panzer_VI_(Tiger_I).jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tiger_131_at_The_Tank_Museum.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Tiger I", "url": "https://en.wikipedia.org/wiki/Tiger_I" }]
   },
   {
@@ -706,7 +706,7 @@
       "wingspan": "20 m",
       "crew": "0 (remotely piloted)"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/MQ-9_Reaper_in_flight_(MQ-9_Reaper_cropped).jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/MQ-9_Reaper_UAV.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — MQ-9 Reaper", "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-9_Reaper" }]
   },
 
@@ -728,7 +728,7 @@
       "capacity": "1,323 passengers",
       "propulsion": "Electric (25 kV AC)"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/N700S_Shinkansen_J2_20200701.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Shinkansen700.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Shinkansen N700", "url": "https://en.wikipedia.org/wiki/N700_Series_Shinkansen" }]
   },
   {
@@ -748,7 +748,7 @@
       "propulsion": "Electric (25 kV AC / 1.5 kV DC)",
       "capacity": "Up to 1,000 passengers (duplex)"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/TGV_Duplex_rame_201_Lyon.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/TGV_Duplex.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — TGV", "url": "https://en.wikipedia.org/wiki/TGV" }]
   },
   {
@@ -768,7 +768,7 @@
       "propulsion": "Linear induction motor",
       "levitation": "~100 mm"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/L0-Series-Maglev.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/L0_Series_Maglev.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — SCMaglev", "url": "https://en.wikipedia.org/wiki/SCMaglev" }]
   },
   {
@@ -812,7 +812,7 @@
       "weight": "195 kg (dry)",
       "electronics": "6-axis IMU, cornering ABS"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/2018_Ducati_Panigale_V4S_(43128569700).jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/2020_Ducati_Panigale_V4_S.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Ducati Panigale V4", "url": "https://en.wikipedia.org/wiki/Ducati_Panigale_V4" }]
   },
   {
@@ -854,7 +854,7 @@
       "weight": "199 kg (dry)",
       "electronics": "6-axis IMU, launch control"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/2015_Yamaha_YZF-R1M,_front_8.3.15.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Yamaha_YZF-R1_2009.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Yamaha YZF-R1", "url": "https://en.wikipedia.org/wiki/Yamaha_YZF-R1" }]
   },
   {
@@ -873,7 +873,7 @@
       "type": "Cruiser",
       "era": "1948–1965"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Harley_Davidson_FLH_1958_Duoglide_(7645905082).jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/1957_Harley-Davidson_FLH_Hydra_Glide.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Harley-Davidson Panhead", "url": "https://en.wikipedia.org/wiki/Harley-Davidson_Panhead_engine" }]
   },
 
@@ -918,7 +918,7 @@
       "engines": "33× Raptor (booster) + 6× Raptor (ship)",
       "reusability": "Full — booster + ship"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/SpaceX_Starship_IFT-4_booster_catch.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/SpaceX_Starship_IFT-3_launch_(cropped).jpg&width=800"],
     "sources": [{ "title": "Wikipedia — SpaceX Starship", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship" }]
   },
   {
@@ -939,7 +939,7 @@
       "engines": "9× Merlin 1D (stage 1)",
       "reusability": "First stage (booster)"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Falcon_9_rocket_family.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/SpaceX_Falcon_9_Launch_(2_of_4).jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Falcon 9", "url": "https://en.wikipedia.org/wiki/Falcon_9" }]
   },
   {
@@ -961,7 +961,7 @@
       "missions": "135 total",
       "service": "1981–2011"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/STS-134_launch.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Space_Shuttle_Discovery_launch.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Space Shuttle", "url": "https://en.wikipedia.org/wiki/Space_Shuttle" }]
   },
 
@@ -1006,7 +1006,7 @@
       "axles": "9",
       "travelSpeed": "75 km/h"
     },
-    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Liebherr_LTM_1500-8.1.jpg&width=800"],
+    "images": ["https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Liebherr_LTM_11200_mobile_crane.jpg&width=800"],
     "sources": [{ "title": "Wikipedia — Liebherr cranes", "url": "https://en.wikipedia.org/wiki/Liebherr" }]
   },
   {
