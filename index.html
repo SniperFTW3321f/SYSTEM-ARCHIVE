@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SYSTEM ARCHIVE</title>
   <link rel="stylesheet" href="./css/styles.css" />
+  <script>
+    /* Apply theme before first paint to avoid flash */
+    (function(){
+      const t = localStorage.getItem("sa_theme") || "nebula";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
 </head>
 <body>
 
@@ -13,6 +20,12 @@
       <a class="brand" href="./index.html">SYSTEM ARCHIVE</a>
       <nav class="nav">
         <a href="./catalog.html">Catalog</a>
+        <div class="theme-switcher">
+          <button class="theme-btn" aria-label="Switch theme">
+            🎨 <span>Nebula</span> ▾
+          </button>
+          <div class="theme-dropdown"></div>
+        </div>
       </nav>
     </div>
   </header>

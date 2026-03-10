@@ -16,6 +16,15 @@ const CATEGORY_META = {
   construction: { title: "Construction", emoji: "🏗️" }
 };
 
+const THEMES = [
+  { id: "nebula",    label: "Nebula",    group: "dark"  },
+  { id: "carbon",    label: "Carbon",    group: "dark"  },
+  { id: "crimson",   label: "Crimson",   group: "dark"  },
+  { id: "arctic",    label: "Arctic",    group: "light" },
+  { id: "parchment", label: "Parchment", group: "light" },
+  { id: "forest",    label: "Forest",    group: "light" }
+];
+
 /* ─────────────────────────────────────────
    UTILS
 ───────────────────────────────────────── */
@@ -48,7 +57,86 @@ function categoryLabel(cat) {
 }
 
 /* ─────────────────────────────────────────
-   IMAGE ERROR HANDLERS  (no inline JSON.stringify)
+   THEME SYSTEM
+───────────────────────────────────────── */
+const THEME_KEY = "sa_theme";
+
+function getActiveTheme() {
+  return localStorage.getItem(THEME_KEY) || "nebula";
+}
+
+function applyTheme(id, animate = true) {
+  if (animate) {
+    document.documentElement.classList.add("theme-transitioning");
+    setTimeout(() => document.documentElement.classList.remove("theme-transitioning"), 350);
+  }
+  document.documentElement.setAttribute("data-theme", id);
+  localStorage.setItem(THEME_KEY, id);
+  updateThemeUI(id);
+}
+
+function updateThemeUI(id) {
+  qsa(".theme-option").forEach(el => {
+    el.classList.toggle("active", el.dataset.themeId === id);
+  });
+  const btn = qs(".theme-btn span");
+  if (btn) {
+    const t = THEMES.find(t => t.id === id);
+    if (t) btn.textContent = t.label;
+  }
+}
+
+function buildThemeDropdown() {
+  const dark  = THEMES.filter(t => t.group === "dark");
+  const light = THEMES.filter(t => t.group === "light");
+  const active = getActiveTheme();
+
+  const optionHTML = t => `
+    <div class="theme-option${t.id === active ? " active" : ""}" data-theme-id="${t.id}">
+      <div class="theme-swatch swatch-${t.id}"></div>
+      <span>${t.label}</span>
+    </div>`;
+
+  return `
+    <div class="theme-group-label">🌙 Dark</div>
+    ${dark.map(optionHTML).join("")}
+    <div class="theme-group-label" style="margin-top:6px">☀️ Light</div>
+    ${light.map(optionHTML).join("")}`;
+}
+
+function initThemeSwitcher() {
+  const switcher = qs(".theme-switcher");
+  if (!switcher) return;
+
+  const dropdown = switcher.querySelector(".theme-dropdown");
+  if (!dropdown) return;
+
+  dropdown.innerHTML = buildThemeDropdown();
+
+  /* Toggle dropdown */
+  switcher.querySelector(".theme-btn").addEventListener("click", e => {
+    e.stopPropagation();
+    dropdown.classList.toggle("open");
+  });
+
+  /* Close on outside click */
+  document.addEventListener("click", () => dropdown.classList.remove("open"));
+  dropdown.addEventListener("click", e => e.stopPropagation());
+
+  /* Pick theme */
+  dropdown.addEventListener("click", e => {
+    const opt = e.target.closest(".theme-option");
+    if (!opt) return;
+    applyTheme(opt.dataset.themeId);
+    dropdown.classList.remove("open");
+  });
+
+  /* Apply saved theme label */
+  updateThemeUI(getActiveTheme());
+}
+
+/* ─────────────────────────────────────────
+   IMAGE ERROR HANDLERS
 ───────────────────────────────────────── */
 window._cardImgError = function(img) {
   const media = img.closest(".card__media");
@@ -66,7 +154,7 @@ window._mainImgError = function(img) {
   const wrap = img.parentElement;
   if (!wrap) return;
   wrap.innerHTML = `
-    <div class="placeholder" style="aspect-ratio:16/10;min-height:220px">
+    <div class="placeholder" style="height:100%">
       <div>
         <div class="placeholder__name">${img.dataset.name || ""}</div>
         <div class="placeholder__sub">${img.dataset.cat  || ""}</div>
@@ -74,9 +162,7 @@ window._mainImgError = function(img) {
     </div>`;
 };
 
-window._thumbError = function(img) {
-  img.remove();
-};
+window._thumbError = function(img) { img.remove() };
 
 /* ─────────────────────────────────────────
    LOAD DATA
@@ -123,7 +209,7 @@ function renderPlaceholder(m) {
 }
 
 function renderCard(m) {
-  const imgSrc = m.images?.[0] ?? "";
+  const imgSrc   = m.images?.[0] ?? "";
   const safeName = esc(safeText(m.name));
   const safeCat  = esc(categoryLabel(m.category));
 
@@ -163,15 +249,12 @@ function renderCard(m) {
    HOME PAGE
 ───────────────────────────────────────── */
 function renderHome(machines) {
-
-  /* Category grid */
   const catGrid = qs("#categoryGrid");
   if (catGrid) {
     const counts = machines.reduce((acc, m) => {
       acc[m.category] = (acc[m.category] || 0) + 1;
       return acc;
     }, {});
-
     catGrid.innerHTML = Object.keys(CATEGORY_META).map(k => {
       const meta  = CATEGORY_META[k];
       const count = counts[k] || 0;
@@ -184,33 +267,18 @@ function renderHome(machines) {
     }).join("");
   }
 
-  /* Stats bar */
   const statsEl = qs("#statsBar");
   if (statsEl) {
     const catUsed    = new Set(machines.map(m => m.category)).size;
     const countries  = new Set(machines.map(m => m.country).filter(Boolean)).size;
     const withPhotos = machines.filter(hasPhoto).length;
-
     statsEl.innerHTML = `
-      <div class="stat">
-        <div class="stat__num">${machines.length}</div>
-        <div class="stat__label">Total machines</div>
-      </div>
-      <div class="stat">
-        <div class="stat__num">${catUsed}</div>
-        <div class="stat__label">Categories</div>
-      </div>
-      <div class="stat">
-        <div class="stat__num">${countries}</div>
-        <div class="stat__label">Countries</div>
-      </div>
-      <div class="stat">
-        <div class="stat__num">${withPhotos}</div>
-        <div class="stat__label">With photos</div>
-      </div>`;
+      <div class="stat"><div class="stat__num">${machines.length}</div><div class="stat__label">Total machines</div></div>
+      <div class="stat"><div class="stat__num">${catUsed}</div><div class="stat__label">Categories</div></div>
+      <div class="stat"><div class="stat__num">${countries}</div><div class="stat__label">Countries</div></div>
+      <div class="stat"><div class="stat__num">${withPhotos}</div><div class="stat__label">With photos</div></div>`;
   }
 
-  /* Newest grid */
   const newestEl = qs("#newestGrid");
   if (newestEl) {
     const sorted = [...machines].sort((a, b) => (b.year || 0) - (a.year || 0));
@@ -232,22 +300,19 @@ function initCatalog(machines) {
   const onlyPhotosEl = qs("#onlyWithPhotos");
   const countEl      = qs("#resultsCount");
 
-  /* Populate category dropdown */
   catEl.innerHTML =
     `<option value="">All categories</option>` +
     Object.keys(CATEGORY_META)
       .map(c => `<option value="${esc(c)}">${esc(categoryLabel(c))}</option>`)
       .join("");
 
-  /* Auto-select from URL param */
   const urlCat = normKey(getParam("category") || "");
   if (urlCat) catEl.value = urlCat;
 
   function fillSubcats(category) {
     const subs = machines
       .filter(m => !category || m.category === category)
-      .map(m => m.subcategory)
-      .filter(Boolean);
+      .map(m => m.subcategory).filter(Boolean);
     const uniq = Array.from(new Set(subs)).sort((a, b) => a.localeCompare(b));
     subEl.innerHTML =
       `<option value="">All subcategories</option>` +
@@ -339,7 +404,6 @@ function initMachine(machines) {
   const safeName = esc(safeText(m.name));
   const safeCat  = esc(categoryLabel(m.category));
 
-  /* Gallery */
   const gallery = imgs.length
     ? `
       <div class="gallery">
@@ -373,12 +437,11 @@ function initMachine(machines) {
         </div>
       </div>`;
 
-  /* Sources */
   const sourcesHTML = (m.sources || []).length
     ? `<ul class="links">
         ${m.sources.map(s => `
           <li>
-            <a href="${esc(safeText(s.url, "#"))}" target="_blank" rel="noreferrer">
+            <a href="${esc(safeText(s.url,"#"))}" target="_blank" rel="noreferrer">
               ${esc(safeText(s.title, "Source"))}
             </a>
           </li>`).join("")}
@@ -387,7 +450,6 @@ function initMachine(machines) {
 
   root.innerHTML = `
     <div class="panel">
-
       <div class="crumbs">
         <a href="./index.html">Home</a>
         <span>›</span>
@@ -400,34 +462,27 @@ function initMachine(machines) {
       </div>
 
       <div class="machine">
-
         <div>${gallery}</div>
-
         <div class="machine__info">
           <h1>${safeName}</h1>
           <div class="muted" style="margin-top:4px">
-            ${esc(safeText(m.manufacturer, ""))}
+            ${esc(safeText(m.manufacturer,""))}
             ${m.country ? `&bull; ${esc(m.country)}` : ""}
             ${m.year    ? `&bull; ${esc(m.year)}`    : ""}
           </div>
-
           <div class="chiprow" style="margin-top:10px">
             <span class="chip">${esc(safeText(m.category))}</span>
             ${m.subcategory
               ? `<span class="chip chip--muted">${esc(m.subcategory)}</span>`
               : ""}
           </div>
-
           <p style="margin-top:14px">
             ${esc(safeText(m.fullDescription, m.shortDescription || ""))}
           </p>
-
           <h2>Specifications</h2>
           ${renderSpecsTable(m.specs)}
-
           <h2>Sources</h2>
           ${sourcesHTML}
-
           <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
             <a class="btn btn--ghost"
                href="./catalog.html?category=${encodeURIComponent(m.category)}">
@@ -436,11 +491,9 @@ function initMachine(machines) {
             <a class="btn" href="./catalog.html">All catalog</a>
           </div>
         </div>
-
       </div>
     </div>`;
 
-  /* Thumbnail click → swap main image */
   qsa(".thumb").forEach(t => {
     t.addEventListener("click", () => {
       const main = qs("#mainImg");
@@ -456,6 +509,12 @@ function initMachine(machines) {
    BOOT
 ───────────────────────────────────────── */
 async function boot() {
+  /* Apply saved theme immediately (before paint) */
+  applyTheme(getActiveTheme(), false);
+
+  /* Init theme UI */
+  initThemeSwitcher();
+
   try {
     const machines = await loadMachines();
     renderHome(machines);

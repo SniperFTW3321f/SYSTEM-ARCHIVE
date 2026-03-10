@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Catalog • SYSTEM ARCHIVE</title>
   <link rel="stylesheet" href="./css/styles.css" />
+  <script>
+    (function(){
+      const t = localStorage.getItem("sa_theme") || "nebula";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
 </head>
 <body>
 
@@ -14,6 +20,12 @@
       <nav class="nav">
         <a href="./index.html">Home</a>
         <a href="./catalog.html" aria-current="page">Catalog</a>
+        <div class="theme-switcher">
+          <button class="theme-btn" aria-label="Switch theme">
+            🎨 <span>Nebula</span> ▾
+          </button>
+          <div class="theme-dropdown"></div>
+        </div>
       </nav>
     </div>
   </header>
@@ -47,7 +59,6 @@
             <span>Only with photos</span>
           </label>
         </div>
-
         <div id="fatalError" class="error"></div>
       </section>
 
